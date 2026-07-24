@@ -4,6 +4,11 @@
     "vscjava.vscode-java-pack",
     "vmware.vscode-boot-dev-pack",
     "gabrielbb.vscode-lombok",
-    "sonarsource.sonarlint-vscode"
+    "sonarsource.sonarlint-vscode",
+    "Vue.volar",
+    "Vue.vscode-typescript-vue-plugin",
+    "bradlc.vscode-tailwindcss",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode"
   ]
 }

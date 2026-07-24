@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Port design tokens from origin/style.css */
+:root {
+  --navy-950: #10263f;
+  --navy-800: #183a5c;
+  --blue-600: #2f6cf4;
+  --blue-500: #4a7df4;
+  --blue-100: #eaf1ff;
+  --sky: #f0f7ff;
+  --coral-500: #f06a5b;
+  --coral-100: #fff0ec;
+  --cream: #fbfaf6;
+  --white: #fff;
+  --text: #1d3145;
+  --muted: #6d7c8a;
+  --line: #dfe7ec;
+  --green: #2a9d72;
+  --shadow: 0 22px 60px rgba(16, 38, 63, 0.1);
+  --radius: 24px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--cream);
+  font-family: Inter, Pretendard, "Noto Sans KR", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: min(1160px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+/* Utility classes */
+.button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.button:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
