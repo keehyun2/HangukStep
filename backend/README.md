@@ -44,6 +44,8 @@ nano .env  # or use your preferred editor
 - `SERVER_PORT` - Default: `8080`
 - `CORS_ORIGINS` - Default: `http://localhost:5173,http://localhost:3000`
 
+> **Note:** The application automatically loads environment variables from the `.env` file on startup. No need to manually export environment variables!
+
 ### 3. Initialize Database
 
 ```bash

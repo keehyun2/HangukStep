@@ -1,0 +1,41 @@
+{
+  "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/StyleGuide/main/java/google-style-guide.xml",
+  "java.saveActions.organizeImports": true,
+  "java.completion.importOrder": [
+    "java",
+    "javax",
+    "org",
+    "com"
+  ],
+  "java.debug.settings.enableRunDebugCodeLens": true,
+  "java.debug.settings.onBuildFailureProceed": true,
+  "java.symbols.includeSourceMethodNames": false,
+  "spring.boot.ls.restart": {
+    "enabled": true
+  },
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.gradle": true,
+    "**/build": true,
+    "**/out": true,
+    "**/.gradle": false
+  },
+  "files.associations": {
+    "*.gradle": "groovy",
+    "*.gradle.kts": "kotlin"
+  }
+}

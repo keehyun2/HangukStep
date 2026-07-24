@@ -8,7 +8,7 @@ Get the HangukStep authentication API running in 5 minutes.
 - **PostgreSQL** - [Install PostgreSQL](https://www.postgresql.org/download/)
 - **Git** - To clone the repository
 
-## Quick Setup (5 commands)
+## Quick Setup (4 commands)
 
 ```bash
 # 1. Clone the repository
@@ -18,9 +18,11 @@ cd HangukStep/backend
 # 2. Create environment file
 cp .env.example .env
 
-# 3. Edit .env and set these variables:
-#    - DB_PASSWORD=your_password
-#    - JWT_SECRET=your_secret_key
+# 3. Edit .env and set your credentials
+nano .env  # or use your preferred editor
+# Set these variables:
+#   - DB_PASSWORD=your_postgresql_password
+#   - JWT_SECRET=your_jwt_secret_key
 
 # 4. Initialize database
 ./scripts/init-db.sh
@@ -28,6 +30,12 @@ cp .env.example .env
 # 5. Run the application
 ./gradlew bootRun
 ```
+
+That's it! The API will be running at `http://localhost:8080`
+
+## How it works
+
+The application automatically loads environment variables from the `.env` file using the `dotenv-java` library. No need to manually export environment variables!
 
 That's it! The API will be running at `http://localhost:8080`
 

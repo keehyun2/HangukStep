@@ -38,6 +38,9 @@ dependencies {
     runtimeOnly("io.jsonwebtoken:jjwt-impl:${property("jjwtVersion")}")
     runtimeOnly("io.jsonwebtoken:jjwt-jackson:${property("jjwtVersion")}")
 
+    // Dotenv (Environment variables from .env file)
+    implementation("io.github.cdimascio:dotenv-java:3.0.0")
+
     // Lombok
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")

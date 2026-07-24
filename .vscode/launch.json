@@ -1,0 +1,35 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot: HangukStepApplication",
+      "request": "launch",
+      "mainClass": "com.hangukstep.HangukStepApplication",
+      "args": "",
+      "vmArgs": "-Dfile.encoding=UTF-8",
+      "envFile": "${workspaceFolder}/backend/.env",
+      "env": {
+        "SPRING_PROFILES_ACTIVE": "local"
+      },
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "cwd": "${workspaceFolder}/backend",
+      "stopOnEntry": false
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot: HangukStepApplication (Debug)",
+      "request": "launch",
+      "mainClass": "com.hangukstep.HangukStepApplication",
+      "vmArgs": "-Dfile.encoding=UTF-8 -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005",
+      "envFile": "${workspaceFolder}/backend/.env",
+      "env": {
+        "SPRING_PROFILES_ACTIVE": "local"
+      },
+      "console": "internalConsole",
+      "cwd": "${workspaceFolder}/backend",
+      "stopOnEntry": true
+    }
+  ]
+}
