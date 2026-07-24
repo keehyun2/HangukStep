@@ -1,4 +1,13 @@
 {
+  "java.jdt.ls.java.home": "C:\\Program Files\\Java\\jdk-21.0.11",
+  "java.import.gradle.java.home": "C:\\Program Files\\Java\\jdk-21.0.11",
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-21",
+      "path": "C:\\Program Files\\Java\\jdk-21.0.11",
+      "default": true
+    }
+  ],
   "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/StyleGuide/main/java/google-style-guide.xml",
   "java.saveActions.organizeImports": true,
   "java.completion.importOrder": [
@@ -38,5 +47,6 @@
     "*.gradle": "groovy",
     "*.gradle.kts": "kotlin"
   },
-  "java.compile.nullAnalysis.mode": "automatic"
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.configuration.updateBuildConfiguration": "interactive"
 }

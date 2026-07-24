@@ -1,0 +1,2 @@
+2026-07-24 18:13:32.462 KST [25472] 치명적오류:  "postmaster.pid" 잠금 파일이 이미 있음
+2026-07-24 18:13:32.462 KST [25472] 힌트:  다른 postmaster 프로그램(PID 21104)이 "C:/Program Files/PostgreSQL/18/data" 데이터 디렉터리를 사용해서 실행중입니까?

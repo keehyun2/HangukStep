@@ -1,314 +1,140 @@
 <script setup lang="ts">
+import axios from 'axios'
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
-
-const router = useRouter()
-const authStore = useAuthStore()
 
 const isLogin = ref(true)
 const email = ref('')
 const password = ref('')
 const name = ref('')
-const error = ref('')
-const loading = ref(false)
+const passwordCheck = ref('')
+const isSubmitting = ref(false)
+const errorMessage = ref('')
 
-const toggleMode = () => {
-  isLogin.value = !isLogin.value
-  error.value = ''
-  // Clear form fields
-  email.value = ''
-  password.value = ''
-  name.value = ''
+const router = useRouter()
+const authStore = useAuthStore()
+
+function getErrorMessage(error: unknown) {
+  if (axios.isAxiosError(error)) {
+    const data = error.response?.data
+    if (data?.error === 'INVALID_CREDENTIALS') return 'Email atau kata sandi salah.'
+    if (data?.error === 'EMAIL_EXISTS') return 'Email ini sudah terdaftar.'
+    if (typeof data?.message === 'string') return data.message
+  }
+
+  return 'Tidak dapat terhubung ke server. Silakan coba lagi.'
 }
 
-const handleSubmit = async () => {
-  error.value = ''
-  loading.value = true
+async function submitLogin() {
+  errorMessage.value = ''
+  isSubmitting.value = true
 
   try {
-    if (isLogin.value) {
-      await authStore.login(email.value, password.value)
-    } else {
-      await authStore.signup(email.value, password.value, name.value)
-    }
-    router.push('/dashboard')
-  } catch (err: any) {
-    console.error('Auth error:', err)
-    if (err.response?.data?.error === 'EMAIL_EXISTS') {
-      error.value = 'Email sudah terdaftar. Silakan login.'
-    } else if (err.response?.data?.error === 'INVALID_CREDENTIALS') {
-      error.value = 'Email atau kata sandi salah.'
-    } else if (err.response?.data?.message) {
-      error.value = err.response.data.message
-    } else {
-      error.value = 'Terjadi kesalahan. Silakan coba lagi.'
-    }
+    await authStore.login(email.value.trim(), password.value)
+    await router.push('/dashboard')
+  } catch (error) {
+    errorMessage.value = getErrorMessage(error)
   } finally {
-    loading.value = false
+    isSubmitting.value = false
   }
+}
+
+async function submitSignup() {
+  errorMessage.value = ''
+
+  if (password.value !== passwordCheck.value) {
+    errorMessage.value = 'Konfirmasi kata sandi tidak cocok.'
+    return
+  }
+
+  isSubmitting.value = true
+
+  try {
+    await authStore.signup(email.value.trim(), password.value, name.value.trim())
+    await router.push('/dashboard')
+  } catch (error) {
+    errorMessage.value = getErrorMessage(error)
+  } finally {
+    isSubmitting.value = false
+  }
+}
+
+function selectMode(loginMode: boolean) {
+  isLogin.value = loginMode
+  errorMessage.value = ''
+  password.value = ''
+  passwordCheck.value = ''
 }
 </script>
 
 <template>
   <div class="auth-body">
-    <div class="auth-card">
-      <div class="auth-header">
-        <div class="auth-logo">
-          <strong>Hanguk Step</strong>
-          <small>Korean, one step at a time</small>
-        </div>
-      </div>
+    <header class="auth-header">
+      <RouterLink to="/" class="auth-logo">
+        <span class="brand-mark" aria-hidden="true"><i></i><b>HS</b></span>
+        <span><strong>Hanguk Step</strong><small>Korean, one step at a time</small></span>
+      </RouterLink>
+      <RouterLink to="/" class="back-link">Kembali</RouterLink>
+    </header>
 
-      <div class="auth-main">
-        <h1 id="authTitle">{{ isLogin ? 'Masuk' : 'Daftar' }}</h1>
+    <main class="auth-main">
+      <section class="auth-card">
+        <p class="auth-label">SELAMAT DATANG</p>
+        <h1>{{ isLogin ? 'Login' : 'Daftar' }}</h1>
         <p class="auth-description">
-          {{ isLogin ? 'Masuk untuk melanjutkan belajar' : 'Buat akun untuk mulai belajar' }}
+          {{ isLogin ? 'Masuk untuk melanjutkan pembelajaranmu.' : 'Buat akun dan mulai perjalanan belajarmu.' }}
         </p>
 
         <div class="auth-tabs">
-          <button
-            type="button"
-            class="auth-tab"
-            :class="{ 'is-active': isLogin }"
-            @click="toggleMode"
-          >
-            Masuk
+          <button class="auth-tab" :class="{ 'is-active': isLogin }" type="button" @click="selectMode(true)">
+            Login
           </button>
-          <button
-            type="button"
-            class="auth-tab"
-            :class="{ 'is-active': !isLogin }"
-            @click="toggleMode"
-          >
+          <button class="auth-tab" :class="{ 'is-active': !isLogin }" type="button" @click="selectMode(false)">
             Daftar
           </button>
         </div>
 
-        <form class="auth-form" @submit.prevent="handleSubmit">
-          <div v-if="!isLogin" class="auth-form-group">
-            <label for="name">Nama</label>
-            <input
-              id="name"
-              v-model="name"
-              type="text"
-              placeholder="Nama lengkap"
-              required
-              minlength="2"
-              maxlength="100"
-            />
-          </div>
-
-          <div class="auth-form-group">
-            <label for="email">Email</label>
-            <input
-              id="email"
-              v-model="email"
-              type="email"
-              placeholder="nama@example.com"
-              required
-            />
-          </div>
-
-          <div class="auth-form-group">
-            <label for="password">Kata sandi</label>
-            <input
-              id="password"
-              v-model="password"
-              type="password"
-              placeholder="Minimal 8 karakter"
-              required
-              minlength="8"
-            />
-          </div>
-
-          <button
-            type="submit"
-            class="auth-submit button"
-            :disabled="loading"
-          >
-            {{ loading ? 'Memproses...' : (isLogin ? 'Masuk' : 'Daftar') }}
+        <form v-if="isLogin" class="auth-form" @submit.prevent="submitLogin">
+          <label for="loginEmail">Email</label>
+          <input id="loginEmail" v-model="email" type="email" autocomplete="email" placeholder="contoh@email.com" required>
+          <label for="loginPassword">Kata sandi</label>
+          <input id="loginPassword" v-model="password" type="password" autocomplete="current-password" placeholder="Masukkan kata sandi" required>
+          <p v-if="errorMessage" class="auth-error" role="alert">{{ errorMessage }}</p>
+          <button class="button auth-submit" type="submit" :disabled="isSubmitting">
+            {{ isSubmitting ? 'Memproses...' : 'Login' }}
           </button>
-
-          <p v-if="error" class="auth-error">{{ error }}</p>
         </form>
 
-        <p class="auth-notice">
-          {{ isLogin ? 'Belum punya akun?' : 'Sudah punya akun?' }}
-          <button
-            type="button"
-            class="auth-link"
-            @click="toggleMode"
-          >
-            {{ isLogin ? 'Daftar sekarang' : 'Masuk saja' }}
+        <form v-else class="auth-form" @submit.prevent="submitSignup">
+          <label for="signupName">Nama</label>
+          <input id="signupName" v-model="name" type="text" autocomplete="name" placeholder="Masukkan nama" minlength="2" required>
+          <label for="signupEmail">Email</label>
+          <input id="signupEmail" v-model="email" type="email" autocomplete="email" placeholder="contoh@email.com" required>
+          <label for="signupPassword">Kata sandi</label>
+          <input id="signupPassword" v-model="password" type="password" autocomplete="new-password" placeholder="Minimal 8 karakter" minlength="8" required>
+          <label for="signupPasswordCheck">Konfirmasi kata sandi</label>
+          <input id="signupPasswordCheck" v-model="passwordCheck" type="password" autocomplete="new-password" placeholder="Masukkan kembali kata sandi" minlength="8" required>
+          <p v-if="errorMessage" class="auth-error" role="alert">{{ errorMessage }}</p>
+          <button class="button auth-submit" type="submit" :disabled="isSubmitting">
+            {{ isSubmitting ? 'Memproses...' : 'Daftar' }}
           </button>
-        </p>
-      </div>
-    </div>
+        </form>
+      </section>
+    </main>
   </div>
 </template>
 
 <style scoped>
-.auth-body {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-  background: var(--sky);
-}
-
-.auth-card {
-  width: 100%;
-  max-width: 440px;
-  background: var(--white);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  overflow: hidden;
-}
-
-.auth-header {
-  padding: 32px 32px 24px;
-  background: var(--navy-950);
-  color: var(--white);
-}
-
-.auth-logo {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.auth-logo strong {
-  font-size: 24px;
-}
-
-.auth-logo small {
-  font-size: 14px;
-  opacity: 0.8;
-}
-
-.auth-main {
-  padding: 32px;
-}
-
-.auth-main h1 {
-  margin: 0 0 8px;
-  font-size: 28px;
-  color: var(--navy-950);
-}
-
-.auth-description {
-  margin: 0 0 24px;
-  color: var(--muted);
-}
-
-.auth-tabs {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 24px;
-  background: var(--blue-100);
-  padding: 4px;
-  border-radius: 12px;
-}
-
-.auth-tab {
-  flex: 1;
-  padding: 12px;
-  border: none;
-  background: transparent;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 500;
-  color: var(--muted);
-  transition: all 0.2s;
-}
-
-.auth-tab.is-active {
-  background: var(--white);
-  color: var(--navy-950);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.auth-form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.auth-form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.auth-form label {
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--navy-950);
-}
-
-.auth-form input {
-  padding: 12px 16px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  font-size: 16px;
-  transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.auth-form input:focus {
-  outline: none;
-  border-color: var(--blue-600);
-  box-shadow: 0 0 0 3px rgba(47, 108, 244, 0.1);
-}
-
-.auth-submit {
-  padding: 14px 24px;
-  background: var(--blue-600);
-  color: var(--white);
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-.auth-submit:hover:not(:disabled) {
-  background: var(--blue-500);
+.auth-error {
+  margin: 10px 0 0;
+  color: #b42318;
+  font-size: 13px;
+  font-weight: 700;
 }
 
 .auth-submit:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-
-.auth-error {
-  margin: 0;
-  padding: 12px;
-  background: var(--coral-100);
-  color: var(--coral-500);
-  border-radius: 8px;
-  font-size: 14px;
-}
-
-.auth-notice {
-  margin: 16px 0 0;
-  text-align: center;
-  font-size: 14px;
-  color: var(--muted);
-}
-
-.auth-link {
-  background: none;
-  border: none;
-  color: var(--blue-600);
-  font-weight: 500;
-  cursor: pointer;
-  padding: 0;
-}
-
-.auth-link:hover {
-  text-decoration: underline;
+  cursor: wait;
+  opacity: 0.65;
 }
 </style>

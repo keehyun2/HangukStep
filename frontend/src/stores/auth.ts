@@ -3,11 +3,14 @@ import type { AuthState, User } from './types'
 import { authAPI } from '@/api/auth'
 
 export const useAuthStore = defineStore('auth', {
-  state: (): AuthState => ({
-    user: null,
-    token: localStorage.getItem('token') || null,
-    isAuthenticated: false,
-  }),
+  state: (): AuthState => {
+    const token = localStorage.getItem('token')
+    return {
+      user: null,
+      token,
+      isAuthenticated: Boolean(token),
+    }
+  },
 
   getters: {
     currentUser(): User | null {

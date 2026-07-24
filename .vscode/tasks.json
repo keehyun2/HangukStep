@@ -11,7 +11,10 @@
         "test"
       ],
       "options": {
-        "cwd": "${workspaceFolder}/backend"
+        "cwd": "${workspaceFolder}/backend",
+        "env": {
+          "JAVA_HOME": "C:\\Program Files\\Java\\jdk-21.0.11"
+        }
       },
       "group": {
         "kind": "build",
@@ -33,7 +36,10 @@
         "bootRun"
       ],
       "options": {
-        "cwd": "${workspaceFolder}/backend"
+        "cwd": "${workspaceFolder}/backend",
+        "env": {
+          "JAVA_HOME": "C:\\Program Files\\Java\\jdk-21.0.11"
+        }
       },
       "group": {
         "kind": "build",
@@ -54,7 +60,10 @@
         "test"
       ],
       "options": {
-        "cwd": "${workspaceFolder}/backend"
+        "cwd": "${workspaceFolder}/backend",
+        "env": {
+          "JAVA_HOME": "C:\\Program Files\\Java\\jdk-21.0.11"
+        }
       },
       "group": {
         "kind": "test",
@@ -76,7 +85,10 @@
         "clean"
       ],
       "options": {
-        "cwd": "${workspaceFolder}/backend"
+        "cwd": "${workspaceFolder}/backend",
+        "env": {
+          "JAVA_HOME": "C:\\Program Files\\Java\\jdk-21.0.11"
+        }
       },
       "group": "build",
       "presentation": {
