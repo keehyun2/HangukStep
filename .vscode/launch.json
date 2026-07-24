@@ -15,7 +15,9 @@
       "console": "internalConsole",
       "internalConsoleOptions": "openOnSessionStart",
       "cwd": "${workspaceFolder}/backend",
-      "stopOnEntry": false
+      "stopOnEntry": false,
+      "noDebug": true,
+      "projectName": "backend"
     },
     {
       "type": "java",
@@ -29,7 +31,8 @@
       },
       "console": "internalConsole",
       "cwd": "${workspaceFolder}/backend",
-      "stopOnEntry": true
+      "stopOnEntry": false,
+      "projectName": "backend"
     },
     {
       "name": "Vue: Dev Server",
