@@ -11,10 +11,10 @@
         "test"
       ],
       "options": {
-        "cwd": "${workspaceFolder}/backend",
-        "env": {
-          "JAVA_HOME": "C:\\Program Files\\Java\\jdk-21.0.11"
-        }
+        "cwd": "${workspaceFolder}/backend"
+      },
+      "windows": {
+        "command": ".\\gradlew.bat"
       },
       "group": {
         "kind": "build",
@@ -36,10 +36,10 @@
         "bootRun"
       ],
       "options": {
-        "cwd": "${workspaceFolder}/backend",
-        "env": {
-          "JAVA_HOME": "C:\\Program Files\\Java\\jdk-21.0.11"
-        }
+        "cwd": "${workspaceFolder}/backend"
+      },
+      "windows": {
+        "command": ".\\gradlew.bat"
       },
       "group": {
         "kind": "build",
@@ -60,10 +60,10 @@
         "test"
       ],
       "options": {
-        "cwd": "${workspaceFolder}/backend",
-        "env": {
-          "JAVA_HOME": "C:\\Program Files\\Java\\jdk-21.0.11"
-        }
+        "cwd": "${workspaceFolder}/backend"
+      },
+      "windows": {
+        "command": ".\\gradlew.bat"
       },
       "group": {
         "kind": "test",
@@ -85,10 +85,10 @@
         "clean"
       ],
       "options": {
-        "cwd": "${workspaceFolder}/backend",
-        "env": {
-          "JAVA_HOME": "C:\\Program Files\\Java\\jdk-21.0.11"
-        }
+        "cwd": "${workspaceFolder}/backend"
+      },
+      "windows": {
+        "command": ".\\gradlew.bat"
       },
       "group": "build",
       "presentation": {
@@ -103,6 +103,15 @@
       "command": "./scripts/init-db.sh",
       "options": {
         "cwd": "${workspaceFolder}/backend"
+      },
+      "windows": {
+        "command": "powershell",
+        "args": [
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          ".\\scripts\\init-db.ps1"
+        ]
       },
       "group": "build",
       "presentation": {
