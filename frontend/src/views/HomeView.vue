@@ -30,6 +30,7 @@ const modules = Array.from({ length: 8 }, (_, index) => ({
           <a href="#beranda">Beranda</a>
           <a href="#kurikulum">Kurikulum</a>
           <a href="#belajar">Belajar</a>
+          <RouterLink :to="isAuthenticated ? '/extra-study' : '/login'">Belajar Tambahan</RouterLink>
           <a href="#review">Review</a>
           <RouterLink class="button button-small" :to="isAuthenticated ? '/learn' : '/login'">
             Mulai Belajar

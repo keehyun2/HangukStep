@@ -4,6 +4,7 @@ import HomeView from '@/views/HomeView.vue'
 import LoginView from '@/views/LoginView.vue'
 import DashboardView from '@/views/DashboardView.vue'
 import LearnView from '@/views/LearnView.vue'
+import ExtraStudyView from '@/views/ExtraStudyView.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -28,6 +29,12 @@ const router = createRouter({
       path: '/learn',
       name: 'learn',
       component: LearnView,
+      meta: { requiresAuth: true },
+    },
+    {
+      path: '/extra-study',
+      name: 'extra-study',
+      component: ExtraStudyView,
       meta: { requiresAuth: true },
     },
   ],

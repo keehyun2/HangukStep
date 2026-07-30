@@ -2,6 +2,7 @@
 import { computed, onBeforeUnmount, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { curriculum, getWordsForDay } from '@/data/curriculum'
+import { romanizeKorean } from '@/utils/romanizeKorean'
 
 const pronunciationOverrides: Record<string, string> = {
   씻다: '씯따',
@@ -19,6 +20,7 @@ const days = curriculum.map((lesson) => lesson.day)
 const lesson = computed(() => curriculum.find((item) => item.day === selectedDay.value)!)
 const words = computed(() => getWordsForDay(selectedDay.value))
 const currentWord = computed(() => words.value[currentIndex.value]!)
+const currentRomanization = computed(() => romanizeKorean(currentWord.value.korean))
 const progress = computed(() => Math.round((learned.value.length / words.value.length) * 100))
 const isCurrentLearned = computed(() => learned.value.includes(currentIndex.value))
 const lessonTitle = computed(() => lesson.value.title)
@@ -174,6 +176,7 @@ onBeforeUnmount(stopPronunciation)
 
           <div class="word-content">
             <h2>{{ currentWord.korean }}</h2>
+            <p class="romanization">{{ currentRomanization }}</p>
             <button
               class="pronunciation-button"
               :class="{ speaking: isSpeaking }"
@@ -240,7 +243,7 @@ onBeforeUnmount(stopPronunciation)
 .card-meta { display: flex; justify-content: space-between; color: var(--muted); font-size: 11px; font-weight: 900; }
 .word-content { flex: 1; display: grid; align-content: center; justify-items: center; text-align: center; }
 .word-content h2 { margin: 0; font-size: 58px; }
-.pronunciation { margin: 8px 0 24px; color: var(--muted); font-size: 18px; }
+.romanization { margin: 8px 0 0; color: var(--muted); font-size: 18px; font-weight: 700; }
 .pronunciation-button { min-height: 38px; margin: 14px 0 22px; padding: 0 16px; border: 1px solid #c6d2e3; border-radius: 6px; background: #f7f9fc; color: var(--navy-950); font-size: 13px; font-weight: 800; cursor: pointer; }
 .pronunciation-button:hover, .pronunciation-button.speaking { border-color: #d94f45; background: #fff2f0; color: #b8342b; }
 .pronunciation-error { margin: -13px 0 16px; color: #b42318; font-size: 12px; }
