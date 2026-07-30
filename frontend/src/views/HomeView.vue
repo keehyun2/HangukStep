@@ -1,4 +1,10 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useAuthStore } from '@/stores/auth'
+
+const authStore = useAuthStore()
+const isAuthenticated = computed(() => authStore.isAuthenticated)
+
 const modules = Array.from({ length: 8 }, (_, index) => ({
   number: index + 1,
   days: `${index * 5 + 1}–${index * 5 + 5}`,
@@ -18,12 +24,16 @@ const modules = Array.from({ length: 8 }, (_, index) => ({
           <span></span><span></span><span></span>
         </button>
         <nav class="main-nav" aria-label="Navigasi utama">
-          <RouterLink class="login-link" to="/login">Login</RouterLink>
+          <RouterLink class="login-link" :to="isAuthenticated ? '/dashboard' : '/login'">
+            {{ isAuthenticated ? 'Dashboard' : 'Login' }}
+          </RouterLink>
           <a href="#beranda">Beranda</a>
           <a href="#kurikulum">Kurikulum</a>
           <a href="#belajar">Belajar</a>
           <a href="#review">Review</a>
-          <a class="button button-small" href="#belajar">Mulai Belajar</a>
+          <RouterLink class="button button-small" :to="isAuthenticated ? '/learn' : '/login'">
+            Mulai Belajar
+          </RouterLink>
         </nav>
       </div>
     </header>
@@ -39,7 +49,9 @@ const modules = Array.from({ length: 8 }, (_, index) => ({
               contoh kalimat, audio, latihan berbicara, dan review.
             </p>
             <div class="hero-actions">
-              <a class="button" href="#belajar">Mulai Day 1 <span>→</span></a>
+              <RouterLink class="button" :to="isAuthenticated ? '/learn' : '/login'">
+                Mulai Day 1 <span>→</span>
+              </RouterLink>
               <a class="button button-ghost" href="#kurikulum">Lihat Kurikulum</a>
             </div>
             <div class="trust-row"><span>✓ Gratis untuk belajar</span><span>✓ Progres tersimpan</span></div>
@@ -112,7 +124,9 @@ const modules = Array.from({ length: 8 }, (_, index) => ({
                 <span>가</span>
                 <h3>Pilih Day untuk mulai belajar</h3>
                 <p>Kosakata, kalimat, audio, latihan berbicara, dan kuis akan muncul di sini.</p>
-                <button type="button" class="button">Buka Day 1</button>
+                <RouterLink class="button" :to="isAuthenticated ? '/learn' : '/login'">
+                  Buka Day 1
+                </RouterLink>
               </div>
             </div>
           </div>

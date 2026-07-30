@@ -49,7 +49,7 @@ const formatDate = (dateString: string) => {
           <button @click="handleLogout" class="button button-secondary">
             Keluar
           </button>
-          <button class="button button-primary">
+          <button class="button button-primary" @click="router.push('/learn')">
             Mulai Belajar
           </button>
         </div>
