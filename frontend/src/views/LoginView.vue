@@ -32,7 +32,7 @@ async function submitLogin() {
 
   try {
     await authStore.login(email.value.trim(), password.value)
-    await router.push('/dashboard')
+    await router.push('/')
   } catch (error) {
     errorMessage.value = getErrorMessage(error)
   } finally {
@@ -52,7 +52,7 @@ async function submitSignup() {
 
   try {
     await authStore.signup(email.value.trim(), password.value, name.value.trim())
-    await router.push('/dashboard')
+    await router.push('/')
   } catch (error) {
     errorMessage.value = getErrorMessage(error)
   } finally {

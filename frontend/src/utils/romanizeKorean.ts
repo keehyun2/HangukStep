@@ -16,6 +16,12 @@ const finals = [
 ]
 
 const wordOverrides: Record<string, string> = {
+  입니다: 'imnida',
+  입니까: 'imnikka',
+  '제 이름은 리나입니다.': 'je ireumeun Rina-imnida.',
+  '저는 인도네시아 사람입니다.': 'jeoneun Indonesia saram-imnida.',
+  '저는 학생입니다.': 'jeoneun haksaeng-imnida.',
+  '만나서 반갑습니다.': 'mannaseo bangapseumnida.',
   씻다: 'ssit-tta',
   듣다: 'deut-tta',
   읽다: 'ik-tta',

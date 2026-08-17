@@ -3,8 +3,10 @@ import { useAuthStore } from '@/stores/auth'
 import HomeView from '@/views/HomeView.vue'
 import LoginView from '@/views/LoginView.vue'
 import DashboardView from '@/views/DashboardView.vue'
-import LearnView from '@/views/LearnView.vue'
-import ExtraStudyView from '@/views/ExtraStudyView.vue'
+import CourseView from '@/views/CourseView.vue'
+import BasicLessonView from '@/views/BasicLessonView.vue'
+import GrammarView from '@/views/GrammarView.vue'
+import WordbookView from '@/views/WordbookView.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -26,16 +28,30 @@ const router = createRouter({
       meta: { requiresAuth: true },
     },
     {
-      path: '/learn',
-      name: 'learn',
-      component: LearnView,
+      path: '/courses/:courseId',
+      name: 'course',
+      component: CourseView,
+    },
+    {
+      path: '/courses/basic/lessons/1',
+      name: 'basic-lesson-1',
+      component: BasicLessonView,
       meta: { requiresAuth: true },
     },
     {
-      path: '/extra-study',
-      name: 'extra-study',
-      component: ExtraStudyView,
+      path: '/grammar',
+      name: 'grammar',
+      component: GrammarView,
+    },
+    {
+      path: '/wordbook',
+      name: 'wordbook',
+      component: WordbookView,
       meta: { requiresAuth: true },
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      redirect: '/',
     },
   ],
 })
