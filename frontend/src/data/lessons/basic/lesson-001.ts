@@ -1,0 +1,43 @@
+import type { Lesson } from '@/data/lessons/types'
+
+export const basicLessonOne: Lesson = {
+  id: 'basic-001',
+  courseId: 'basic',
+  lessonNumber: 1,
+  status: 'published',
+  title: '인사와 자기소개',
+  subtitle: 'Salam dan perkenalan diri',
+  vocabulary: [
+    { id: 'hello', korean: '안녕하세요', meaning: 'halo' },
+    { id: 'name', korean: '이름', meaning: 'nama' },
+    { id: 'person', korean: '사람', meaning: 'orang' },
+    { id: 'imnida', korean: '~입니다', meaning: 'adalah / merupakan (bentuk sopan)' },
+    { id: 'i-formal', korean: '저', meaning: 'saya (bentuk sopan)' },
+    { id: 'student', korean: '학생', meaning: 'pelajar / siswa' },
+    { id: 'teacher', korean: '선생님', meaning: 'guru' },
+    { id: 'office-worker', korean: '회사원', meaning: 'karyawan perusahaan' },
+    { id: 'bank-worker', korean: '은행원', meaning: 'pegawai bank' },
+    { id: 'police', korean: '경찰', meaning: 'polisi' },
+    { id: 'firefighter', korean: '소방관', meaning: 'pemadam kebakaran' },
+    { id: 'korea', korean: '한국', meaning: 'Korea' },
+    { id: 'indonesia', korean: '인도네시아', meaning: 'Indonesia' },
+    { id: 'vietnam', korean: '베트남', meaning: 'Vietnam' },
+    { id: 'cambodia', korean: '캄보디아', meaning: 'Kamboja' },
+    { id: 'uzbekistan', korean: '우즈베키스탄', meaning: 'Uzbekistan' },
+    { id: 'philippines', korean: '필리핀', meaning: 'Filipina' },
+    { id: 'china', korean: '중국', meaning: 'Tiongkok' },
+    { id: 'usa', korean: '미국', meaning: 'Amerika Serikat' },
+    { id: 'pakistan', korean: '파키스탄', meaning: 'Pakistan' },
+    { id: 'nepal', korean: '네팔', meaning: 'Nepal' },
+  ],
+  sentences: [
+    { korean: '제 이름은 리나입니다.', indonesian: 'Nama saya Rina.' },
+    { korean: '저는 인도네시아 사람입니다.', indonesian: 'Saya orang Indonesia.' },
+    { korean: '저는 학생입니다.', indonesian: 'Saya seorang pelajar.' },
+    { korean: '만나서 반갑습니다.', indonesian: 'Senang bertemu dengan Anda.' },
+  ],
+  grammarSections: [
+    { grammarId: 'jeo-je', mode: 'introduction' },
+    { grammarId: 'imnida-imnikka', mode: 'introduction' },
+  ],
+}

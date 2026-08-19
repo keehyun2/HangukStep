@@ -8,9 +8,9 @@ Use IDs in this format:
 
 ```text
 {course}-{lesson}-q{sequence}
-basic-1-q001
-eps-12-q004
-topik-1-8-q015
+basic-001-q001
+eps-topik-012-q004
+topik-1-008-q015
 ```
 
 Never reuse an ID for a different question. Content edits should increment a `version` field after questions move to the backend.
@@ -30,6 +30,16 @@ Every question needs:
 - searchable tags
 - answer data
 - optional image or audio URL
+- optional explanation
+- optional `grammarRefs` linking to a Tata Bahasa entry or one of its sections
+
+Example grammar reference:
+
+```ts
+grammarRefs: [
+  { grammarId: 'particle-eul-reul', sectionId: 'no-batchim' },
+]
+```
 
 ## Supported first types
 

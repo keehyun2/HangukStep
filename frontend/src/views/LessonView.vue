@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, ref } from 'vue'
-import { useRouter } from 'vue-router'
-import { grammarItems, lessonOneSentences, lessonOneVocabulary } from '@/data/learning'
+import { useRoute, useRouter } from 'vue-router'
+import { courses } from '@/data/courses'
+import { getGrammarById } from '@/data/grammar/grammar'
+import { getLesson } from '@/data/lessons'
+import { getQuestionsForLesson } from '@/data/questions'
 import { useWordbookStore } from '@/stores/wordbook'
 import { romanizeKorean } from '@/utils/romanizeKorean'
 import LessonQuiz from '@/components/LessonQuiz.vue'
@@ -13,12 +16,27 @@ const sections = [
   { id: 'practice', label: 'Latihan', korean: '문제를 풀어요' },
 ]
 
+const route = useRoute()
 const router = useRouter()
+const courseId = String(route.params.courseId)
+const lessonNumber = Number(route.params.lessonNumber)
+const lesson = computed(() => getLesson(courseId, lessonNumber))
+const course = computed(() => courses.find((item) => item.id === courseId))
+const lessonQuestions = computed(() => lesson.value ? getQuestionsForLesson(lesson.value.id) : [])
+const lessonGrammarItems = computed(() => (lesson.value?.grammarSections ?? []).flatMap((reference) => {
+  const grammar = getGrammarById(reference.grammarId)
+  if (!grammar) return []
+  const selectedSections = reference.sectionIds
+    ? grammar.sections?.filter((section) => reference.sectionIds?.includes(section.id))
+    : grammar.sections
+  return [{ ...grammar, sections: selectedSections, lessonReference: reference }]
+}))
+const progressStorageKey = `hangukstep-${courseId}-lesson-${lessonNumber}`
 const wordbook = useWordbookStore()
 const currentSection = ref(0)
 const speakingKey = ref('')
-const highestSection = ref(Number(localStorage.getItem('hangukstep-basic-lesson-1-section') || 0))
-const lessonCompleted = ref(localStorage.getItem('hangukstep-basic-lesson-1-complete') === 'true')
+const highestSection = ref(Number(localStorage.getItem(`${progressStorageKey}-section`) || 0))
+const lessonCompleted = ref(localStorage.getItem(`${progressStorageKey}-complete`) === 'true')
 
 const progress = computed(() => lessonCompleted.value ? 100 : Math.round((highestSection.value / sections.length) * 100))
 
@@ -27,7 +45,7 @@ function selectSection(index: number) {
   currentSection.value = index
   if (index > highestSection.value) {
     highestSection.value = index
-    localStorage.setItem('hangukstep-basic-lesson-1-section', String(index))
+    localStorage.setItem(`${progressStorageKey}-section`, String(index))
   }
 }
 
@@ -62,20 +80,20 @@ function stopSpeech() {
 function finishLesson(score: number) {
   lessonCompleted.value = true
   highestSection.value = sections.length
-  localStorage.setItem('hangukstep-basic-lesson-1-complete', 'true')
-  localStorage.setItem('hangukstep-basic-lesson-1-score', String(score))
-  localStorage.setItem('hangukstep-basic-lesson-1-section', String(sections.length))
+  localStorage.setItem(`${progressStorageKey}-complete`, 'true')
+  localStorage.setItem(`${progressStorageKey}-score`, String(score))
+  localStorage.setItem(`${progressStorageKey}-section`, String(sections.length))
 }
 
 onBeforeUnmount(stopSpeech)
 </script>
 
 <template>
-  <div class="lesson-page">
+  <div v-if="lesson" class="lesson-page">
     <header class="lesson-header">
-      <button type="button" @click="router.push('/courses/basic')">Kembali</button>
+      <button type="button" @click="router.push(`/courses/${courseId}`)">Kembali</button>
       <RouterLink to="/">Hanguk Step</RouterLink>
-      <span>Belajar Dasar · Pelajaran 1</span>
+      <span>{{ course?.title }} · Pelajaran {{ lesson.lessonNumber }}</span>
     </header>
 
     <div class="lesson-progress">
@@ -84,9 +102,9 @@ onBeforeUnmount(stopSpeech)
 
     <main class="lesson-layout">
       <aside>
-        <p class="eyebrow">PELAJARAN 1</p>
-        <h1>인사와 자기소개</h1>
-        <p>Salam dan perkenalan diri</p>
+        <p class="eyebrow">PELAJARAN {{ lesson.lessonNumber }}</p>
+        <h1>{{ lesson.title }}</h1>
+        <p>{{ lesson.subtitle }}</p>
 
         <nav aria-label="Bagian pelajaran">
           <button
@@ -106,11 +124,11 @@ onBeforeUnmount(stopSpeech)
         <div v-if="currentSection === 0">
           <div class="content-heading">
             <div><p class="eyebrow">단어를 배워요</p><h2>Pelajari kosakata</h2></div>
-            <span>{{ lessonOneVocabulary.length }} kata</span>
+            <span>{{ lesson.vocabulary.length }} kata</span>
           </div>
 
           <div class="vocabulary-grid">
-            <article v-for="word in lessonOneVocabulary" :key="word.id" class="vocabulary-item">
+            <article v-for="word in lesson.vocabulary" :key="word.id" class="vocabulary-item">
               <div>
                 <h3>{{ word.korean }}</h3>
                 <p>{{ romanizeKorean(word.korean) }}</p>
@@ -136,11 +154,11 @@ onBeforeUnmount(stopSpeech)
         <div v-else-if="currentSection === 1">
           <div class="content-heading">
             <div><p class="eyebrow">문장으로 배워요</p><h2>Pelajari dengan kalimat</h2></div>
-            <span>{{ lessonOneSentences.length }} kalimat</span>
+            <span>{{ lesson.sentences.length }} kalimat</span>
           </div>
 
           <div class="sentence-list">
-            <article v-for="(sentence, index) in lessonOneSentences" :key="sentence.korean">
+            <article v-for="(sentence, index) in lesson.sentences" :key="sentence.korean">
               <span>0{{ index + 1 }}</span>
               <div>
                 <h3>{{ sentence.korean }}</h3>
@@ -161,21 +179,26 @@ onBeforeUnmount(stopSpeech)
             <RouterLink to="/grammar">Buka kamus tata bahasa</RouterLink>
           </div>
 
-          <article v-for="grammar in grammarItems" :key="grammar.id" class="grammar-block">
+          <article v-for="grammar in lessonGrammarItems" :key="grammar.id" class="grammar-block">
             <p>{{ grammar.summary }}</p>
             <h3>{{ grammar.title }}</h3>
             <div class="grammar-explanation">{{ grammar.explanation }}</div>
+            <p v-if="grammar.lessonReference.lessonNote" class="lesson-note">{{ grammar.lessonReference.lessonNote }}</p>
             <div class="grammar-examples">
               <div v-for="example in grammar.examples" :key="example.korean">
                 <strong>{{ example.korean }}</strong><span>{{ example.indonesian }}</span>
               </div>
+            </div>
+            <div v-for="detail in grammar.sections" :key="detail.id" class="grammar-detail-section">
+              <strong>{{ detail.title }}</strong>
+              <p>{{ detail.explanation }}</p>
             </div>
           </article>
           <button class="next-action" type="button" @click="nextSection">Lanjut ke latihan</button>
         </div>
 
         <div v-else>
-          <LessonQuiz @complete="finishLesson" />
+          <LessonQuiz :questions="lessonQuestions" :course-id="courseId" @complete="finishLesson" />
         </div>
       </section>
     </main>
@@ -230,6 +253,9 @@ onBeforeUnmount(stopSpeech)
 .grammar-examples { margin-top: 16px; display: grid; gap: 8px; }
 .grammar-examples > div { padding: 11px 13px; display: flex; justify-content: space-between; gap: 20px; background: #f5f7fa; }
 .grammar-examples span { color: var(--muted); }
+.lesson-note { padding: 12px 15px; background: #eef4ff; color: var(--navy-950); }
+.grammar-detail-section { margin-top: 12px; padding: 13px 15px; border: 1px solid var(--line); background: #fafbfc; }
+.grammar-detail-section p { margin: 6px 0 0; color: var(--muted); line-height: 1.6; }
 .practice-state { min-height: 65vh; display: grid; align-content: center; justify-items: center; text-align: center; }
 .practice-state h2 { margin: 8px 0 10px; font-size: 32px; }
 .practice-state > p:not(.eyebrow) { max-width: 630px; margin: 0; color: var(--muted); line-height: 1.65; }

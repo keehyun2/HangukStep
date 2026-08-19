@@ -1,6 +1,14 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, ref } from 'vue'
-import { basicLessonOneQuestions, type LessonQuestion } from '@/data/questions'
+import { getGrammarById } from '@/data/grammar/grammar'
+import type { LessonQuestion } from '@/data/questions'
+
+const props = defineProps<{
+  questions: LessonQuestion[]
+  courseId: string
+}>()
+const questions = computed(() => props.questions)
+const courseId = computed(() => props.courseId)
 
 const emit = defineEmits<{
   complete: [score: number]
@@ -13,13 +21,17 @@ const results = ref<Record<string, boolean>>({})
 const isFinished = ref(false)
 const isSpeaking = ref(false)
 
-const currentQuestion = computed(() => basicLessonOneQuestions[currentIndex.value]!)
+const currentQuestion = computed(() => props.questions[currentIndex.value]!)
 const currentAnswer = computed(() => answers.value[currentQuestion.value.id])
 const isChecked = computed(() => Boolean(checked.value[currentQuestion.value.id]))
 const isCorrect = computed(() => Boolean(results.value[currentQuestion.value.id]))
 const correctCount = computed(() => Object.values(results.value).filter(Boolean).length)
-const score = computed(() => Math.round((correctCount.value / basicLessonOneQuestions.length) * 100))
+const score = computed(() => props.questions.length ? Math.round((correctCount.value / props.questions.length) * 100) : 0)
 const answeredCount = computed(() => Object.keys(checked.value).length)
+const relatedGrammar = computed(() => (currentQuestion.value.grammarRefs ?? []).flatMap((reference) => {
+  const grammar = getGrammarById(reference.grammarId)
+  return grammar ? [{ ...reference, title: grammar.title }] : []
+}))
 
 function selectOption(value: string) {
   if (isChecked.value) return
@@ -66,7 +78,7 @@ function checkAnswer() {
 
 function nextQuestion() {
   stopAudio()
-  if (currentIndex.value < basicLessonOneQuestions.length - 1) {
+  if (currentIndex.value < props.questions.length - 1) {
     currentIndex.value += 1
     return
   }
@@ -107,10 +119,10 @@ onBeforeUnmount(stopAudio)
 </script>
 
 <template>
-  <div v-if="!isFinished" class="quiz-shell">
+  <div v-if="questions.length && !isFinished" class="quiz-shell">
     <div class="quiz-status">
-      <span>SOAL {{ currentIndex + 1 }} / {{ basicLessonOneQuestions.length }}</span>
-      <div><i :style="{ width: `${(answeredCount / basicLessonOneQuestions.length) * 100}%` }"></i></div>
+      <span>SOAL {{ currentIndex + 1 }} / {{ questions.length }}</span>
+      <div><i :style="{ width: `${(answeredCount / questions.length) * 100}%` }"></i></div>
     </div>
 
     <section class="question-panel">
@@ -178,11 +190,17 @@ onBeforeUnmount(stopAudio)
       </div>
 
       <div v-if="isChecked" class="answer-feedback" :class="isCorrect ? 'correct' : 'incorrect'">
-        <strong>{{ isCorrect ? 'Benar!' : 'Belum tepat.' }}</strong>
-        <span v-if="currentQuestion.type === 'sentence-builder'">
-          Jawaban: {{ currentQuestion.completedSentence }}
-        </span>
-        <span v-else>Jawaban: {{ currentQuestion.correctAnswer }}</span>
+        <div>
+          <strong>{{ isCorrect ? 'Benar!' : 'Belum tepat.' }}</strong>
+          <span v-if="currentQuestion.type === 'sentence-builder'">Jawaban: {{ currentQuestion.completedSentence }}</span>
+          <span v-else>Jawaban: {{ currentQuestion.correctAnswer }}</span>
+          <p v-if="currentQuestion.explanation">{{ currentQuestion.explanation }}</p>
+          <RouterLink
+            v-for="grammar in relatedGrammar"
+            :key="`${grammar.grammarId}-${grammar.sectionId ?? 'all'}`"
+            :to="`/grammar#${grammar.sectionId ? `${grammar.grammarId}-${grammar.sectionId}` : grammar.grammarId}`"
+          >Lihat tata bahasa {{ grammar.title }}</RouterLink>
+        </div>
       </div>
 
       <div class="quiz-actions">
@@ -194,22 +212,23 @@ onBeforeUnmount(stopAudio)
           @click="checkAnswer"
         >Periksa jawaban</button>
         <button v-else class="check-action" type="button" @click="nextQuestion">
-          {{ currentIndex === basicLessonOneQuestions.length - 1 ? 'Lihat hasil' : 'Soal berikutnya' }}
+          {{ currentIndex === questions.length - 1 ? 'Lihat hasil' : 'Soal berikutnya' }}
         </button>
       </div>
     </section>
   </div>
 
-  <section v-else class="quiz-result">
+  <section v-else-if="questions.length" class="quiz-result">
     <p>HASIL LATIHAN</p>
     <strong>{{ score }}</strong>
-    <h2>{{ correctCount }} dari {{ basicLessonOneQuestions.length }} jawaban benar</h2>
+    <h2>{{ correctCount }} dari {{ questions.length }} jawaban benar</h2>
     <span>{{ score >= 70 ? 'Bagus! Kamu telah menyelesaikan latihan ini.' : 'Pelajari kembali materi lalu coba sekali lagi.' }}</span>
     <div>
       <button type="button" @click="retryQuiz">Ulangi latihan</button>
-      <RouterLink to="/courses/basic">Kembali ke kursus</RouterLink>
+      <RouterLink :to="`/courses/${courseId}`">Kembali ke kursus</RouterLink>
     </div>
   </section>
+  <section v-else class="quiz-result"><h2>Latihan sedang disiapkan.</h2></section>
 </template>
 
 <style scoped>
@@ -237,7 +256,11 @@ onBeforeUnmount(stopAudio)
 .token-bank button:disabled { cursor: default; opacity: .3; }
 .audio-player { width: 130px; height: 70px; border: 0; border-radius: 7px; background: var(--navy-950); color: var(--white); font-weight: 900; cursor: pointer; }
 .audio-question > p { margin: 12px 0 28px; color: var(--muted); font-size: 12px; }
-.answer-feedback { margin-top: 18px; padding: 13px 15px; display: flex; justify-content: space-between; gap: 15px; border-left: 4px solid; }
+.answer-feedback { margin-top: 18px; padding: 13px 15px; border-left: 4px solid; }
+.answer-feedback strong, .answer-feedback span { display: block; }
+.answer-feedback span { margin-top: 4px; }
+.answer-feedback p { margin: 8px 0; line-height: 1.5; }
+.answer-feedback a { display: inline-block; margin: 3px 12px 0 0; color: inherit; font-weight: 800; }
 .answer-feedback.correct { border-color: #1b8c5a; background: #eaf8f1; color: #146a43; }
 .answer-feedback.incorrect { border-color: #b42318; background: #fff0ee; color: #9d241a; }
 .quiz-actions { margin-top: auto; padding-top: 18px; }

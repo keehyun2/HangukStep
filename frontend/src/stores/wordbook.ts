@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import type { VocabularyWord } from '@/data/learning'
+import type { VocabularyWord } from '@/data/lessons'
 
 export interface SavedWord extends VocabularyWord {
   savedAt: string

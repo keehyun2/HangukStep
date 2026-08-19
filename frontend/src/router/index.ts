@@ -4,12 +4,17 @@ import HomeView from '@/views/HomeView.vue'
 import LoginView from '@/views/LoginView.vue'
 import DashboardView from '@/views/DashboardView.vue'
 import CourseView from '@/views/CourseView.vue'
-import BasicLessonView from '@/views/BasicLessonView.vue'
+import LessonView from '@/views/LessonView.vue'
 import GrammarView from '@/views/GrammarView.vue'
 import WordbookView from '@/views/WordbookView.vue'
 
 const router = createRouter({
   history: createWebHistory(),
+  scrollBehavior(_to, _from, savedPosition) {
+    if (savedPosition) return savedPosition
+    if (_to.hash) return { el: _to.hash, top: 20, behavior: 'smooth' }
+    return { top: 0 }
+  },
   routes: [
     {
       path: '/',
@@ -33,9 +38,9 @@ const router = createRouter({
       component: CourseView,
     },
     {
-      path: '/courses/basic/lessons/1',
-      name: 'basic-lesson-1',
-      component: BasicLessonView,
+      path: '/courses/:courseId/lessons/:lessonNumber',
+      name: 'lesson',
+      component: LessonView,
       meta: { requiresAuth: true },
     },
     {

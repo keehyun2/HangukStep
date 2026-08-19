@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useAuthStore } from '@/stores/auth'
-import { courses } from '@/data/learning'
+import { courses } from '@/data/courses'
+import { getPublishedLessons } from '@/data/lessons'
 import heroImage from '@/assets/hero.png'
 
 const authStore = useAuthStore()
 const isAuthenticated = computed(() => authStore.isAuthenticated)
+const availableLessonCount = (courseId: string) => getPublishedLessons(courseId).length
 </script>
 
 <template>
@@ -49,7 +51,7 @@ const isAuthenticated = computed(() => authStore.isAuthenticated)
               <p>{{ course.description }}</p>
             </div>
             <div class="course-meta">
-              <span v-if="course.status === 'available'">{{ course.lessonCount }} pelajaran tersedia</span>
+              <span v-if="course.status === 'available'">{{ availableLessonCount(course.id) }} pelajaran tersedia</span>
               <span v-else class="coming-label">Segera hadir</span>
               <RouterLink
                 v-if="course.status === 'available'"

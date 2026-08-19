@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { courses } from '@/data/learning'
+import { courses } from '@/data/courses'
+import { getPublishedLessons } from '@/data/lessons'
 
 const route = useRoute()
 const router = useRouter()
 const course = computed(() => courses.find((item) => item.id === route.params.courseId))
+const publishedLessons = computed(() => getPublishedLessons(String(route.params.courseId)))
 </script>
 
 <template>
@@ -24,10 +26,15 @@ const course = computed(() => courses.find((item) => item.id === route.params.co
       </section>
 
       <section v-if="course.status === 'available'" class="lesson-list">
-        <div class="lesson-heading"><h2>Daftar pelajaran</h2><span>1 pelajaran tersedia</span></div>
-        <RouterLink class="lesson-row" to="/courses/basic/lessons/1">
-          <span class="lesson-index">01</span>
-          <div><strong>인사와 자기소개</strong><small>Salam dan perkenalan diri</small></div>
+        <div class="lesson-heading"><h2>Daftar pelajaran</h2><span>{{ publishedLessons.length }} pelajaran tersedia</span></div>
+        <RouterLink
+          v-for="lesson in publishedLessons"
+          :key="lesson.id"
+          class="lesson-row"
+          :to="`/courses/${lesson.courseId}/lessons/${lesson.lessonNumber}`"
+        >
+          <span class="lesson-index">{{ String(lesson.lessonNumber).padStart(2, '0') }}</span>
+          <div><strong>{{ lesson.title }}</strong><small>{{ lesson.subtitle }}</small></div>
           <span class="lesson-state">Mulai</span>
         </RouterLink>
       </section>

@@ -1,16 +1,25 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { grammarItems } from '@/data/learning'
+import { courses } from '@/data/courses'
+import { grammarItems } from '@/data/grammar/grammar'
+import { lessons } from '@/data/lessons'
 
 const router = useRouter()
 const query = ref('')
+const lessonLabels = (grammarId: string) => lessons
+  .filter((lesson) => lesson.grammarSections.some((reference) => reference.grammarId === grammarId))
+  .map((lesson) => `${courses.find((course) => course.id === lesson.courseId)?.title ?? lesson.courseId} · Pelajaran ${lesson.lessonNumber}`)
+  .join(' · ')
 const filteredItems = computed(() => {
   const search = query.value.trim().toLowerCase()
   if (!search) return grammarItems
-  return grammarItems.filter((item) => (
-    `${item.title} ${item.summary} ${item.explanation}`.toLowerCase().includes(search)
-  ))
+  return grammarItems.filter((item) => {
+    const sectionText = item.sections?.map((section) => `${section.title} ${section.explanation}`).join(' ') ?? ''
+    return `${item.title} ${item.summary} ${item.explanation} ${item.keywords.join(' ')} ${sectionText}`
+      .toLowerCase()
+      .includes(search)
+  })
 })
 </script>
 
@@ -31,13 +40,21 @@ const filteredItems = computed(() => {
       </section>
 
       <section class="grammar-list">
-        <article v-for="item in filteredItems" :key="item.id">
-          <div class="grammar-title"><span>PEMULA</span><h2>{{ item.title }}</h2><p>{{ item.summary }}</p></div>
+        <article v-for="item in filteredItems" :id="item.id" :key="item.id">
+          <div class="grammar-title"><span>{{ lessonLabels(item.id) || 'KAMUS TATA BAHASA' }}</span><h2>{{ item.title }}</h2><p>{{ item.summary }}</p></div>
           <div class="grammar-detail">
             <p>{{ item.explanation }}</p>
             <div v-for="example in item.examples" :key="example.korean" class="example-row">
               <strong>{{ example.korean }}</strong><span>{{ example.indonesian }}</span>
             </div>
+            <section v-for="section in item.sections" :id="`${item.id}-${section.id}`" :key="section.id" class="grammar-section">
+              <small>{{ section.type === 'exception' ? 'PENGECUALIAN' : 'ATURAN' }}</small>
+              <h3>{{ section.title }}</h3>
+              <p>{{ section.explanation }}</p>
+              <div v-for="example in section.examples" :key="example.korean" class="example-row">
+                <strong>{{ example.korean }}</strong><span>{{ example.indonesian }}</span>
+              </div>
+            </section>
           </div>
         </article>
         <p v-if="!filteredItems.length" class="empty-result">Tata bahasa tidak ditemukan.</p>
@@ -70,6 +87,10 @@ const filteredItems = computed(() => {
 .example-row { padding: 10px 12px; display: flex; justify-content: space-between; gap: 20px; background: #f7f8fa; }
 .example-row + .example-row { margin-top: 6px; }
 .example-row span { color: var(--muted); }
+.grammar-section { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); }
+.grammar-section small { color: var(--blue-600); font-size: 10px; font-weight: 900; }
+.grammar-section h3 { margin: 5px 0 7px; }
+.grammar-section p { margin: 0 0 10px; color: var(--muted); line-height: 1.6; }
 .empty-result { padding: 30px; text-align: center; color: var(--muted); }
 @media (max-width: 700px) { .grammar-list article { grid-template-columns: 1fr; } .grammar-title { border-right: 0; border-bottom: 1px solid var(--line); } .example-row { flex-direction: column; gap: 5px; } }
 </style>
