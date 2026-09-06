@@ -10,6 +10,13 @@ export interface Course {
 
 export const courses: Course[] = [
   {
+    id: 'daily',
+    title: 'Belajar Harian',
+    subtitle: '데일리 학습',
+    description: 'Pelajaran singkat untuk membangun kebiasaan belajar bahasa Korea setiap hari.',
+    status: 'available',
+  },
+  {
     id: 'basic',
     title: 'Belajar Dasar',
     subtitle: '기본 공부',

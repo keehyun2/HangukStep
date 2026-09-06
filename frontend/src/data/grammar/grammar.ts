@@ -1,4 +1,5 @@
 import type { LessonSentence } from '@/data/lessons/types'
+import rawEpsGrammarItems from '@/data/grammar/eps-grammar.json'
 
 export type GrammarLevel = 'beginner' | 'intermediate' | 'advanced'
 export type GrammarSectionType = 'rule' | 'exception' | 'usage-note'
@@ -22,20 +23,39 @@ export interface GrammarItem {
   examples: LessonSentence[]
   sections?: GrammarSection[]
   relatedGrammarIds?: string[]
+  koreanExplanation?: string
+  epsLesson?: number
+  sourceSequence?: number
+  courseTags?: string[]
 }
 
-export const grammarItems: GrammarItem[] = [
+const curatedGrammarItems: GrammarItem[] = [
   {
     id: 'jeo-je',
     title: '저 / 제',
     summary: 'Menyatakan saya dan milik saya dengan sopan.',
-    explanation: '저 berarti “saya” dan digunakan dalam situasi sopan.\n\n제 adalah bentuk singkat dari 저의 dan berarti “milik saya” atau digunakan seperti “… saya”.',
+    explanation: '저 berarti “saya” dan digunakan dalam situasi sopan.\n\n제 adalah bentuk singkat dan sopan dari 저의. Artinya “milik saya” dan biasanya dipakai sebelum kata benda untuk menunjukkan bahwa sesuatu itu milik atau berhubungan dengan diri sendiri.\n\nDalam percakapan sehari-hari, orang Korea biasanya lebih sering memakai 제 daripada 저의.',
     level: 'beginner',
     category: 'pronoun',
     keywords: ['저', '제', 'saya', 'milik saya', 'kata ganti'],
     examples: [
       { korean: '저는 학생입니다.', indonesian: 'Saya seorang pelajar.' },
       { korean: '제 이름은 리나입니다.', indonesian: 'Nama saya Rina.' },
+      { korean: '제 친구입니다.', indonesian: 'Dia teman saya.' },
+      { korean: '제 학교입니다.', indonesian: 'Itu sekolah saya.' },
+      { korean: '제 가방입니다.', indonesian: 'Itu tas saya.' },
+    ],
+    sections: [
+      {
+        id: 'comparison',
+        type: 'rule',
+        title: 'Perbedaan 저 dan 제',
+        explanation: '저 berarti “saya”, sedangkan 제 berarti “milik saya”. Secara tata bahasa, 저의 disingkat menjadi 제.',
+        examples: [
+          { korean: '저는 학생입니다.', indonesian: 'Saya seorang siswa.' },
+          { korean: '제 이름은 아디입니다.', indonesian: 'Nama saya Adi.' },
+        ],
+      },
     ],
   },
   {
@@ -48,7 +68,40 @@ export const grammarItems: GrammarItem[] = [
     keywords: ['입니다', '입니까', 'adalah', 'pertanyaan formal'],
     examples: [
       { korean: '저는 회사원입니다.', indonesian: 'Saya seorang karyawan perusahaan.' },
+      { korean: '저는 학생입니다.', indonesian: 'Saya seorang siswa.' },
       { korean: '선생님입니까?', indonesian: 'Apakah Anda seorang guru?' },
+      { korean: '회사원입니까?', indonesian: 'Apakah Anda seorang karyawan?' },
+    ],
+  },
+  {
+    id: 'particle-eun-neun',
+    title: '~은/는',
+    summary: 'Menunjukkan topik yang sedang dibicarakan.',
+    explanation: '은/는 adalah partikel yang menunjukkan topik yang sedang dibicarakan.\n\nKalau kata sebelumnya memiliki batchim (받침), gunakan 은. Kalau tidak ada batchim, gunakan 는.',
+    level: 'beginner',
+    category: 'particle',
+    keywords: ['은', '는', 'topik', 'batchim', 'partikel'],
+    examples: [
+      { korean: '저는 학생입니다.', indonesian: 'Saya seorang siswa.' },
+      { korean: '저는 인도네시아 사람입니다.', indonesian: 'Saya orang Indonesia.' },
+      { korean: '이름은 아디입니다.', indonesian: 'Namanya Adi.' },
+      { korean: '직업은 회사원입니다.', indonesian: 'Pekerjaannya adalah karyawan.' },
+    ],
+    sections: [
+      {
+        id: 'no-batchim',
+        type: 'rule',
+        title: 'Kata tanpa batchim',
+        explanation: 'Jika kata sebelumnya tidak memiliki batchim, gunakan 는.',
+        examples: [{ korean: '저 → 저는', indonesian: '저 tidak memiliki batchim.' }],
+      },
+      {
+        id: 'batchim',
+        type: 'rule',
+        title: 'Kata dengan batchim',
+        explanation: 'Jika kata sebelumnya memiliki batchim, gunakan 은.',
+        examples: [{ korean: '이름 → 이름은', indonesian: '이름 memiliki batchim.' }],
+      },
     ],
   },
   {
@@ -124,6 +177,40 @@ export const grammarItems: GrammarItem[] = [
     ],
   },
 ]
+
+const importedGrammarItems = rawEpsGrammarItems as GrammarItem[]
+const canonicalIdBySourceSequence: Record<number, string> = {
+  1: 'imnida-imnikka',
+  2: 'particle-eun-neun',
+  8: 'particle-eul-reul',
+  12: 'particle-eseo',
+  39: 'progressive-go-itsseumnida',
+}
+
+const mergedCuratedItems = curatedGrammarItems.map((item) => {
+  const sourceSequence = Object.entries(canonicalIdBySourceSequence)
+    .find(([, canonicalId]) => canonicalId === item.id)?.[0]
+  const imported = sourceSequence
+    ? importedGrammarItems.find((candidate) => candidate.sourceSequence === Number(sourceSequence))
+    : undefined
+
+  if (!imported) return item
+  return {
+    ...imported,
+    ...item,
+    koreanExplanation: imported.koreanExplanation,
+    epsLesson: imported.epsLesson,
+    sourceSequence: imported.sourceSequence,
+    courseTags: imported.courseTags,
+    keywords: [...new Set([...imported.keywords, ...item.keywords])],
+  }
+})
+
+const standaloneImportedItems = importedGrammarItems.filter(
+  (item) => !canonicalIdBySourceSequence[item.sourceSequence ?? -1],
+)
+
+export const grammarItems: GrammarItem[] = [...mergedCuratedItems, ...standaloneImportedItems]
 
 export function getGrammarById(id: string) {
   return grammarItems.find((grammar) => grammar.id === id)

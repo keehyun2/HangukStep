@@ -1,0 +1,5012 @@
+[
+  {
+    "id": "topic-01",
+    "lessonNumber": 1,
+    "titleKorean": "얼굴",
+    "titleIndonesian": "Wajah",
+    "words": [
+      {
+        "id": "topic-01-word-001",
+        "korean": "얼굴",
+        "pronunciation": "eol-gul",
+        "meaning": "wajah"
+      },
+      {
+        "id": "topic-01-word-002",
+        "korean": "눈",
+        "pronunciation": "nun",
+        "meaning": "mata"
+      },
+      {
+        "id": "topic-01-word-003",
+        "korean": "눈썹",
+        "pronunciation": "nun-sseop",
+        "meaning": "alis"
+      },
+      {
+        "id": "topic-01-word-004",
+        "korean": "쌍꺼풀",
+        "pronunciation": "ssang-kkeo-pul",
+        "meaning": "lipatan kelopak mata"
+      },
+      {
+        "id": "topic-01-word-005",
+        "korean": "코",
+        "pronunciation": "ko",
+        "meaning": "hidung"
+      },
+      {
+        "id": "topic-01-word-006",
+        "korean": "콧물",
+        "pronunciation": "kon-mul",
+        "meaning": "ingus"
+      },
+      {
+        "id": "topic-01-word-007",
+        "korean": "입",
+        "pronunciation": "ip",
+        "meaning": "mulut"
+      },
+      {
+        "id": "topic-01-word-008",
+        "korean": "귀",
+        "pronunciation": "gwi",
+        "meaning": "telinga"
+      },
+      {
+        "id": "topic-01-word-009",
+        "korean": "목",
+        "pronunciation": "mok",
+        "meaning": "leher / tenggorokan"
+      },
+      {
+        "id": "topic-01-word-010",
+        "korean": "머리",
+        "pronunciation": "meo-ri",
+        "meaning": "kepala"
+      },
+      {
+        "id": "topic-01-word-011",
+        "korean": "머리카락",
+        "pronunciation": "meo-ri-ka-rak",
+        "meaning": "rambut"
+      }
+    ],
+    "expressions": [
+      {
+        "id": "topic-01-expression-01",
+        "korean": "입이 가볍다",
+        "pronunciation": "i-bi ga-byeop-tta",
+        "meaning": "tidak bisa menyimpan rahasia / suka membocorkan rahasia"
+      },
+      {
+        "id": "topic-01-expression-02",
+        "korean": "입이 거칠다",
+        "pronunciation": "i-bi geo-chil-da",
+        "meaning": "cara bicaranya kasar"
+      },
+      {
+        "id": "topic-01-expression-03",
+        "korean": "귀가 밝다",
+        "pronunciation": "gwi-ga bak-tta",
+        "meaning": "pendengarannya tajam"
+      }
+    ],
+    "questions": [
+      {
+        "id": "topic-01-question-01",
+        "prompt": "얼굴에서 냄새를 맡을 때 사용하는 곳은 어디입니까?",
+        "hint": "Bagian wajah manakah yang digunakan untuk mencium bau?",
+        "options": [
+          "눈",
+          "코",
+          "귀",
+          "입"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-01-question-02",
+        "prompt": "머리에 있는 털을 무엇이라고 합니까?",
+        "hint": "Apa sebutan untuk rambut yang tumbuh di kepala?",
+        "options": [
+          "눈썹",
+          "머리카락",
+          "콧물",
+          "목"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-01-question-03",
+        "prompt": "저는 작은 소리도 잘 들을 수 있습니다. 저는 ________.",
+        "hint": "Saya dapat mendengar suara kecil dengan baik. Saya ________.",
+        "options": [
+          "입이 가볍습니다",
+          "귀가 밝습니다",
+          "입이 거칩니다",
+          "코가 큽니다"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-01-question-04",
+        "prompt": "비밀을 다른 사람에게 쉽게 말하는 사람에게 사용할 수 있는 표현은 무엇입니까?",
+        "hint": "Ungkapan manakah yang dapat digunakan untuk orang yang mudah menceritakan rahasia kepada orang lain?",
+        "options": [
+          "귀가 밝다",
+          "입이 가볍다",
+          "눈이 크다",
+          "목이 아프다"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-01-question-05",
+        "prompt": "`alis`와 같은 뜻의 한국어 단어는 무엇입니까?",
+        "hint": "Kata bahasa Korea manakah yang memiliki arti sama dengan `alis`?",
+        "options": [
+          "눈",
+          "눈썹",
+          "귀",
+          "코"
+        ],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "topic-02",
+    "lessonNumber": 2,
+    "titleKorean": "몸",
+    "titleIndonesian": "Tubuh",
+    "words": [
+      {
+        "id": "topic-02-word-001",
+        "korean": "몸",
+        "pronunciation": "mom",
+        "meaning": "tubuh"
+      },
+      {
+        "id": "topic-02-word-002",
+        "korean": "어깨",
+        "pronunciation": "eo-kkae",
+        "meaning": "bahu"
+      },
+      {
+        "id": "topic-02-word-003",
+        "korean": "팔",
+        "pronunciation": "pal",
+        "meaning": "lengan"
+      },
+      {
+        "id": "topic-02-word-004",
+        "korean": "팔꿈치",
+        "pronunciation": "pal-kkum-chi",
+        "meaning": "siku"
+      },
+      {
+        "id": "topic-02-word-005",
+        "korean": "손",
+        "pronunciation": "son",
+        "meaning": "tangan"
+      },
+      {
+        "id": "topic-02-word-006",
+        "korean": "손가락",
+        "pronunciation": "son-kka-rak",
+        "meaning": "jari tangan"
+      },
+      {
+        "id": "topic-02-word-007",
+        "korean": "엄지손가락",
+        "pronunciation": "eom-ji-son-kka-rak",
+        "meaning": "ibu jari"
+      },
+      {
+        "id": "topic-02-word-008",
+        "korean": "손톱",
+        "pronunciation": "son-top",
+        "meaning": "kuku"
+      },
+      {
+        "id": "topic-02-word-009",
+        "korean": "손목",
+        "pronunciation": "son-mok",
+        "meaning": "pergelangan tangan"
+      },
+      {
+        "id": "topic-02-word-010",
+        "korean": "가슴",
+        "pronunciation": "ga-seum",
+        "meaning": "dada"
+      },
+      {
+        "id": "topic-02-word-011",
+        "korean": "배",
+        "pronunciation": "bae",
+        "meaning": "perut"
+      },
+      {
+        "id": "topic-02-word-012",
+        "korean": "엉덩이",
+        "pronunciation": "eong-deong-i",
+        "meaning": "bokong"
+      },
+      {
+        "id": "topic-02-word-013",
+        "korean": "허벅지",
+        "pronunciation": "heo-beok-jji",
+        "meaning": "paha"
+      },
+      {
+        "id": "topic-02-word-014",
+        "korean": "무릎",
+        "pronunciation": "mu-reup",
+        "meaning": "lutut"
+      },
+      {
+        "id": "topic-02-word-015",
+        "korean": "다리",
+        "pronunciation": "da-ri",
+        "meaning": "kaki"
+      },
+      {
+        "id": "topic-02-word-016",
+        "korean": "발",
+        "pronunciation": "bal",
+        "meaning": "kaki / telapak kaki"
+      }
+    ],
+    "expressions": [
+      {
+        "id": "topic-02-expression-01",
+        "korean": "손이 크다",
+        "pronunciation": "so-ni keu-da",
+        "meaning": "suka memberi banyak / murah hati"
+      },
+      {
+        "id": "topic-02-expression-02",
+        "korean": "발이 넓다",
+        "pronunciation": "ba-ri neol-tta",
+        "meaning": "memiliki banyak kenalan"
+      },
+      {
+        "id": "topic-02-expression-03",
+        "korean": "어깨가 무겁다",
+        "pronunciation": "eo-kkae-ga mu-geop-tta",
+        "meaning": "merasa memiliki tanggung jawab yang besar"
+      }
+    ],
+    "questions": [
+      {
+        "id": "topic-02-question-01",
+        "prompt": "손과 팔 사이에 있는 부분은 무엇입니까?",
+        "hint": "Bagian tubuh apakah yang berada di antara tangan dan lengan?",
+        "options": [
+          "발",
+          "손목",
+          "허벅지",
+          "어깨"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-02-question-02",
+        "prompt": "다리를 구부릴 때 사용하는 관절은 무엇입니까?",
+        "hint": "Sendi apakah yang digunakan ketika menekuk kaki?",
+        "options": [
+          "무릎",
+          "손톱",
+          "가슴",
+          "손가락"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-02-question-03",
+        "prompt": "`ibu jari`와 같은 뜻의 한국어 단어는 무엇입니까?",
+        "hint": "Kata bahasa Korea manakah yang memiliki arti sama dengan `ibu jari`?",
+        "options": [
+          "손목",
+          "손톱",
+          "엄지손가락",
+          "팔꿈치"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "topic-02-question-04",
+        "prompt": "아는 사람이 아주 많은 사람에게 사용할 수 있는 표현은 무엇입니까?",
+        "hint": "Ungkapan manakah yang dapat digunakan untuk orang yang memiliki banyak kenalan?",
+        "options": [
+          "손이 크다",
+          "발이 넓다",
+          "배가 아프다",
+          "어깨가 작다"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-02-question-05",
+        "prompt": "반지를 끼는 곳은 어디입니까?",
+        "hint": "Di bagian tubuh manakah cincin biasanya dikenakan?",
+        "options": [
+          "손가락",
+          "손목",
+          "팔꿈치",
+          "무릎"
+        ],
+        "correctIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "topic-03",
+    "lessonNumber": 3,
+    "titleKorean": "가족",
+    "titleIndonesian": "Keluarga",
+    "words": [
+      {
+        "id": "topic-03-word-001",
+        "korean": "가족",
+        "pronunciation": "ga-jok",
+        "meaning": "keluarga"
+      },
+      {
+        "id": "topic-03-word-002",
+        "korean": "할아버지",
+        "pronunciation": "ha-ra-beo-ji",
+        "meaning": "kakek"
+      },
+      {
+        "id": "topic-03-word-003",
+        "korean": "할머니",
+        "pronunciation": "hal-meo-ni",
+        "meaning": "nenek"
+      },
+      {
+        "id": "topic-03-word-004",
+        "korean": "부모",
+        "pronunciation": "bu-mo",
+        "meaning": "orang tua"
+      },
+      {
+        "id": "topic-03-word-005",
+        "korean": "아빠",
+        "pronunciation": "a-ppa",
+        "meaning": "ayah / papa"
+      },
+      {
+        "id": "topic-03-word-006",
+        "korean": "엄마",
+        "pronunciation": "eom-ma",
+        "meaning": "ibu / mama"
+      },
+      {
+        "id": "topic-03-word-007",
+        "korean": "자식",
+        "pronunciation": "ja-sik",
+        "meaning": "anak"
+      },
+      {
+        "id": "topic-03-word-008",
+        "korean": "아들",
+        "pronunciation": "a-deul",
+        "meaning": "anak laki-laki"
+      },
+      {
+        "id": "topic-03-word-009",
+        "korean": "딸",
+        "pronunciation": "ttal",
+        "meaning": "anak perempuan"
+      },
+      {
+        "id": "topic-03-word-010",
+        "korean": "어린이",
+        "pronunciation": "eo-ri-ni",
+        "meaning": "anak-anak"
+      },
+      {
+        "id": "topic-03-word-011",
+        "korean": "외동",
+        "pronunciation": "we-dong",
+        "meaning": "anak tunggal"
+      },
+      {
+        "id": "topic-03-word-012",
+        "korean": "쌍둥이",
+        "pronunciation": "ssang-dung-i",
+        "meaning": "anak kembar"
+      },
+      {
+        "id": "topic-03-word-013",
+        "korean": "형제",
+        "pronunciation": "hyeong-je",
+        "meaning": "saudara laki-laki / saudara kandung"
+      },
+      {
+        "id": "topic-03-word-014",
+        "korean": "형",
+        "pronunciation": "hyeong",
+        "meaning": "kakak laki-laki bagi laki-laki"
+      },
+      {
+        "id": "topic-03-word-015",
+        "korean": "오빠",
+        "pronunciation": "o-ppa",
+        "meaning": "kakak laki-laki bagi perempuan"
+      },
+      {
+        "id": "topic-03-word-016",
+        "korean": "남동생",
+        "pronunciation": "nam-dong-saeng",
+        "meaning": "adik laki-laki"
+      },
+      {
+        "id": "topic-03-word-017",
+        "korean": "자매",
+        "pronunciation": "ja-mae",
+        "meaning": "saudara perempuan"
+      },
+      {
+        "id": "topic-03-word-018",
+        "korean": "누나",
+        "pronunciation": "nu-na",
+        "meaning": "kakak perempuan bagi laki-laki"
+      },
+      {
+        "id": "topic-03-word-019",
+        "korean": "언니",
+        "pronunciation": "eon-ni",
+        "meaning": "kakak perempuan bagi perempuan"
+      },
+      {
+        "id": "topic-03-word-020",
+        "korean": "사위",
+        "pronunciation": "sa-wi",
+        "meaning": "menantu laki-laki"
+      },
+      {
+        "id": "topic-03-word-021",
+        "korean": "며느리",
+        "pronunciation": "mye-neu-ri",
+        "meaning": "menantu perempuan"
+      }
+    ],
+    "expressions": [
+      {
+        "id": "topic-03-expression-01",
+        "korean": "저는 외동이에요.",
+        "pronunciation": "jeo-neun we-dong-i-e-yo",
+        "meaning": "Saya anak tunggal."
+      },
+      {
+        "id": "topic-03-expression-02",
+        "korean": "형제가 몇 명이에요?",
+        "pronunciation": "hyeong-je-ga myeot myeong-i-e-yo?",
+        "meaning": "Kamu punya berapa saudara?"
+      },
+      {
+        "id": "topic-03-expression-03",
+        "korean": "우리 가족은 다섯 명이에요.",
+        "pronunciation": "u-ri ga-jo-geun da-seot myeong-i-e-yo",
+        "meaning": "Keluarga saya terdiri dari lima orang."
+      }
+    ],
+    "questions": [
+      {
+        "id": "topic-03-question-01",
+        "prompt": "아버지의 아버지는 누구입니까?",
+        "hint": "Siapakah ayah dari ayah kita?",
+        "options": [
+          "형",
+          "할아버지",
+          "아들",
+          "사위"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-03-question-02",
+        "prompt": "형제나 자매가 없는 사람을 무엇이라고 합니까?",
+        "hint": "Apa sebutan untuk seseorang yang tidak memiliki saudara laki-laki maupun perempuan?",
+        "options": [
+          "외동",
+          "쌍둥이",
+          "사위",
+          "부모"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-03-question-03",
+        "prompt": "여자가 자기보다 나이가 많은 남자 형제를 부르는 말은 무엇입니까?",
+        "hint": "Apa sebutan yang digunakan oleh perempuan untuk kakak laki-lakinya?",
+        "options": [
+          "형",
+          "오빠",
+          "누나",
+          "언니"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-03-question-04",
+        "prompt": "남자가 자기보다 나이가 많은 여자 형제를 부르는 말은 무엇입니까?",
+        "hint": "Apa sebutan yang digunakan oleh laki-laki untuk kakak perempuannya?",
+        "options": [
+          "누나",
+          "언니",
+          "오빠",
+          "형"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-03-question-05",
+        "prompt": "`anak kembar`와 같은 뜻의 한국어 단어는 무엇입니까?",
+        "hint": "Kata bahasa Korea manakah yang memiliki arti sama dengan `anak kembar`?",
+        "options": [
+          "외동",
+          "어린이",
+          "쌍둥이",
+          "자식"
+        ],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "topic-04",
+    "lessonNumber": 4,
+    "titleKorean": "직업",
+    "titleIndonesian": "Pekerjaan",
+    "words": [
+      {
+        "id": "topic-04-word-001",
+        "korean": "직업",
+        "pronunciation": "ji-geop",
+        "meaning": "pekerjaan / profesi"
+      },
+      {
+        "id": "topic-04-word-002",
+        "korean": "회사원",
+        "pronunciation": "hwe-sa-won",
+        "meaning": "pegawai perusahaan"
+      },
+      {
+        "id": "topic-04-word-003",
+        "korean": "배우",
+        "pronunciation": "bae-u",
+        "meaning": "aktor / aktris"
+      },
+      {
+        "id": "topic-04-word-004",
+        "korean": "가수",
+        "pronunciation": "ga-su",
+        "meaning": "penyanyi"
+      },
+      {
+        "id": "topic-04-word-005",
+        "korean": "연예인",
+        "pronunciation": "yeo-nye-in",
+        "meaning": "selebritas"
+      },
+      {
+        "id": "topic-04-word-006",
+        "korean": "요리사",
+        "pronunciation": "yo-ri-sa",
+        "meaning": "koki"
+      },
+      {
+        "id": "topic-04-word-007",
+        "korean": "경찰",
+        "pronunciation": "gyeong-chal",
+        "meaning": "polisi"
+      },
+      {
+        "id": "topic-04-word-008",
+        "korean": "소방관",
+        "pronunciation": "so-bang-gwan",
+        "meaning": "petugas pemadam kebakaran"
+      },
+      {
+        "id": "topic-04-word-009",
+        "korean": "의사",
+        "pronunciation": "ui-sa",
+        "meaning": "dokter"
+      },
+      {
+        "id": "topic-04-word-010",
+        "korean": "병원",
+        "pronunciation": "byeong-won",
+        "meaning": "rumah sakit"
+      },
+      {
+        "id": "topic-04-word-011",
+        "korean": "은행원",
+        "pronunciation": "eun-haeng-won",
+        "meaning": "pegawai bank"
+      },
+      {
+        "id": "topic-04-word-012",
+        "korean": "주부",
+        "pronunciation": "ju-bu",
+        "meaning": "ibu/bapak rumah tangga"
+      },
+      {
+        "id": "topic-04-word-013",
+        "korean": "공무원",
+        "pronunciation": "gong-mu-won",
+        "meaning": "pegawai negeri"
+      },
+      {
+        "id": "topic-04-word-014",
+        "korean": "운전기사",
+        "pronunciation": "un-jeon-gi-sa",
+        "meaning": "sopir"
+      }
+    ],
+    "expressions": [
+      {
+        "id": "topic-04-expression-01",
+        "korean": "무슨 일을 하세요?",
+        "pronunciation": "mu-seun i-reul ha-se-yo?",
+        "meaning": "Kamu bekerja sebagai apa?"
+      },
+      {
+        "id": "topic-04-expression-02",
+        "korean": "저는 회사원이에요.",
+        "pronunciation": "jeo-neun hwe-sa-won-i-e-yo",
+        "meaning": "Saya pegawai perusahaan."
+      },
+      {
+        "id": "topic-04-expression-03",
+        "korean": "의사가 되고 싶어요.",
+        "pronunciation": "ui-sa-ga dwe-go si-peo-yo",
+        "meaning": "Saya ingin menjadi dokter."
+      }
+    ],
+    "questions": [
+      {
+        "id": "topic-04-question-01",
+        "prompt": "병원에서 환자를 치료하는 사람은 누구입니까?",
+        "hint": "Siapakah orang yang merawat pasien di rumah sakit?",
+        "options": [
+          "가수",
+          "의사",
+          "경찰",
+          "은행원"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-04-question-02",
+        "prompt": "불이 났을 때 출동하는 사람은 누구입니까?",
+        "hint": "Siapakah yang bertugas ketika terjadi kebakaran?",
+        "options": [
+          "소방관",
+          "요리사",
+          "배우",
+          "회사원"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-04-question-03",
+        "prompt": "은행에서 일하는 사람을 무엇이라고 합니까?",
+        "hint": "Apa sebutan untuk orang yang bekerja di bank?",
+        "options": [
+          "공무원",
+          "은행원",
+          "연예인",
+          "운전기사"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-04-question-04",
+        "prompt": "음식을 전문적으로 만드는 사람은 누구입니까?",
+        "hint": "Siapakah orang yang bekerja secara profesional dalam membuat makanan?",
+        "options": [
+          "배우",
+          "요리사",
+          "가수",
+          "경찰"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-04-question-05",
+        "prompt": "버스나 택시를 운전하는 사람은 누구입니까?",
+        "hint": "Siapakah orang yang mengemudikan bus atau taksi?",
+        "options": [
+          "운전기사",
+          "의사",
+          "주부",
+          "소방관"
+        ],
+        "correctIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "topic-05",
+    "lessonNumber": 5,
+    "titleKorean": "취미",
+    "titleIndonesian": "Hobi",
+    "words": [
+      {
+        "id": "topic-05-word-001",
+        "korean": "취미",
+        "pronunciation": "chwi-mi",
+        "meaning": "hobi"
+      },
+      {
+        "id": "topic-05-word-002",
+        "korean": "독서",
+        "pronunciation": "dok-sseo",
+        "meaning": "membaca buku"
+      },
+      {
+        "id": "topic-05-word-003",
+        "korean": "음악 감상",
+        "pronunciation": "eu-mak gam-sang",
+        "meaning": "mendengarkan musik"
+      },
+      {
+        "id": "topic-05-word-004",
+        "korean": "클래식",
+        "pronunciation": "keul-lae-sik",
+        "meaning": "musik klasik"
+      },
+      {
+        "id": "topic-05-word-005",
+        "korean": "영화관",
+        "pronunciation": "yeong-hwa-gwan",
+        "meaning": "bioskop"
+      },
+      {
+        "id": "topic-05-word-006",
+        "korean": "요리",
+        "pronunciation": "yo-ri",
+        "meaning": "memasak"
+      },
+      {
+        "id": "topic-05-word-007",
+        "korean": "운동",
+        "pronunciation": "un-dong",
+        "meaning": "olahraga"
+      },
+      {
+        "id": "topic-05-word-008",
+        "korean": "수영",
+        "pronunciation": "su-yeong",
+        "meaning": "berenang"
+      },
+      {
+        "id": "topic-05-word-009",
+        "korean": "골프",
+        "pronunciation": "gol-peu",
+        "meaning": "golf"
+      },
+      {
+        "id": "topic-05-word-010",
+        "korean": "배드민턴",
+        "pronunciation": "bae-deu-min-teon",
+        "meaning": "bulu tangkis"
+      },
+      {
+        "id": "topic-05-word-011",
+        "korean": "축구",
+        "pronunciation": "chuk-kku",
+        "meaning": "sepak bola"
+      },
+      {
+        "id": "topic-05-word-012",
+        "korean": "낚시",
+        "pronunciation": "nak-ssi",
+        "meaning": "memancing"
+      },
+      {
+        "id": "topic-05-word-013",
+        "korean": "등산",
+        "pronunciation": "deung-san",
+        "meaning": "mendaki gunung"
+      },
+      {
+        "id": "topic-05-word-014",
+        "korean": "쇼핑",
+        "pronunciation": "syo-ping",
+        "meaning": "berbelanja"
+      }
+    ],
+    "expressions": [
+      {
+        "id": "topic-05-expression-01",
+        "korean": "취미가 뭐예요?",
+        "pronunciation": "chwi-mi-ga mwo-ye-yo?",
+        "meaning": "Hobimu apa?"
+      },
+      {
+        "id": "topic-05-expression-02",
+        "korean": "제 취미는 독서예요.",
+        "pronunciation": "je chwi-mi-neun dok-sseo-ye-yo",
+        "meaning": "Hobi saya membaca buku."
+      },
+      {
+        "id": "topic-05-expression-03",
+        "korean": "주말마다 등산을 해요.",
+        "pronunciation": "ju-mal-ma-da deung-sa-neul hae-yo",
+        "meaning": "Setiap akhir pekan saya mendaki gunung."
+      }
+    ],
+    "questions": [
+      {
+        "id": "topic-05-question-01",
+        "prompt": "산에 올라가는 취미는 무엇입니까?",
+        "hint": "Hobi apakah yang dilakukan dengan naik ke gunung?",
+        "options": [
+          "낚시",
+          "등산",
+          "수영",
+          "독서"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-05-question-02",
+        "prompt": "물에서 하는 운동은 무엇입니까?",
+        "hint": "Olahraga apakah yang dilakukan di dalam air?",
+        "options": [
+          "골프",
+          "수영",
+          "쇼핑",
+          "독서"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-05-question-03",
+        "prompt": "책을 읽는 활동을 무엇이라고 합니까?",
+        "hint": "Apa sebutan untuk kegiatan membaca buku?",
+        "options": [
+          "독서",
+          "운동",
+          "영화관",
+          "음악 감상"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-05-question-04",
+        "prompt": "물고기를 잡는 취미는 무엇입니까?",
+        "hint": "Hobi apakah yang dilakukan dengan menangkap ikan?",
+        "options": [
+          "축구",
+          "낚시",
+          "등산",
+          "골프"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-05-question-05",
+        "prompt": "`bulu tangkis`와 같은 뜻의 한국어 단어는 무엇입니까?",
+        "hint": "Kata bahasa Korea manakah yang memiliki arti sama dengan `bulu tangkis`?",
+        "options": [
+          "배드민턴",
+          "축구",
+          "수영",
+          "골프"
+        ],
+        "correctIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "topic-06",
+    "lessonNumber": 6,
+    "titleKorean": "성격",
+    "titleIndonesian": "Kepribadian",
+    "words": [
+      {
+        "id": "topic-06-word-001",
+        "korean": "상냥하다",
+        "pronunciation": "sang-nyang-ha-da",
+        "meaning": "ramah / lembut"
+      },
+      {
+        "id": "topic-06-word-002",
+        "korean": "성실하다",
+        "pronunciation": "seong-sil-ha-da",
+        "meaning": "rajin dan tekun"
+      },
+      {
+        "id": "topic-06-word-003",
+        "korean": "긍정적이다",
+        "pronunciation": "geung-jeong-jeo-gi-da",
+        "meaning": "positif"
+      },
+      {
+        "id": "topic-06-word-004",
+        "korean": "부정적이다",
+        "pronunciation": "bu-jeong-jeo-gi-da",
+        "meaning": "negatif"
+      },
+      {
+        "id": "topic-06-word-005",
+        "korean": "책임감이 있다",
+        "pronunciation": "chae-gim-ga-mi it-tta",
+        "meaning": "bertanggung jawab"
+      },
+      {
+        "id": "topic-06-word-006",
+        "korean": "사교적이다",
+        "pronunciation": "sa-gyo-jeo-gi-da",
+        "meaning": "mudah bergaul"
+      },
+      {
+        "id": "topic-06-word-007",
+        "korean": "참을성이 있다",
+        "pronunciation": "cha-meul-sseong-i it-tta",
+        "meaning": "sabar"
+      },
+      {
+        "id": "topic-06-word-008",
+        "korean": "내성적이다",
+        "pronunciation": "nae-seong-jeo-gi-da",
+        "meaning": "introvert"
+      },
+      {
+        "id": "topic-06-word-009",
+        "korean": "근성이 있다",
+        "pronunciation": "geun-sseong-i it-tta",
+        "meaning": "gigih"
+      },
+      {
+        "id": "topic-06-word-010",
+        "korean": "변덕스럽다",
+        "pronunciation": "byeon-deok-sseu-reop-tta",
+        "meaning": "mudah berubah-ubah"
+      },
+      {
+        "id": "topic-06-word-011",
+        "korean": "밝다",
+        "pronunciation": "bak-tta",
+        "meaning": "ceria"
+      },
+      {
+        "id": "topic-06-word-012",
+        "korean": "집요하다",
+        "pronunciation": "ji-byo-ha-da",
+        "meaning": "sangat gigih / persisten"
+      },
+      {
+        "id": "topic-06-word-013",
+        "korean": "느긋하다",
+        "pronunciation": "neu-geu-ta-da",
+        "meaning": "santai"
+      },
+      {
+        "id": "topic-06-word-014",
+        "korean": "급하다",
+        "pronunciation": "geu-pa-da",
+        "meaning": "terburu-buru / tidak sabaran"
+      },
+      {
+        "id": "topic-06-word-015",
+        "korean": "화를 잘 내다",
+        "pronunciation": "hwa-reul jal nae-da",
+        "meaning": "mudah marah"
+      },
+      {
+        "id": "topic-06-word-016",
+        "korean": "인색하다",
+        "pronunciation": "in-sae-ka-da",
+        "meaning": "pelit"
+      }
+    ],
+    "expressions": [
+      {
+        "id": "topic-06-expression-01",
+        "korean": "성격이 밝아요.",
+        "pronunciation": "",
+        "meaning": "Kepribadiannya ceria."
+      },
+      {
+        "id": "topic-06-expression-02",
+        "korean": "사람들과 잘 어울려요.",
+        "pronunciation": "",
+        "meaning": "Mudah bergaul dengan orang lain."
+      },
+      {
+        "id": "topic-06-expression-03",
+        "korean": "화를 잘 내는 편이에요.",
+        "pronunciation": "",
+        "meaning": "Dia termasuk orang yang mudah marah."
+      }
+    ],
+    "questions": [
+      {
+        "id": "topic-06-question-01",
+        "prompt": "다른 사람과 쉽게 친해지는 성격입니다.",
+        "hint": "Kepribadian seperti apakah yang mudah akrab dengan orang lain?",
+        "options": [
+          "내성적이다",
+          "사교적이다",
+          "인색하다",
+          "부정적이다"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-06-question-02",
+        "prompt": "돈을 잘 쓰지 않고 다른 사람에게 주는 것도 싫어합니다.",
+        "hint": "Orang ini tidak suka mengeluarkan uang dan juga tidak suka memberikannya kepada orang lain.",
+        "options": [
+          "느긋하다",
+          "인색하다",
+          "상냥하다",
+          "밝다"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-06-question-03",
+        "prompt": "어려워도 끝까지 포기하지 않습니다.",
+        "hint": "Orang ini tidak menyerah sampai akhir meskipun menghadapi kesulitan.",
+        "options": [
+          "근성이 있다",
+          "변덕스럽다",
+          "급하다",
+          "부정적이다"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-06-question-04",
+        "prompt": "오래 기다릴 수 있는 사람입니다.",
+        "hint": "Orang ini mampu menunggu dalam waktu yang lama.",
+        "options": [
+          "참을성이 있다",
+          "화를 잘 내다",
+          "급하다",
+          "인색하다"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-06-question-05",
+        "prompt": "`ramah dan lembut`와 가장 가까운 표현은 무엇입니까?",
+        "hint": "Ungkapan manakah yang paling dekat dengan arti `ramah dan lembut`?",
+        "options": [
+          "상냥하다",
+          "집요하다",
+          "급하다",
+          "부정적이다"
+        ],
+        "correctIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "topic-07",
+    "lessonNumber": 7,
+    "titleKorean": "옷",
+    "titleIndonesian": "Pakaian",
+    "words": [
+      {
+        "id": "topic-07-word-001",
+        "korean": "양복",
+        "pronunciation": "yang-bok",
+        "meaning": "setelan jas"
+      },
+      {
+        "id": "topic-07-word-002",
+        "korean": "넥타이",
+        "pronunciation": "nek-ta-i",
+        "meaning": "dasi"
+      },
+      {
+        "id": "topic-07-word-003",
+        "korean": "손수건",
+        "pronunciation": "son-su-geon",
+        "meaning": "saputangan"
+      },
+      {
+        "id": "topic-07-word-004",
+        "korean": "단추",
+        "pronunciation": "dan-chu",
+        "meaning": "kancing"
+      },
+      {
+        "id": "topic-07-word-005",
+        "korean": "바지",
+        "pronunciation": "ba-ji",
+        "meaning": "celana"
+      },
+      {
+        "id": "topic-07-word-006",
+        "korean": "반바지",
+        "pronunciation": "ban-ba-ji",
+        "meaning": "celana pendek"
+      },
+      {
+        "id": "topic-07-word-007",
+        "korean": "청바지",
+        "pronunciation": "cheong-ba-ji",
+        "meaning": "celana jeans"
+      },
+      {
+        "id": "topic-07-word-008",
+        "korean": "벨트",
+        "pronunciation": "bel-teu",
+        "meaning": "ikat pinggang"
+      },
+      {
+        "id": "topic-07-word-009",
+        "korean": "치마",
+        "pronunciation": "chi-ma",
+        "meaning": "rok"
+      },
+      {
+        "id": "topic-07-word-010",
+        "korean": "스웨터",
+        "pronunciation": "seu-we-teo",
+        "meaning": "sweater"
+      },
+      {
+        "id": "topic-07-word-011",
+        "korean": "속옷",
+        "pronunciation": "so-got",
+        "meaning": "pakaian dalam"
+      },
+      {
+        "id": "topic-07-word-012",
+        "korean": "신발",
+        "pronunciation": "sin-bal",
+        "meaning": "sepatu / alas kaki"
+      },
+      {
+        "id": "topic-07-word-013",
+        "korean": "운동화",
+        "pronunciation": "un-dong-hwa",
+        "meaning": "sepatu olahraga"
+      },
+      {
+        "id": "topic-07-word-014",
+        "korean": "양말",
+        "pronunciation": "yang-mal",
+        "meaning": "kaus kaki"
+      }
+    ],
+    "expressions": [
+      {
+        "id": "topic-07-expression-01",
+        "korean": "옷이 잘 어울려요.",
+        "pronunciation": "",
+        "meaning": "Pakaiannya cocok denganmu."
+      },
+      {
+        "id": "topic-07-expression-02",
+        "korean": "옷을 갈아입어요.",
+        "pronunciation": "",
+        "meaning": "Saya berganti pakaian."
+      },
+      {
+        "id": "topic-07-expression-03",
+        "korean": "단추를 잠가 주세요.",
+        "pronunciation": "",
+        "meaning": "Tolong kancingkan."
+      }
+    ],
+    "questions": [
+      {
+        "id": "topic-07-question-01",
+        "prompt": "발에 신고 운동할 때 많이 사용하는 것은 무엇입니까?",
+        "hint": "Benda apakah yang dikenakan di kaki dan sering digunakan saat berolahraga?",
+        "options": [
+          "벨트",
+          "운동화",
+          "양복",
+          "단추"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-07-question-02",
+        "prompt": "목에 매는 것은 무엇입니까?",
+        "hint": "Benda apakah yang dikenakan dengan cara diikat di leher?",
+        "options": [
+          "넥타이",
+          "손수건",
+          "양말",
+          "치마"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-07-question-03",
+        "prompt": "허리에 착용하는 것은 무엇입니까?",
+        "hint": "Benda apakah yang dikenakan di pinggang?",
+        "options": [
+          "벨트",
+          "단추",
+          "속옷",
+          "운동화"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-07-question-04",
+        "prompt": "짧은 바지를 무엇이라고 합니까?",
+        "hint": "Apa sebutan untuk celana yang pendek?",
+        "options": [
+          "청바지",
+          "반바지",
+          "양복",
+          "치마"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-07-question-05",
+        "prompt": "`kaus kaki`와 같은 뜻의 한국어 단어는 무엇입니까?",
+        "hint": "Kata bahasa Korea manakah yang memiliki arti sama dengan `kaus kaki`?",
+        "options": [
+          "신발",
+          "양말",
+          "스웨터",
+          "벨트"
+        ],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "topic-08",
+    "lessonNumber": 8,
+    "titleKorean": "동사 1",
+    "titleIndonesian": "Kata Kerja 1",
+    "words": [
+      {
+        "id": "topic-08-word-001",
+        "korean": "만나다",
+        "pronunciation": "man-na-da",
+        "meaning": "bertemu"
+      },
+      {
+        "id": "topic-08-word-002",
+        "korean": "갖다",
+        "pronunciation": "gat-tta",
+        "meaning": "memiliki / membawa"
+      },
+      {
+        "id": "topic-08-word-003",
+        "korean": "보다",
+        "pronunciation": "bo-da",
+        "meaning": "melihat"
+      },
+      {
+        "id": "topic-08-word-004",
+        "korean": "이야기하다",
+        "pronunciation": "i-ya-gi-ha-da",
+        "meaning": "berbicara"
+      },
+      {
+        "id": "topic-08-word-005",
+        "korean": "먹다",
+        "pronunciation": "meok-tta",
+        "meaning": "makan"
+      },
+      {
+        "id": "topic-08-word-006",
+        "korean": "음식",
+        "pronunciation": "eum-sik",
+        "meaning": "makanan"
+      },
+      {
+        "id": "topic-08-word-007",
+        "korean": "마시다",
+        "pronunciation": "ma-si-da",
+        "meaning": "minum"
+      },
+      {
+        "id": "topic-08-word-008",
+        "korean": "물",
+        "pronunciation": "mul",
+        "meaning": "air"
+      },
+      {
+        "id": "topic-08-word-009",
+        "korean": "밥",
+        "pronunciation": "bap",
+        "meaning": "nasi / makanan"
+      },
+      {
+        "id": "topic-08-word-010",
+        "korean": "돌아오다",
+        "pronunciation": "do-ra-o-da",
+        "meaning": "kembali"
+      },
+      {
+        "id": "topic-08-word-011",
+        "korean": "씻다",
+        "pronunciation": "ssit-tta",
+        "meaning": "mencuci / membersihkan"
+      },
+      {
+        "id": "topic-08-word-012",
+        "korean": "자다",
+        "pronunciation": "ja-da",
+        "meaning": "tidur"
+      },
+      {
+        "id": "topic-08-word-013",
+        "korean": "일어나다",
+        "pronunciation": "i-reo-na-da",
+        "meaning": "bangun"
+      },
+      {
+        "id": "topic-08-word-014",
+        "korean": "입다",
+        "pronunciation": "ip-tta",
+        "meaning": "memakai pakaian"
+      },
+      {
+        "id": "topic-08-word-015",
+        "korean": "가다",
+        "pronunciation": "ga-da",
+        "meaning": "pergi"
+      },
+      {
+        "id": "topic-08-word-016",
+        "korean": "오다",
+        "pronunciation": "o-da",
+        "meaning": "datang"
+      },
+      {
+        "id": "topic-08-word-017",
+        "korean": "하다",
+        "pronunciation": "ha-da",
+        "meaning": "melakukan"
+      }
+    ],
+    "expressions": [
+      {
+        "id": "topic-08-expression-01",
+        "korean": "밥을 먹어요.",
+        "pronunciation": "",
+        "meaning": "Saya makan."
+      },
+      {
+        "id": "topic-08-expression-02",
+        "korean": "친구를 만나요.",
+        "pronunciation": "",
+        "meaning": "Saya bertemu teman."
+      },
+      {
+        "id": "topic-08-expression-03",
+        "korean": "집에 돌아왔어요.",
+        "pronunciation": "",
+        "meaning": "Saya sudah pulang ke rumah."
+      }
+    ],
+    "questions": [
+      {
+        "id": "topic-08-question-01",
+        "prompt": "밤에 침대에서 ________.",
+        "hint": "Pada malam hari, saya ________ di tempat tidur.",
+        "options": [
+          "자요",
+          "먹어요",
+          "가요",
+          "마셔요"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-08-question-02",
+        "prompt": "아침에 눈을 뜨고 ________.",
+        "hint": "Pada pagi hari, setelah membuka mata saya ________.",
+        "options": [
+          "입어요",
+          "일어나요",
+          "마셔요",
+          "만나요"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-08-question-03",
+        "prompt": "물은 보통 ________.",
+        "hint": "Air biasanya ________.",
+        "options": [
+          "먹어요",
+          "입어요",
+          "마셔요",
+          "봐요"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "topic-08-question-04",
+        "prompt": "옷을 몸에 착용하는 것을 무엇이라고 합니까?",
+        "hint": "Apa kata kerja yang berarti mengenakan pakaian pada tubuh?",
+        "options": [
+          "입다",
+          "씻다",
+          "오다",
+          "보다"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-08-question-05",
+        "prompt": "친구와 약속이 있어서 친구를 ________.",
+        "hint": "Saya memiliki janji dengan teman, sehingga saya ________ teman saya.",
+        "options": [
+          "자요",
+          "만나요",
+          "마셔요",
+          "입어요"
+        ],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "topic-09",
+    "lessonNumber": 9,
+    "titleKorean": "동사 2",
+    "titleIndonesian": "Kata Kerja 2",
+    "words": [
+      {
+        "id": "topic-09-word-001",
+        "korean": "쓰다",
+        "pronunciation": "sseu-da",
+        "meaning": "menulis / menggunakan"
+      },
+      {
+        "id": "topic-09-word-002",
+        "korean": "기다리다",
+        "pronunciation": "gi-da-ri-da",
+        "meaning": "menunggu"
+      },
+      {
+        "id": "topic-09-word-003",
+        "korean": "타다",
+        "pronunciation": "ta-da",
+        "meaning": "naik"
+      },
+      {
+        "id": "topic-09-word-004",
+        "korean": "알다",
+        "pronunciation": "al-da",
+        "meaning": "tahu"
+      },
+      {
+        "id": "topic-09-word-005",
+        "korean": "놀다",
+        "pronunciation": "nol-da",
+        "meaning": "bermain"
+      },
+      {
+        "id": "topic-09-word-006",
+        "korean": "있다",
+        "pronunciation": "it-tta",
+        "meaning": "ada / memiliki"
+      },
+      {
+        "id": "topic-09-word-007",
+        "korean": "앉다",
+        "pronunciation": "an-tta",
+        "meaning": "duduk"
+      },
+      {
+        "id": "topic-09-word-008",
+        "korean": "서다",
+        "pronunciation": "seo-da",
+        "meaning": "berdiri"
+      },
+      {
+        "id": "topic-09-word-009",
+        "korean": "웃다",
+        "pronunciation": "ut-tta",
+        "meaning": "tertawa"
+      },
+      {
+        "id": "topic-09-word-010",
+        "korean": "비웃다",
+        "pronunciation": "bi-ut-tta",
+        "meaning": "mengejek / menertawakan"
+      },
+      {
+        "id": "topic-09-word-011",
+        "korean": "울다",
+        "pronunciation": "ul-da",
+        "meaning": "menangis"
+      },
+      {
+        "id": "topic-09-word-012",
+        "korean": "쉬다",
+        "pronunciation": "swi-da",
+        "meaning": "beristirahat"
+      },
+      {
+        "id": "topic-09-word-013",
+        "korean": "읽다",
+        "pronunciation": "ik-tta",
+        "meaning": "membaca"
+      },
+      {
+        "id": "topic-09-word-014",
+        "korean": "듣다",
+        "pronunciation": "deut-tta",
+        "meaning": "mendengar"
+      },
+      {
+        "id": "topic-09-word-015",
+        "korean": "걷다",
+        "pronunciation": "geot-tta",
+        "meaning": "berjalan"
+      },
+      {
+        "id": "topic-09-word-016",
+        "korean": "달리다",
+        "pronunciation": "dal-li-da",
+        "meaning": "berlari"
+      },
+      {
+        "id": "topic-09-word-017",
+        "korean": "팔다",
+        "pronunciation": "pal-da",
+        "meaning": "menjual"
+      },
+      {
+        "id": "topic-09-word-018",
+        "korean": "사다",
+        "pronunciation": "sa-da",
+        "meaning": "membeli"
+      },
+      {
+        "id": "topic-09-word-019",
+        "korean": "이기다",
+        "pronunciation": "i-gi-da",
+        "meaning": "menang"
+      },
+      {
+        "id": "topic-09-word-020",
+        "korean": "지다",
+        "pronunciation": "ji-da",
+        "meaning": "kalah"
+      }
+    ],
+    "expressions": [
+      {
+        "id": "topic-09-expression-01",
+        "korean": "잠깐 기다려 주세요.",
+        "pronunciation": "",
+        "meaning": "Tolong tunggu sebentar."
+      },
+      {
+        "id": "topic-09-expression-02",
+        "korean": "버스를 타요.",
+        "pronunciation": "",
+        "meaning": "Saya naik bus."
+      },
+      {
+        "id": "topic-09-expression-03",
+        "korean": "책을 읽고 음악을 들어요.",
+        "pronunciation": "",
+        "meaning": "Saya membaca buku dan mendengarkan musik."
+      }
+    ],
+    "questions": [
+      {
+        "id": "topic-09-question-01",
+        "prompt": "가게에서 물건을 돈을 주고 가져옵니다.",
+        "hint": "Kita memberikan uang di toko dan membawa barang tersebut.",
+        "options": [
+          "팔다",
+          "사다",
+          "쓰다",
+          "기다리다"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-09-question-02",
+        "prompt": "경기가 끝났습니다. 우리 팀이 3:0으로 ________.",
+        "hint": "Pertandingan telah selesai. Tim kami ________ dengan skor 3:0.",
+        "options": [
+          "졌습니다",
+          "이겼습니다",
+          "울었습니다",
+          "기다렸습니다"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-09-question-03",
+        "prompt": "의자에 ________.",
+        "hint": "Saya ________ di kursi.",
+        "options": [
+          "앉아요",
+          "달려요",
+          "팔아요",
+          "울어요"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-09-question-04",
+        "prompt": "책을 ________.",
+        "hint": "Saya ________ buku.",
+        "options": [
+          "들어요",
+          "읽어요",
+          "타요",
+          "사요"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-09-question-05",
+        "prompt": "버스가 아직 안 왔어요. 그래서 ________.",
+        "hint": "Bus belum datang. Oleh karena itu saya ________.",
+        "options": [
+          "기다려요",
+          "웃어요",
+          "달려요",
+          "팔아요"
+        ],
+        "correctIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "topic-10",
+    "lessonNumber": 10,
+    "titleKorean": "감정",
+    "titleIndonesian": "Emosi",
+    "words": [
+      {
+        "id": "topic-10-word-001",
+        "korean": "행복하다",
+        "pronunciation": "haeng-bo-ka-da",
+        "meaning": "bahagia"
+      },
+      {
+        "id": "topic-10-word-002",
+        "korean": "기쁘다",
+        "pronunciation": "gi-ppeu-da",
+        "meaning": "senang"
+      },
+      {
+        "id": "topic-10-word-003",
+        "korean": "슬프다",
+        "pronunciation": "seul-peu-da",
+        "meaning": "sedih"
+      },
+      {
+        "id": "topic-10-word-004",
+        "korean": "즐겁다",
+        "pronunciation": "jeul-geop-tta",
+        "meaning": "menyenangkan"
+      },
+      {
+        "id": "topic-10-word-005",
+        "korean": "재미있다",
+        "pronunciation": "jae-mi-it-tta",
+        "meaning": "menarik / seru"
+      },
+      {
+        "id": "topic-10-word-006",
+        "korean": "부럽다",
+        "pronunciation": "bu-reop-tta",
+        "meaning": "iri dalam arti menginginkan hal serupa"
+      },
+      {
+        "id": "topic-10-word-007",
+        "korean": "좋아하다",
+        "pronunciation": "jo-a-ha-da",
+        "meaning": "menyukai"
+      },
+      {
+        "id": "topic-10-word-008",
+        "korean": "싫어하다",
+        "pronunciation": "si-reo-ha-da",
+        "meaning": "tidak menyukai"
+      },
+      {
+        "id": "topic-10-word-009",
+        "korean": "실망하다",
+        "pronunciation": "sil-mang-ha-da",
+        "meaning": "kecewa"
+      },
+      {
+        "id": "topic-10-word-010",
+        "korean": "쓸쓸하다",
+        "pronunciation": "sseul-sseul-ha-da",
+        "meaning": "kesepian"
+      },
+      {
+        "id": "topic-10-word-011",
+        "korean": "무섭다",
+        "pronunciation": "mu-seop-tta",
+        "meaning": "takut / menakutkan"
+      },
+      {
+        "id": "topic-10-word-012",
+        "korean": "열받다",
+        "pronunciation": "yeol-bat-tta",
+        "meaning": "sangat kesal / marah"
+      },
+      {
+        "id": "topic-10-word-013",
+        "korean": "짜증나다",
+        "pronunciation": "jja-jeung-na-da",
+        "meaning": "kesal / jengkel"
+      },
+      {
+        "id": "topic-10-word-014",
+        "korean": "억울하다",
+        "pronunciation": "eo-gu-ra-da",
+        "meaning": "merasa diperlakukan tidak adil"
+      },
+      {
+        "id": "topic-10-word-015",
+        "korean": "그립다",
+        "pronunciation": "geu-rip-tta",
+        "meaning": "rindu"
+      },
+      {
+        "id": "topic-10-word-016",
+        "korean": "귀찮다",
+        "pronunciation": "gwi-chan-ta",
+        "meaning": "merasa malas / merepotkan"
+      },
+      {
+        "id": "topic-10-word-017",
+        "korean": "걱정하다",
+        "pronunciation": "geok-jjeong-ha-da",
+        "meaning": "khawatir"
+      }
+    ],
+    "expressions": [
+      {
+        "id": "topic-10-expression-01",
+        "korean": "보고 싶어요. / 그리워요.",
+        "pronunciation": "",
+        "meaning": "Aku rindu."
+      },
+      {
+        "id": "topic-10-expression-02",
+        "korean": "정말 짜증 나요.",
+        "pronunciation": "",
+        "meaning": "Benar-benar membuat kesal."
+      },
+      {
+        "id": "topic-10-expression-03",
+        "korean": "너무 억울해요.",
+        "pronunciation": "",
+        "meaning": "Saya merasa ini sangat tidak adil."
+      }
+    ],
+    "questions": [
+      {
+        "id": "topic-10-question-01",
+        "prompt": "시험에 떨어져서 ________.",
+        "hint": "Saya gagal dalam ujian sehingga merasa ________.",
+        "options": [
+          "기뻐요",
+          "실망했어요",
+          "행복해요",
+          "부러워요"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-10-question-02",
+        "prompt": "오랫동안 가족을 못 만나서 가족이 ________.",
+        "hint": "Saya sudah lama tidak bertemu keluarga sehingga saya ________ keluarga saya.",
+        "options": [
+          "그리워요",
+          "귀찮아요",
+          "재미있어요",
+          "부러워요"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-10-question-03",
+        "prompt": "아무 잘못도 없는데 제가 혼났습니다. 정말 ________.",
+        "hint": "Saya dimarahi meskipun tidak melakukan kesalahan. Saya merasa sangat ________.",
+        "options": [
+          "즐거워요",
+          "억울해요",
+          "행복해요",
+          "기뻐요"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-10-question-04",
+        "prompt": "공포 영화를 보면 ________.",
+        "hint": "Ketika menonton film horor, saya merasa ________.",
+        "options": [
+          "무서워요",
+          "부러워요",
+          "기뻐요",
+          "즐거워요"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-10-question-05",
+        "prompt": "`kecewa`와 같은 뜻의 한국어 단어는 무엇입니까?",
+        "hint": "Kata bahasa Korea manakah yang memiliki arti sama dengan `kecewa`?",
+        "options": [
+          "실망하다",
+          "부럽다",
+          "좋아하다",
+          "행복하다"
+        ],
+        "correctIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "topic-11",
+    "lessonNumber": 11,
+    "titleKorean": "느낌·상태",
+    "titleIndonesian": "Perasaan dan Kondisi",
+    "words": [
+      {
+        "id": "topic-11-word-001",
+        "korean": "뜨겁다",
+        "pronunciation": "tteu-geop-tta",
+        "meaning": "panas"
+      },
+      {
+        "id": "topic-11-word-002",
+        "korean": "차갑다",
+        "pronunciation": "cha-gap-tta",
+        "meaning": "dingin saat disentuh"
+      },
+      {
+        "id": "topic-11-word-003",
+        "korean": "무겁다",
+        "pronunciation": "mu-geop-tta",
+        "meaning": "berat"
+      },
+      {
+        "id": "topic-11-word-004",
+        "korean": "가볍다",
+        "pronunciation": "ga-byeop-tta",
+        "meaning": "ringan"
+      },
+      {
+        "id": "topic-11-word-005",
+        "korean": "따뜻하다",
+        "pronunciation": "tta-tteu-ta-da",
+        "meaning": "hangat"
+      },
+      {
+        "id": "topic-11-word-006",
+        "korean": "춥다",
+        "pronunciation": "chup-tta",
+        "meaning": "dingin"
+      },
+      {
+        "id": "topic-11-word-007",
+        "korean": "덥다",
+        "pronunciation": "deop-tta",
+        "meaning": "panas"
+      },
+      {
+        "id": "topic-11-word-008",
+        "korean": "싫다",
+        "pronunciation": "sil-ta",
+        "meaning": "tidak suka"
+      },
+      {
+        "id": "topic-11-word-009",
+        "korean": "간단하다",
+        "pronunciation": "gan-dan-ha-da",
+        "meaning": "sederhana"
+      },
+      {
+        "id": "topic-11-word-010",
+        "korean": "어렵다",
+        "pronunciation": "eo-ryeop-tta",
+        "meaning": "sulit"
+      },
+      {
+        "id": "topic-11-word-011",
+        "korean": "쉽다",
+        "pronunciation": "swip-tta",
+        "meaning": "mudah"
+      },
+      {
+        "id": "topic-11-word-012",
+        "korean": "부드럽다",
+        "pronunciation": "bu-deu-reop-tta",
+        "meaning": "lembut"
+      },
+      {
+        "id": "topic-11-word-013",
+        "korean": "딱딱하다",
+        "pronunciation": "ttak-tta-ka-da",
+        "meaning": "keras"
+      },
+      {
+        "id": "topic-11-word-014",
+        "korean": "위험하다",
+        "pronunciation": "wi-heom-ha-da",
+        "meaning": "berbahaya"
+      },
+      {
+        "id": "topic-11-word-015",
+        "korean": "안전하다",
+        "pronunciation": "an-jeon-ha-da",
+        "meaning": "aman"
+      },
+      {
+        "id": "topic-11-word-016",
+        "korean": "피곤하다",
+        "pronunciation": "pi-gon-ha-da",
+        "meaning": "lelah"
+      }
+    ],
+    "expressions": [
+      {
+        "id": "topic-11-expression-01",
+        "korean": "오늘 너무 더워요.",
+        "pronunciation": "",
+        "meaning": "Hari ini panas sekali."
+      },
+      {
+        "id": "topic-11-expression-02",
+        "korean": "이 가방은 생각보다 가벼워요.",
+        "pronunciation": "",
+        "meaning": "Tas ini lebih ringan daripada yang saya kira."
+      },
+      {
+        "id": "topic-11-expression-03",
+        "korean": "조심하세요. 위험해요.",
+        "pronunciation": "",
+        "meaning": "Hati-hati. Berbahaya."
+      }
+    ],
+    "questions": [
+      {
+        "id": "topic-11-question-01",
+        "prompt": "여름에는 날씨가 ________.",
+        "hint": "Pada musim panas, cuacanya ________.",
+        "options": [
+          "차가워요",
+          "더워요",
+          "무거워요",
+          "딱딱해요"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-11-question-02",
+        "prompt": "솜은 매우 ________.",
+        "hint": "Kapas terasa sangat ________.",
+        "options": [
+          "부드러워요",
+          "위험해요",
+          "어려워요",
+          "무거워요"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-11-question-03",
+        "prompt": "일이 많아서 정말 ________.",
+        "hint": "Karena banyak pekerjaan, saya merasa sangat ________.",
+        "options": [
+          "안전해요",
+          "피곤해요",
+          "따뜻해요",
+          "쉬워요"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-11-question-04",
+        "prompt": "이 문제는 복잡하지 않습니다. 아주 ________.",
+        "hint": "Soal ini tidak rumit. Soal ini sangat ________.",
+        "options": [
+          "어려워요",
+          "간단해요",
+          "무거워요",
+          "위험해요"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-11-question-05",
+        "prompt": "`berbahaya`와 같은 뜻의 한국어 단어는 무엇입니까?",
+        "hint": "Kata bahasa Korea manakah yang memiliki arti sama dengan `berbahaya`?",
+        "options": [
+          "안전하다",
+          "위험하다",
+          "쉽다",
+          "가볍다"
+        ],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "topic-12",
+    "lessonNumber": 12,
+    "titleKorean": "동물",
+    "titleIndonesian": "Hewan",
+    "words": [
+      {
+        "id": "topic-12-word-001",
+        "korean": "쥐",
+        "pronunciation": "jwi",
+        "meaning": "tikus"
+      },
+      {
+        "id": "topic-12-word-002",
+        "korean": "소",
+        "pronunciation": "so",
+        "meaning": "sapi"
+      },
+      {
+        "id": "topic-12-word-003",
+        "korean": "호랑이",
+        "pronunciation": "ho-rang-i",
+        "meaning": "harimau"
+      },
+      {
+        "id": "topic-12-word-004",
+        "korean": "토끼",
+        "pronunciation": "to-kki",
+        "meaning": "kelinci"
+      },
+      {
+        "id": "topic-12-word-005",
+        "korean": "용",
+        "pronunciation": "yong",
+        "meaning": "naga"
+      },
+      {
+        "id": "topic-12-word-006",
+        "korean": "뱀",
+        "pronunciation": "baem",
+        "meaning": "ular"
+      },
+      {
+        "id": "topic-12-word-007",
+        "korean": "말",
+        "pronunciation": "mal",
+        "meaning": "kuda"
+      },
+      {
+        "id": "topic-12-word-008",
+        "korean": "양",
+        "pronunciation": "yang",
+        "meaning": "domba"
+      },
+      {
+        "id": "topic-12-word-009",
+        "korean": "원숭이",
+        "pronunciation": "won-sung-i",
+        "meaning": "monyet"
+      },
+      {
+        "id": "topic-12-word-010",
+        "korean": "닭",
+        "pronunciation": "dak",
+        "meaning": "ayam"
+      },
+      {
+        "id": "topic-12-word-011",
+        "korean": "병아리",
+        "pronunciation": "byeong-a-ri",
+        "meaning": "anak ayam"
+      },
+      {
+        "id": "topic-12-word-012",
+        "korean": "개",
+        "pronunciation": "gae",
+        "meaning": "anjing"
+      },
+      {
+        "id": "topic-12-word-013",
+        "korean": "강아지",
+        "pronunciation": "gang-a-ji",
+        "meaning": "anak anjing / anjing"
+      },
+      {
+        "id": "topic-12-word-014",
+        "korean": "돼지",
+        "pronunciation": "dwae-ji",
+        "meaning": "babi"
+      },
+      {
+        "id": "topic-12-word-015",
+        "korean": "고양이",
+        "pronunciation": "go-yang-i",
+        "meaning": "kucing"
+      }
+    ],
+    "expressions": [
+      {
+        "id": "topic-12-expression-01",
+        "korean": "강아지를 키워요.",
+        "pronunciation": "",
+        "meaning": "Saya memelihara anjing."
+      },
+      {
+        "id": "topic-12-expression-02",
+        "korean": "고양이를 좋아해요.",
+        "pronunciation": "",
+        "meaning": "Saya suka kucing."
+      },
+      {
+        "id": "topic-12-expression-03",
+        "korean": "겁먹은 강아지처럼 행동하다",
+        "pronunciation": "",
+        "meaning": "bertindak seperti anak anjing yang ketakutan."
+      }
+    ],
+    "questions": [
+      {
+        "id": "topic-12-question-01",
+        "prompt": "사람들이 집에서 많이 키우는 동물입니다.",
+        "hint": "Hewan ini sering dipelihara oleh orang di rumah.",
+        "options": [
+          "강아지",
+          "소",
+          "뱀",
+          "호랑이"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-12-question-02",
+        "prompt": "`kelinci`와 같은 뜻의 한국어 단어는 무엇입니까?",
+        "hint": "Kata bahasa Korea manakah yang memiliki arti sama dengan `kelinci`?",
+        "options": [
+          "토끼",
+          "쥐",
+          "양",
+          "말"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-12-question-03",
+        "prompt": "알에서 태어난 작은 닭을 무엇이라고 합니까?",
+        "hint": "Apa sebutan untuk anak ayam yang baru menetas dari telur?",
+        "options": [
+          "병아리",
+          "강아지",
+          "고양이",
+          "쥐"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-12-question-04",
+        "prompt": "큰 고양잇과 동물이고 몸에 줄무늬가 있습니다.",
+        "hint": "Hewan ini termasuk keluarga kucing besar dan memiliki belang pada tubuhnya.",
+        "options": [
+          "호랑이",
+          "토끼",
+          "양",
+          "원숭이"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-12-question-05",
+        "prompt": "`ular`와 같은 뜻의 한국어 단어는 무엇입니까?",
+        "hint": "Kata bahasa Korea manakah yang memiliki arti sama dengan `ular`?",
+        "options": [
+          "용",
+          "뱀",
+          "말",
+          "소"
+        ],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "topic-13",
+    "lessonNumber": 13,
+    "titleKorean": "병·증상",
+    "titleIndonesian": "Penyakit dan Gejala",
+    "words": [
+      {
+        "id": "topic-13-word-001",
+        "korean": "감기",
+        "pronunciation": "gam-gi",
+        "meaning": "pilek / flu ringan"
+      },
+      {
+        "id": "topic-13-word-002",
+        "korean": "독감",
+        "pronunciation": "dok-kkam",
+        "meaning": "influenza"
+      },
+      {
+        "id": "topic-13-word-003",
+        "korean": "두통",
+        "pronunciation": "du-tong",
+        "meaning": "sakit kepala"
+      },
+      {
+        "id": "topic-13-word-004",
+        "korean": "열",
+        "pronunciation": "yeol",
+        "meaning": "demam / panas tubuh"
+      },
+      {
+        "id": "topic-13-word-005",
+        "korean": "아프다",
+        "pronunciation": "a-peu-da",
+        "meaning": "sakit"
+      },
+      {
+        "id": "topic-13-word-006",
+        "korean": "열이 있다",
+        "pronunciation": "yeo-ri it-tta",
+        "meaning": "demam"
+      },
+      {
+        "id": "topic-13-word-007",
+        "korean": "오한",
+        "pronunciation": "o-han",
+        "meaning": "menggigil"
+      },
+      {
+        "id": "topic-13-word-008",
+        "korean": "기침",
+        "pronunciation": "gi-chim",
+        "meaning": "batuk"
+      },
+      {
+        "id": "topic-13-word-009",
+        "korean": "기침을 하다",
+        "pronunciation": "gi-chi-meul ha-da",
+        "meaning": "batuk"
+      },
+      {
+        "id": "topic-13-word-010",
+        "korean": "콧물",
+        "pronunciation": "kon-mul",
+        "meaning": "ingus"
+      },
+      {
+        "id": "topic-13-word-011",
+        "korean": "콧물이 나다",
+        "pronunciation": "kon-mu-ri na-da",
+        "meaning": "hidung berair"
+      },
+      {
+        "id": "topic-13-word-012",
+        "korean": "목",
+        "pronunciation": "mok",
+        "meaning": "tenggorokan"
+      },
+      {
+        "id": "topic-13-word-013",
+        "korean": "목이 아프다",
+        "pronunciation": "mo-gi a-peu-da",
+        "meaning": "sakit tenggorokan"
+      },
+      {
+        "id": "topic-13-word-014",
+        "korean": "식중독",
+        "pronunciation": "sik-jjung-dok",
+        "meaning": "keracunan makanan"
+      },
+      {
+        "id": "topic-13-word-015",
+        "korean": "토하다",
+        "pronunciation": "to-ha-da",
+        "meaning": "muntah"
+      },
+      {
+        "id": "topic-13-word-016",
+        "korean": "구역질",
+        "pronunciation": "gu-yeok-jjil",
+        "meaning": "mual"
+      },
+      {
+        "id": "topic-13-word-017",
+        "korean": "설사",
+        "pronunciation": "seol-ssa",
+        "meaning": "diare"
+      },
+      {
+        "id": "topic-13-word-018",
+        "korean": "설사를 하다",
+        "pronunciation": "seol-ssa-reul ha-da",
+        "meaning": "mengalami diare"
+      }
+    ],
+    "expressions": [
+      {
+        "id": "topic-13-expression-01",
+        "korean": "몸이 안 좋아요.",
+        "pronunciation": "",
+        "meaning": "Saya sedang kurang sehat."
+      },
+      {
+        "id": "topic-13-expression-02",
+        "korean": "감기에 걸렸어요.",
+        "pronunciation": "",
+        "meaning": "Saya terkena flu/pilek."
+      },
+      {
+        "id": "topic-13-expression-03",
+        "korean": "열이 많이 나요.",
+        "pronunciation": "",
+        "meaning": "Saya demam tinggi."
+      }
+    ],
+    "questions": [
+      {
+        "id": "topic-13-question-01",
+        "prompt": "머리가 아픈 증상을 무엇이라고 합니까?",
+        "hint": "Apa sebutan untuk gejala sakit pada kepala?",
+        "options": [
+          "두통",
+          "설사",
+          "기침",
+          "오한"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-13-question-02",
+        "prompt": "상한 음식을 먹고 아팠습니다.",
+        "hint": "Saya sakit setelah memakan makanan yang sudah rusak.",
+        "options": [
+          "감기",
+          "식중독",
+          "두통",
+          "독감"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-13-question-03",
+        "prompt": "코에서 계속 물 같은 것이 나옵니다.",
+        "hint": "Cairan terus keluar dari hidung saya.",
+        "options": [
+          "콧물이 나요",
+          "설사를 해요",
+          "토해요",
+          "기침해요"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-13-question-04",
+        "prompt": "배가 아프고 화장실을 계속 갑니다.",
+        "hint": "Perut saya sakit dan saya terus pergi ke toilet.",
+        "options": [
+          "오한",
+          "설사",
+          "두통",
+          "감기"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-13-question-05",
+        "prompt": "`muntah`와 같은 뜻의 한국어 단어는 무엇입니까?",
+        "hint": "Kata bahasa Korea manakah yang memiliki arti sama dengan `muntah`?",
+        "options": [
+          "토하다",
+          "기침하다",
+          "아프다",
+          "설사하다"
+        ],
+        "correctIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "topic-14",
+    "lessonNumber": 14,
+    "titleKorean": "생리 현상",
+    "titleIndonesian": "Kondisi Alami Tubuh",
+    "words": [
+      {
+        "id": "topic-14-word-001",
+        "korean": "숨",
+        "pronunciation": "sum",
+        "meaning": "napas"
+      },
+      {
+        "id": "topic-14-word-002",
+        "korean": "한숨",
+        "pronunciation": "han-sum",
+        "meaning": "helaan napas"
+      },
+      {
+        "id": "topic-14-word-003",
+        "korean": "재채기",
+        "pronunciation": "jae-chae-gi",
+        "meaning": "bersin"
+      },
+      {
+        "id": "topic-14-word-004",
+        "korean": "방귀",
+        "pronunciation": "bang-gwi",
+        "meaning": "kentut"
+      },
+      {
+        "id": "topic-14-word-005",
+        "korean": "대변",
+        "pronunciation": "dae-byeon",
+        "meaning": "tinja"
+      },
+      {
+        "id": "topic-14-word-006",
+        "korean": "소변",
+        "pronunciation": "so-byeon",
+        "meaning": "urine"
+      },
+      {
+        "id": "topic-14-word-007",
+        "korean": "하품",
+        "pronunciation": "ha-pum",
+        "meaning": "menguap"
+      },
+      {
+        "id": "topic-14-word-008",
+        "korean": "침",
+        "pronunciation": "chim",
+        "meaning": "air liur"
+      },
+      {
+        "id": "topic-14-word-009",
+        "korean": "딸꾹질",
+        "pronunciation": "ttal-kkuk-jjil",
+        "meaning": "cegukan"
+      },
+      {
+        "id": "topic-14-word-010",
+        "korean": "트림",
+        "pronunciation": "teu-rim",
+        "meaning": "sendawa"
+      },
+      {
+        "id": "topic-14-word-011",
+        "korean": "코골이",
+        "pronunciation": "ko-go-ri",
+        "meaning": "dengkuran"
+      },
+      {
+        "id": "topic-14-word-012",
+        "korean": "코를 골다",
+        "pronunciation": "ko-reul gol-da",
+        "meaning": "mendengkur"
+      },
+      {
+        "id": "topic-14-word-013",
+        "korean": "잠꼬대",
+        "pronunciation": "jam-kko-dae",
+        "meaning": "mengigau"
+      },
+      {
+        "id": "topic-14-word-014",
+        "korean": "이",
+        "pronunciation": "i",
+        "meaning": "gigi"
+      },
+      {
+        "id": "topic-14-word-015",
+        "korean": "이를 갈다",
+        "pronunciation": "i-reul gal-da",
+        "meaning": "menggemeretakkan gigi"
+      },
+      {
+        "id": "topic-14-word-016",
+        "korean": "땀",
+        "pronunciation": "ttam",
+        "meaning": "keringat"
+      },
+      {
+        "id": "topic-14-word-017",
+        "korean": "눈물",
+        "pronunciation": "nun-mul",
+        "meaning": "air mata"
+      }
+    ],
+    "expressions": [
+      {
+        "id": "topic-14-expression-01",
+        "korean": "한숨을 쉬다",
+        "pronunciation": "",
+        "meaning": "menghela napas"
+      },
+      {
+        "id": "topic-14-expression-02",
+        "korean": "코를 심하게 골아요.",
+        "pronunciation": "",
+        "meaning": "Dia mendengkur keras."
+      },
+      {
+        "id": "topic-14-expression-03",
+        "korean": "눈물이 나요.",
+        "pronunciation": "",
+        "meaning": "Air mata saya keluar."
+      }
+    ],
+    "questions": [
+      {
+        "id": "topic-14-question-01",
+        "prompt": "졸릴 때 입을 크게 벌리는 행동은 무엇입니까?",
+        "hint": "Apa sebutan untuk tindakan membuka mulut lebar ketika mengantuk?",
+        "options": [
+          "재채기",
+          "하품",
+          "트림",
+          "딸꾹질"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-14-question-02",
+        "prompt": "자면서 큰 소리를 냅니다.",
+        "hint": "Seseorang mengeluarkan suara keras ketika sedang tidur.",
+        "options": [
+          "코를 골다",
+          "땀을 흘리다",
+          "한숨을 쉬다",
+          "울다"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-14-question-03",
+        "prompt": "밥을 먹은 후 입에서 가스가 나오는 현상은 무엇입니까?",
+        "hint": "Apa sebutan untuk keluarnya gas dari mulut setelah makan?",
+        "options": [
+          "방귀",
+          "트림",
+          "하품",
+          "재채기"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-14-question-04",
+        "prompt": "눈에서 나오는 물은 무엇입니까?",
+        "hint": "Cairan apakah yang keluar dari mata?",
+        "options": [
+          "침",
+          "땀",
+          "눈물",
+          "소변"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "topic-14-question-05",
+        "prompt": "`bersin`과 같은 뜻의 한국어 단어는 무엇입니까?",
+        "hint": "Kata bahasa Korea manakah yang memiliki arti sama dengan `bersin`?",
+        "options": [
+          "하품",
+          "재채기",
+          "딸꾹질",
+          "트림"
+        ],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "topic-15",
+    "lessonNumber": 15,
+    "titleKorean": "사랑·연애",
+    "titleIndonesian": "Cinta dan Hubungan",
+    "words": [
+      {
+        "id": "topic-15-word-001",
+        "korean": "사랑",
+        "pronunciation": "sa-rang",
+        "meaning": "cinta"
+      },
+      {
+        "id": "topic-15-word-002",
+        "korean": "첫사랑",
+        "pronunciation": "cheot-ssa-rang",
+        "meaning": "cinta pertama"
+      },
+      {
+        "id": "topic-15-word-003",
+        "korean": "짝사랑",
+        "pronunciation": "jjak-ssa-rang",
+        "meaning": "cinta bertepuk sebelah tangan"
+      },
+      {
+        "id": "topic-15-word-004",
+        "korean": "첫눈에 반하다",
+        "pronunciation": "cheon-nu-ne ba-na-da",
+        "meaning": "jatuh cinta pada pandangan pertama"
+      },
+      {
+        "id": "topic-15-word-005",
+        "korean": "애인",
+        "pronunciation": "ae-in",
+        "meaning": "kekasih"
+      },
+      {
+        "id": "topic-15-word-006",
+        "korean": "남자친구",
+        "pronunciation": "nam-ja-chin-gu",
+        "meaning": "pacar laki-laki"
+      },
+      {
+        "id": "topic-15-word-007",
+        "korean": "전 남친",
+        "pronunciation": "jeon nam-chin",
+        "meaning": "mantan pacar laki-laki"
+      },
+      {
+        "id": "topic-15-word-008",
+        "korean": "전 여친",
+        "pronunciation": "jeon yeo-chin",
+        "meaning": "mantan pacar perempuan"
+      },
+      {
+        "id": "topic-15-word-009",
+        "korean": "여자친구",
+        "pronunciation": "yeo-ja-chin-gu",
+        "meaning": "pacar perempuan"
+      },
+      {
+        "id": "topic-15-word-010",
+        "korean": "교제",
+        "pronunciation": "gyo-je",
+        "meaning": "hubungan / berpacaran"
+      },
+      {
+        "id": "topic-15-word-011",
+        "korean": "연애",
+        "pronunciation": "yeo-nae",
+        "meaning": "percintaan / pacaran"
+      },
+      {
+        "id": "topic-15-word-012",
+        "korean": "싸우다",
+        "pronunciation": "ssa-u-da",
+        "meaning": "bertengkar"
+      },
+      {
+        "id": "topic-15-word-013",
+        "korean": "양다리",
+        "pronunciation": "yang-da-ri",
+        "meaning": "mendua"
+      },
+      {
+        "id": "topic-15-word-014",
+        "korean": "이별하다",
+        "pronunciation": "i-byeol-ha-da",
+        "meaning": "berpisah"
+      },
+      {
+        "id": "topic-15-word-015",
+        "korean": "차이다",
+        "pronunciation": "cha-i-da",
+        "meaning": "diputuskan pasangan"
+      },
+      {
+        "id": "topic-15-word-016",
+        "korean": "결혼",
+        "pronunciation": "gyeol-hon",
+        "meaning": "pernikahan"
+      },
+      {
+        "id": "topic-15-word-017",
+        "korean": "부부",
+        "pronunciation": "bu-bu",
+        "meaning": "pasangan suami istri"
+      },
+      {
+        "id": "topic-15-word-018",
+        "korean": "임신",
+        "pronunciation": "im-sin",
+        "meaning": "kehamilan"
+      }
+    ],
+    "expressions": [
+      {
+        "id": "topic-15-expression-01",
+        "korean": "첫눈에 반했어요.",
+        "pronunciation": "",
+        "meaning": "Saya jatuh cinta pada pandangan pertama."
+      },
+      {
+        "id": "topic-15-expression-02",
+        "korean": "남자친구한테 차였어요.",
+        "pronunciation": "",
+        "meaning": "Saya diputuskan oleh pacar saya."
+      },
+      {
+        "id": "topic-15-expression-03",
+        "korean": "두 사람이 사귀고 있어요.",
+        "pronunciation": "",
+        "meaning": "Mereka berdua sedang berpacaran."
+      }
+    ],
+    "questions": [
+      {
+        "id": "topic-15-question-01",
+        "prompt": "혼자만 상대방을 좋아하는 것을 무엇이라고 합니까?",
+        "hint": "Apa sebutan untuk keadaan ketika hanya satu pihak yang menyukai orang lain?",
+        "options": [
+          "첫사랑",
+          "짝사랑",
+          "결혼",
+          "부부"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-15-question-02",
+        "prompt": "애인이 먼저 헤어지자고 했습니다. 저는 ________.",
+        "hint": "Pasangan saya meminta untuk berpisah terlebih dahulu. Saya ________.",
+        "options": [
+          "차였어요",
+          "임신했어요",
+          "결혼했어요",
+          "반했어요"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-15-question-03",
+        "prompt": "처음 만난 순간 좋아하게 되었습니다.",
+        "hint": "Saya mulai menyukai seseorang sejak pertama kali bertemu.",
+        "options": [
+          "첫눈에 반하다",
+          "싸우다",
+          "이별하다",
+          "양다리"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-15-question-04",
+        "prompt": "결혼한 두 사람을 무엇이라고 합니까?",
+        "hint": "Apa sebutan untuk dua orang yang telah menikah?",
+        "options": [
+          "애인",
+          "부부",
+          "남친",
+          "첫사랑"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-15-question-05",
+        "prompt": "동시에 두 사람과 연애하는 것을 무엇이라고 합니까?",
+        "hint": "Apa sebutan untuk berpacaran dengan dua orang pada waktu yang sama?",
+        "options": [
+          "이별",
+          "교제",
+          "양다리",
+          "첫사랑"
+        ],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "id": "topic-16",
+    "lessonNumber": 16,
+    "titleKorean": "부엌·거실",
+    "titleIndonesian": "Dapur dan Ruang Tamu",
+    "words": [
+      {
+        "id": "topic-16-word-001",
+        "korean": "주방",
+        "pronunciation": "ju-bang",
+        "meaning": "dapur"
+      },
+      {
+        "id": "topic-16-word-002",
+        "korean": "부엌",
+        "pronunciation": "bu-eok",
+        "meaning": "dapur"
+      },
+      {
+        "id": "topic-16-word-003",
+        "korean": "싱크대",
+        "pronunciation": "sing-keu-dae",
+        "meaning": "bak cuci dapur"
+      },
+      {
+        "id": "topic-16-word-004",
+        "korean": "깨끗하다",
+        "pronunciation": "kkae-kkeu-ta-da",
+        "meaning": "bersih"
+      },
+      {
+        "id": "topic-16-word-005",
+        "korean": "수도꼭지",
+        "pronunciation": "su-do-kkok-jji",
+        "meaning": "keran air"
+      },
+      {
+        "id": "topic-16-word-006",
+        "korean": "칼",
+        "pronunciation": "kal",
+        "meaning": "pisau"
+      },
+      {
+        "id": "topic-16-word-007",
+        "korean": "도마",
+        "pronunciation": "do-ma",
+        "meaning": "talenan"
+      },
+      {
+        "id": "topic-16-word-008",
+        "korean": "가스레인지",
+        "pronunciation": "ga-seu-re-in-ji",
+        "meaning": "kompor gas"
+      },
+      {
+        "id": "topic-16-word-009",
+        "korean": "불",
+        "pronunciation": "bul",
+        "meaning": "api"
+      },
+      {
+        "id": "topic-16-word-010",
+        "korean": "켜다",
+        "pronunciation": "kyeo-da",
+        "meaning": "menyalakan"
+      },
+      {
+        "id": "topic-16-word-011",
+        "korean": "끄다",
+        "pronunciation": "kkeu-da",
+        "meaning": "mematikan"
+      },
+      {
+        "id": "topic-16-word-012",
+        "korean": "전자레인지",
+        "pronunciation": "jeon-ja-re-in-ji",
+        "meaning": "microwave"
+      },
+      {
+        "id": "topic-16-word-013",
+        "korean": "간단하다",
+        "pronunciation": "gan-dan-ha-da",
+        "meaning": "sederhana"
+      },
+      {
+        "id": "topic-16-word-014",
+        "korean": "데우다",
+        "pronunciation": "de-u-da",
+        "meaning": "memanaskan"
+      },
+      {
+        "id": "topic-16-word-015",
+        "korean": "주전자",
+        "pronunciation": "ju-jeon-ja",
+        "meaning": "teko"
+      },
+      {
+        "id": "topic-16-word-016",
+        "korean": "냉장고",
+        "pronunciation": "naeng-jang-go",
+        "meaning": "kulkas"
+      },
+      {
+        "id": "topic-16-word-017",
+        "korean": "식탁",
+        "pronunciation": "sik-tak",
+        "meaning": "meja makan"
+      },
+      {
+        "id": "topic-16-word-018",
+        "korean": "접시",
+        "pronunciation": "jeop-ssi",
+        "meaning": "piring"
+      },
+      {
+        "id": "topic-16-word-019",
+        "korean": "거실",
+        "pronunciation": "geo-sil",
+        "meaning": "ruang keluarga"
+      },
+      {
+        "id": "topic-16-word-020",
+        "korean": "커튼",
+        "pronunciation": "keo-teun",
+        "meaning": "tirai"
+      },
+      {
+        "id": "topic-16-word-021",
+        "korean": "소파",
+        "pronunciation": "so-pa",
+        "meaning": "sofa"
+      },
+      {
+        "id": "topic-16-word-022",
+        "korean": "푹신푹신",
+        "pronunciation": "puk-ssin-puk-ssin",
+        "meaning": "empuk"
+      },
+      {
+        "id": "topic-16-word-023",
+        "korean": "테이블",
+        "pronunciation": "te-i-beul",
+        "meaning": "meja"
+      },
+      {
+        "id": "topic-16-word-024",
+        "korean": "크다",
+        "pronunciation": "keu-da",
+        "meaning": "besar"
+      },
+      {
+        "id": "topic-16-word-025",
+        "korean": "작다",
+        "pronunciation": "jak-tta",
+        "meaning": "kecil"
+      },
+      {
+        "id": "topic-16-word-026",
+        "korean": "쓰레기통",
+        "pronunciation": "sseu-re-gi-tong",
+        "meaning": "tempat sampah"
+      },
+      {
+        "id": "topic-16-word-027",
+        "korean": "상자",
+        "pronunciation": "sang-ja",
+        "meaning": "kotak"
+      }
+    ],
+    "expressions": [
+      {
+        "id": "topic-16-expression-01",
+        "korean": "전자레인지에 데워 먹어요.",
+        "pronunciation": "",
+        "meaning": "Saya memanaskannya di microwave lalu memakannya."
+      },
+      {
+        "id": "topic-16-expression-02",
+        "korean": "불을 꺼 주세요.",
+        "pronunciation": "",
+        "meaning": "Tolong matikan apinya."
+      },
+      {
+        "id": "topic-16-expression-03",
+        "korean": "소파가 푹신푹신해요.",
+        "pronunciation": "",
+        "meaning": "Sofanya empuk sekali."
+      }
+    ],
+    "questions": [
+      {
+        "id": "topic-16-question-01",
+        "prompt": "채소나 고기를 자를 때 밑에 놓는 것은 무엇입니까?",
+        "hint": "Benda apakah yang diletakkan di bawah sayuran atau daging ketika memotongnya?",
+        "options": [
+          "도마",
+          "접시",
+          "소파",
+          "커튼"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-16-question-02",
+        "prompt": "음식을 차갑게 보관하는 것은 무엇입니까?",
+        "hint": "Alat apakah yang digunakan untuk menyimpan makanan agar tetap dingin?",
+        "options": [
+          "주전자",
+          "냉장고",
+          "식탁",
+          "수도꼭지"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-16-question-03",
+        "prompt": "전자레인지로 음식을 ________.",
+        "hint": "Makanan ________ dengan menggunakan microwave.",
+        "options": [
+          "꺼요",
+          "데워요",
+          "잘라요",
+          "씻어요"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-16-question-04",
+        "prompt": "물이 나오는 곳은 무엇입니까?",
+        "hint": "Bagian manakah yang digunakan untuk mengeluarkan air?",
+        "options": [
+          "수도꼭지",
+          "커튼",
+          "상자",
+          "도마"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-16-question-05",
+        "prompt": "`tempat sampah`와 같은 뜻의 한국어 단어는 무엇입니까?",
+        "hint": "Kata bahasa Korea manakah yang memiliki arti sama dengan `tempat sampah`?",
+        "options": [
+          "냉장고",
+          "쓰레기통",
+          "접시",
+          "싱크대"
+        ],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "topic-17",
+    "lessonNumber": 17,
+    "titleKorean": "침실·욕실",
+    "titleIndonesian": "Kamar Tidur dan Kamar Mandi",
+    "words": [
+      {
+        "id": "topic-17-word-001",
+        "korean": "방",
+        "pronunciation": "bang",
+        "meaning": "kamar"
+      },
+      {
+        "id": "topic-17-word-002",
+        "korean": "침대",
+        "pronunciation": "chim-dae",
+        "meaning": "tempat tidur"
+      },
+      {
+        "id": "topic-17-word-003",
+        "korean": "자다",
+        "pronunciation": "ja-da",
+        "meaning": "tidur"
+      },
+      {
+        "id": "topic-17-word-004",
+        "korean": "푹 자다",
+        "pronunciation": "puk jja-da",
+        "meaning": "tidur nyenyak"
+      },
+      {
+        "id": "topic-17-word-005",
+        "korean": "베개",
+        "pronunciation": "be-gae",
+        "meaning": "bantal"
+      },
+      {
+        "id": "topic-17-word-006",
+        "korean": "베개를 베다",
+        "pronunciation": "be-gae-reul be-da",
+        "meaning": "menggunakan bantal"
+      },
+      {
+        "id": "topic-17-word-007",
+        "korean": "이불",
+        "pronunciation": "i-bul",
+        "meaning": "selimut"
+      },
+      {
+        "id": "topic-17-word-008",
+        "korean": "이불을 덮다",
+        "pronunciation": "i-bu-reul deop-tta",
+        "meaning": "menyelimuti diri"
+      },
+      {
+        "id": "topic-17-word-009",
+        "korean": "알람을 맞추다",
+        "pronunciation": "al-la-meul mat-chu-da",
+        "meaning": "menyetel alarm"
+      },
+      {
+        "id": "topic-17-word-010",
+        "korean": "알람이 울리다",
+        "pronunciation": "al-la-mi ul-li-da",
+        "meaning": "alarm berbunyi"
+      },
+      {
+        "id": "topic-17-word-011",
+        "korean": "욕실",
+        "pronunciation": "yok-ssil",
+        "meaning": "kamar mandi"
+      },
+      {
+        "id": "topic-17-word-012",
+        "korean": "샤워",
+        "pronunciation": "sya-wo",
+        "meaning": "shower"
+      },
+      {
+        "id": "topic-17-word-013",
+        "korean": "샤워를 하다",
+        "pronunciation": "sya-wo-reul ha-da",
+        "meaning": "mandi dengan shower"
+      },
+      {
+        "id": "topic-17-word-014",
+        "korean": "욕조",
+        "pronunciation": "yok-jjo",
+        "meaning": "bak mandi"
+      },
+      {
+        "id": "topic-17-word-015",
+        "korean": "목욕을 하다",
+        "pronunciation": "mo-gyo-geul ha-da",
+        "meaning": "mandi / berendam"
+      },
+      {
+        "id": "topic-17-word-016",
+        "korean": "세탁",
+        "pronunciation": "se-tak",
+        "meaning": "mencuci pakaian"
+      },
+      {
+        "id": "topic-17-word-017",
+        "korean": "세탁기",
+        "pronunciation": "se-tak-kki",
+        "meaning": "mesin cuci"
+      },
+      {
+        "id": "topic-17-word-018",
+        "korean": "드라이어",
+        "pronunciation": "deu-ra-i-eo",
+        "meaning": "pengering rambut"
+      },
+      {
+        "id": "topic-17-word-019",
+        "korean": "거울",
+        "pronunciation": "geo-ul",
+        "meaning": "cermin"
+      },
+      {
+        "id": "topic-17-word-020",
+        "korean": "칫솔",
+        "pronunciation": "chit-ssol",
+        "meaning": "sikat gigi"
+      },
+      {
+        "id": "topic-17-word-021",
+        "korean": "치약",
+        "pronunciation": "chi-yak",
+        "meaning": "pasta gigi"
+      },
+      {
+        "id": "topic-17-word-022",
+        "korean": "비누",
+        "pronunciation": "bi-nu",
+        "meaning": "sabun"
+      },
+      {
+        "id": "topic-17-word-023",
+        "korean": "면도기",
+        "pronunciation": "myeon-do-gi",
+        "meaning": "alat cukur"
+      },
+      {
+        "id": "topic-17-word-024",
+        "korean": "변기",
+        "pronunciation": "byeon-gi",
+        "meaning": "toilet"
+      },
+      {
+        "id": "topic-17-word-025",
+        "korean": "휴지",
+        "pronunciation": "hyu-ji",
+        "meaning": "tisu / kertas toilet"
+      }
+    ],
+    "expressions": [
+      {
+        "id": "topic-17-expression-01",
+        "korean": "어젯밤에 푹 잤어요.",
+        "pronunciation": "",
+        "meaning": "Tadi malam saya tidur nyenyak."
+      },
+      {
+        "id": "topic-17-expression-02",
+        "korean": "알람을 7시에 맞췄어요.",
+        "pronunciation": "",
+        "meaning": "Saya menyetel alarm pukul tujuh."
+      },
+      {
+        "id": "topic-17-expression-03",
+        "korean": "이불을 덮고 자요.",
+        "pronunciation": "",
+        "meaning": "Saya tidur dengan memakai selimut."
+      }
+    ],
+    "questions": [
+      {
+        "id": "topic-17-question-01",
+        "prompt": "머리 밑에 놓고 자는 것은 무엇입니까?",
+        "hint": "Benda apakah yang diletakkan di bawah kepala ketika tidur?",
+        "options": [
+          "이불",
+          "베개",
+          "수건",
+          "거울"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-17-question-02",
+        "prompt": "옷을 자동으로 빨아 주는 기계는 무엇입니까?",
+        "hint": "Mesin apakah yang digunakan untuk mencuci pakaian secara otomatis?",
+        "options": [
+          "세탁기",
+          "드라이어",
+          "면도기",
+          "변기"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-17-question-03",
+        "prompt": "이를 닦을 때 사용하는 것은 무엇입니까?",
+        "hint": "Benda apakah yang digunakan ketika menyikat gigi?",
+        "options": [
+          "칫솔",
+          "비누",
+          "베개",
+          "이불"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-17-question-04",
+        "prompt": "아침에 일어나기 위해 ________을 맞춥니다.",
+        "hint": "Untuk bangun pada pagi hari, kita menyetel ________.",
+        "options": [
+          "거울",
+          "알람",
+          "욕조",
+          "휴지"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-17-question-05",
+        "prompt": "`sabun`과 같은 뜻의 한국어 단어는 무엇입니까?",
+        "hint": "Kata bahasa Korea manakah yang memiliki arti sama dengan `sabun`?",
+        "options": [
+          "치약",
+          "비누",
+          "칫솔",
+          "면도기"
+        ],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "topic-18",
+    "lessonNumber": 18,
+    "titleKorean": "길·방향",
+    "titleIndonesian": "Jalan dan Arah",
+    "words": [
+      {
+        "id": "topic-18-word-001",
+        "korean": "길",
+        "pronunciation": "gil",
+        "meaning": "jalan"
+      },
+      {
+        "id": "topic-18-word-002",
+        "korean": "길이 막히다",
+        "pronunciation": "gi-ri ma-ki-da",
+        "meaning": "jalan macet"
+      },
+      {
+        "id": "topic-18-word-003",
+        "korean": "차가 막히다",
+        "pronunciation": "cha-ga ma-ki-da",
+        "meaning": "lalu lintas macet"
+      },
+      {
+        "id": "topic-18-word-004",
+        "korean": "거리",
+        "pronunciation": "geo-ri",
+        "meaning": "jalan / jarak"
+      },
+      {
+        "id": "topic-18-word-005",
+        "korean": "방향",
+        "pronunciation": "bang-hyang",
+        "meaning": "arah"
+      },
+      {
+        "id": "topic-18-word-006",
+        "korean": "동쪽",
+        "pronunciation": "dong-jjok",
+        "meaning": "timur"
+      },
+      {
+        "id": "topic-18-word-007",
+        "korean": "서쪽",
+        "pronunciation": "seo-jjok",
+        "meaning": "barat"
+      },
+      {
+        "id": "topic-18-word-008",
+        "korean": "남쪽",
+        "pronunciation": "nam-jjok",
+        "meaning": "selatan"
+      },
+      {
+        "id": "topic-18-word-009",
+        "korean": "북쪽",
+        "pronunciation": "buk-jjok",
+        "meaning": "utara"
+      },
+      {
+        "id": "topic-18-word-010",
+        "korean": "건너편",
+        "pronunciation": "geon-neo-pyeon",
+        "meaning": "seberang"
+      },
+      {
+        "id": "topic-18-word-011",
+        "korean": "오른쪽",
+        "pronunciation": "o-reun-jjok",
+        "meaning": "kanan"
+      },
+      {
+        "id": "topic-18-word-012",
+        "korean": "왼쪽",
+        "pronunciation": "wen-jjok",
+        "meaning": "kiri"
+      },
+      {
+        "id": "topic-18-word-013",
+        "korean": "육교",
+        "pronunciation": "yuk-kkyo",
+        "meaning": "jembatan penyeberangan"
+      },
+      {
+        "id": "topic-18-word-014",
+        "korean": "모퉁이",
+        "pronunciation": "mo-tung-i",
+        "meaning": "sudut jalan"
+      },
+      {
+        "id": "topic-18-word-015",
+        "korean": "돌다",
+        "pronunciation": "dol-da",
+        "meaning": "berbelok"
+      },
+      {
+        "id": "topic-18-word-016",
+        "korean": "교차로",
+        "pronunciation": "gyo-cha-ro",
+        "meaning": "persimpangan"
+      },
+      {
+        "id": "topic-18-word-017",
+        "korean": "빌딩",
+        "pronunciation": "bil-ding",
+        "meaning": "gedung"
+      },
+      {
+        "id": "topic-18-word-018",
+        "korean": "신호",
+        "pronunciation": "sin-ho",
+        "meaning": "sinyal / lampu lalu lintas"
+      },
+      {
+        "id": "topic-18-word-019",
+        "korean": "바뀌다",
+        "pronunciation": "ba-kkwi-da",
+        "meaning": "berubah"
+      },
+      {
+        "id": "topic-18-word-020",
+        "korean": "도로",
+        "pronunciation": "do-ro",
+        "meaning": "jalan raya"
+      },
+      {
+        "id": "topic-18-word-021",
+        "korean": "고속도로",
+        "pronunciation": "go-sok-tto-ro",
+        "meaning": "jalan tol"
+      },
+      {
+        "id": "topic-18-word-022",
+        "korean": "걷다",
+        "pronunciation": "geot-tta",
+        "meaning": "berjalan"
+      }
+    ],
+    "expressions": [
+      {
+        "id": "topic-18-expression-01",
+        "korean": "오른쪽으로 도세요.",
+        "pronunciation": "",
+        "meaning": "Belok ke kanan."
+      },
+      {
+        "id": "topic-18-expression-02",
+        "korean": "길 건너편에 있어요.",
+        "pronunciation": "",
+        "meaning": "Ada di seberang jalan."
+      },
+      {
+        "id": "topic-18-expression-03",
+        "korean": "지금 차가 많이 막혀요.",
+        "pronunciation": "",
+        "meaning": "Sekarang lalu lintas sangat macet."
+      }
+    ],
+    "questions": [
+      {
+        "id": "topic-18-question-01",
+        "prompt": "오른쪽의 반대말은 무엇입니까?",
+        "hint": "Apakah lawan kata dari `오른쪽`?",
+        "options": [
+          "북쪽",
+          "왼쪽",
+          "건너편",
+          "남쪽"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-18-question-02",
+        "prompt": "길의 반대편을 무엇이라고 합니까?",
+        "hint": "Apa sebutan untuk sisi yang berada di seberang jalan?",
+        "options": [
+          "모퉁이",
+          "건너편",
+          "도로",
+          "방향"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-18-question-03",
+        "prompt": "자동차가 너무 많아서 길에서 잘 움직이지 못합니다.",
+        "hint": "Terdapat terlalu banyak kendaraan sehingga lalu lintas sulit bergerak.",
+        "options": [
+          "길이 막힙니다",
+          "길을 걷습니다",
+          "신호가 바뀝니다",
+          "길을 돕니다"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-18-question-04",
+        "prompt": "`timur`와 같은 뜻의 한국어 단어는 무엇입니까?",
+        "hint": "Kata bahasa Korea manakah yang memiliki arti sama dengan `timur`?",
+        "options": [
+          "서쪽",
+          "북쪽",
+          "동쪽",
+          "남쪽"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "topic-18-question-05",
+        "prompt": "여러 도로가 만나는 곳을 무엇이라고 합니까?",
+        "hint": "Apa sebutan untuk tempat bertemunya beberapa jalan?",
+        "options": [
+          "교차로",
+          "육교",
+          "건너편",
+          "빌딩"
+        ],
+        "correctIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "topic-19",
+    "lessonNumber": 19,
+    "titleKorean": "교통",
+    "titleIndonesian": "Transportasi",
+    "words": [
+      {
+        "id": "topic-19-word-001",
+        "korean": "교통",
+        "pronunciation": "gyo-tong",
+        "meaning": "transportasi / lalu lintas"
+      },
+      {
+        "id": "topic-19-word-002",
+        "korean": "역",
+        "pronunciation": "yeok",
+        "meaning": "stasiun"
+      },
+      {
+        "id": "topic-19-word-003",
+        "korean": "지하철",
+        "pronunciation": "ji-ha-cheol",
+        "meaning": "kereta bawah tanah"
+      },
+      {
+        "id": "topic-19-word-004",
+        "korean": "곧",
+        "pronunciation": "got",
+        "meaning": "sebentar lagi"
+      },
+      {
+        "id": "topic-19-word-005",
+        "korean": "도착하다",
+        "pronunciation": "do-cha-ka-da",
+        "meaning": "tiba"
+      },
+      {
+        "id": "topic-19-word-006",
+        "korean": "입구",
+        "pronunciation": "ip-kku",
+        "meaning": "pintu masuk"
+      },
+      {
+        "id": "topic-19-word-007",
+        "korean": "출구",
+        "pronunciation": "chul-gu",
+        "meaning": "pintu keluar"
+      },
+      {
+        "id": "topic-19-word-008",
+        "korean": "타다",
+        "pronunciation": "ta-da",
+        "meaning": "naik"
+      },
+      {
+        "id": "topic-19-word-009",
+        "korean": "갈아타다",
+        "pronunciation": "ga-ra-ta-da",
+        "meaning": "transit / berganti kendaraan"
+      },
+      {
+        "id": "topic-19-word-010",
+        "korean": "버스",
+        "pronunciation": "beo-seu",
+        "meaning": "bus"
+      },
+      {
+        "id": "topic-19-word-011",
+        "korean": "놓치다",
+        "pronunciation": "no-chi-da",
+        "meaning": "ketinggalan"
+      },
+      {
+        "id": "topic-19-word-012",
+        "korean": "버스를 놓치다",
+        "pronunciation": "beo-seu-reul no-chi-da",
+        "meaning": "ketinggalan bus"
+      },
+      {
+        "id": "topic-19-word-013",
+        "korean": "버스 정류장",
+        "pronunciation": "beo-seu jeong-nyu-jang",
+        "meaning": "halte bus"
+      },
+      {
+        "id": "topic-19-word-014",
+        "korean": "택시",
+        "pronunciation": "taek-ssi",
+        "meaning": "taksi"
+      },
+      {
+        "id": "topic-19-word-015",
+        "korean": "만원",
+        "pronunciation": "ma-nwon",
+        "meaning": "penuh"
+      },
+      {
+        "id": "topic-19-word-016",
+        "korean": "자전거",
+        "pronunciation": "ja-jeon-geo",
+        "meaning": "sepeda"
+      },
+      {
+        "id": "topic-19-word-017",
+        "korean": "왕복",
+        "pronunciation": "wang-bok",
+        "meaning": "pulang-pergi"
+      },
+      {
+        "id": "topic-19-word-018",
+        "korean": "편도",
+        "pronunciation": "pyeon-do",
+        "meaning": "sekali jalan"
+      },
+      {
+        "id": "topic-19-word-019",
+        "korean": "사고",
+        "pronunciation": "sa-go",
+        "meaning": "kecelakaan"
+      },
+      {
+        "id": "topic-19-word-020",
+        "korean": "교통사고",
+        "pronunciation": "gyo-tong-sa-go",
+        "meaning": "kecelakaan lalu lintas"
+      }
+    ],
+    "expressions": [
+      {
+        "id": "topic-19-expression-01",
+        "korean": "2호선으로 갈아타세요.",
+        "pronunciation": "",
+        "meaning": "Silakan pindah ke Jalur 2."
+      },
+      {
+        "id": "topic-19-expression-02",
+        "korean": "버스를 놓쳤어요.",
+        "pronunciation": "",
+        "meaning": "Saya ketinggalan bus."
+      },
+      {
+        "id": "topic-19-expression-03",
+        "korean": "지하철이 곧 도착합니다.",
+        "pronunciation": "",
+        "meaning": "Kereta bawah tanah akan segera tiba."
+      }
+    ],
+    "questions": [
+      {
+        "id": "topic-19-question-01",
+        "prompt": "버스를 기다리는 곳은 어디입니까?",
+        "hint": "Di manakah tempat untuk menunggu bus?",
+        "options": [
+          "역",
+          "버스 정류장",
+          "출구",
+          "입구"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-19-question-02",
+        "prompt": "다른 지하철 노선으로 바꾸어 타는 것을 무엇이라고 합니까?",
+        "hint": "Apa sebutan untuk berpindah dari satu jalur kereta bawah tanah ke jalur lainnya?",
+        "options": [
+          "놓치다",
+          "갈아타다",
+          "도착하다",
+          "걷다"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-19-question-03",
+        "prompt": "사람으로 가득 찬 상태를 무엇이라고 합니까?",
+        "hint": "Apa sebutan untuk keadaan kendaraan atau tempat yang penuh oleh orang?",
+        "options": [
+          "편도",
+          "왕복",
+          "만원",
+          "사고"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "topic-19-question-04",
+        "prompt": "목적지까지 가는 표만 사는 것을 무엇이라고 합니까?",
+        "hint": "Apa sebutan untuk tiket yang hanya digunakan untuk perjalanan pergi?",
+        "options": [
+          "왕복",
+          "편도",
+          "교통",
+          "만원"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-19-question-05",
+        "prompt": "`sepeda`와 같은 뜻의 한국어 단어는 무엇입니까?",
+        "hint": "Kata bahasa Korea manakah yang memiliki arti sama dengan `sepeda`?",
+        "options": [
+          "택시",
+          "자전거",
+          "지하철",
+          "버스"
+        ],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "topic-20",
+    "lessonNumber": 20,
+    "titleKorean": "회사",
+    "titleIndonesian": "Perusahaan",
+    "words": [
+      {
+        "id": "topic-20-word-001",
+        "korean": "회사",
+        "pronunciation": "hwe-sa",
+        "meaning": "perusahaan"
+      },
+      {
+        "id": "topic-20-word-002",
+        "korean": "회사원",
+        "pronunciation": "hwe-sa-won",
+        "meaning": "pegawai perusahaan"
+      },
+      {
+        "id": "topic-20-word-003",
+        "korean": "사회",
+        "pronunciation": "sa-hwe",
+        "meaning": "masyarakat"
+      },
+      {
+        "id": "topic-20-word-004",
+        "korean": "면접",
+        "pronunciation": "myeon-jeop",
+        "meaning": "wawancara"
+      },
+      {
+        "id": "topic-20-word-005",
+        "korean": "사무실",
+        "pronunciation": "sa-mu-sil",
+        "meaning": "kantor"
+      },
+      {
+        "id": "topic-20-word-006",
+        "korean": "복사기",
+        "pronunciation": "bok-ssa-gi",
+        "meaning": "mesin fotokopi"
+      },
+      {
+        "id": "topic-20-word-007",
+        "korean": "팩스",
+        "pronunciation": "paek-sseu",
+        "meaning": "faks"
+      },
+      {
+        "id": "topic-20-word-008",
+        "korean": "컴퓨터",
+        "pronunciation": "keom-pyu-teo",
+        "meaning": "komputer"
+      },
+      {
+        "id": "topic-20-word-009",
+        "korean": "일",
+        "pronunciation": "il",
+        "meaning": "pekerjaan"
+      },
+      {
+        "id": "topic-20-word-010",
+        "korean": "일을 하다",
+        "pronunciation": "i-reul ha-da",
+        "meaning": "bekerja"
+      },
+      {
+        "id": "topic-20-word-011",
+        "korean": "무겁다",
+        "pronunciation": "mu-geop-tta",
+        "meaning": "berat"
+      },
+      {
+        "id": "topic-20-word-012",
+        "korean": "정규직",
+        "pronunciation": "jeong-gyu-jik",
+        "meaning": "pekerja tetap"
+      },
+      {
+        "id": "topic-20-word-013",
+        "korean": "비정규직",
+        "pronunciation": "bi-jeong-gyu-jik",
+        "meaning": "pekerja tidak tetap"
+      },
+      {
+        "id": "topic-20-word-014",
+        "korean": "출근",
+        "pronunciation": "chul-geun",
+        "meaning": "masuk kerja"
+      },
+      {
+        "id": "topic-20-word-015",
+        "korean": "퇴근",
+        "pronunciation": "twe-geun",
+        "meaning": "pulang kerja"
+      },
+      {
+        "id": "topic-20-word-016",
+        "korean": "야근",
+        "pronunciation": "ya-geun",
+        "meaning": "lembur"
+      },
+      {
+        "id": "topic-20-word-017",
+        "korean": "야근을 하다",
+        "pronunciation": "ya-geu-neul ha-da",
+        "meaning": "bekerja lembur"
+      },
+      {
+        "id": "topic-20-word-018",
+        "korean": "월급",
+        "pronunciation": "wol-geup",
+        "meaning": "gaji bulanan"
+      },
+      {
+        "id": "topic-20-word-019",
+        "korean": "연봉",
+        "pronunciation": "yeon-bong",
+        "meaning": "gaji tahunan"
+      },
+      {
+        "id": "topic-20-word-020",
+        "korean": "백수",
+        "pronunciation": "baek-ssu",
+        "meaning": "pengangguran"
+      },
+      {
+        "id": "topic-20-word-021",
+        "korean": "맞벌이",
+        "pronunciation": "mat-ppeo-ri",
+        "meaning": "pasangan yang sama-sama bekerja"
+      }
+    ],
+    "expressions": [
+      {
+        "id": "topic-20-expression-01",
+        "korean": "오늘 야근해야 해요.",
+        "pronunciation": "",
+        "meaning": "Hari ini saya harus lembur."
+      },
+      {
+        "id": "topic-20-expression-02",
+        "korean": "몇 시에 퇴근하세요?",
+        "pronunciation": "",
+        "meaning": "Kamu pulang kerja jam berapa?"
+      },
+      {
+        "id": "topic-20-expression-03",
+        "korean": "월급날이 언제예요?",
+        "pronunciation": "",
+        "meaning": "Kapan hari gajian?"
+      }
+    ],
+    "questions": [
+      {
+        "id": "topic-20-question-01",
+        "prompt": "회사에 일하러 가는 것을 무엇이라고 합니까?",
+        "hint": "Pergi ke perusahaan untuk bekerja disebut apa?",
+        "options": [
+          "퇴근",
+          "출근",
+          "야근",
+          "면접"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-20-question-02",
+        "prompt": "정해진 근무 시간이 끝난 후에도 일합니다. 이것을 무엇이라고 합니까?",
+        "hint": "Tetap bekerja setelah jam kerja yang ditentukan selesai disebut apa?",
+        "options": [
+          "출근",
+          "야근",
+          "면접",
+          "휴가"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-20-question-03",
+        "prompt": "한 달마다 받는 급여를 무엇이라고 합니까?",
+        "hint": "Gaji yang diterima setiap bulan disebut apa?",
+        "options": [
+          "월급",
+          "연봉",
+          "팩스",
+          "면접"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-20-question-04",
+        "prompt": "회사에 들어가기 전에 지원자와 회사가 만나 이야기를 합니다. 이것을 무엇이라고 합니까?",
+        "hint": "Pertemuan antara pelamar dan pihak perusahaan sebelum diterima bekerja disebut apa?",
+        "options": [
+          "야근",
+          "면접",
+          "퇴근",
+          "복사"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-20-question-05",
+        "prompt": "현재 직업이 없는 사람을 무엇이라고 합니까?",
+        "hint": "Orang yang saat ini tidak memiliki pekerjaan disebut apa?",
+        "options": [
+          "회사원",
+          "백수",
+          "공무원",
+          "정규직"
+        ],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "topic-21",
+    "lessonNumber": 21,
+    "titleKorean": "학교",
+    "titleIndonesian": "Sekolah",
+    "words": [
+      {
+        "id": "topic-21-word-001",
+        "korean": "학교",
+        "pronunciation": "hak-kkyo",
+        "meaning": "sekolah"
+      },
+      {
+        "id": "topic-21-word-002",
+        "korean": "입학",
+        "pronunciation": "i-pak",
+        "meaning": "masuk sekolah / universitas"
+      },
+      {
+        "id": "topic-21-word-003",
+        "korean": "졸업",
+        "pronunciation": "jo-reop",
+        "meaning": "lulus"
+      },
+      {
+        "id": "topic-21-word-004",
+        "korean": "선생님",
+        "pronunciation": "seon-saeng-nim",
+        "meaning": "guru"
+      },
+      {
+        "id": "topic-21-word-005",
+        "korean": "교수님",
+        "pronunciation": "gyo-su-nim",
+        "meaning": "dosen / profesor"
+      },
+      {
+        "id": "topic-21-word-006",
+        "korean": "학생",
+        "pronunciation": "hak-ssaeng",
+        "meaning": "siswa / pelajar"
+      },
+      {
+        "id": "topic-21-word-007",
+        "korean": "초등학생",
+        "pronunciation": "cho-deung-hak-ssaeng",
+        "meaning": "murid SD"
+      },
+      {
+        "id": "topic-21-word-008",
+        "korean": "중학생",
+        "pronunciation": "jung-hak-ssaeng",
+        "meaning": "murid SMP"
+      },
+      {
+        "id": "topic-21-word-009",
+        "korean": "고등학생",
+        "pronunciation": "go-deung-hak-ssaeng",
+        "meaning": "murid SMA"
+      },
+      {
+        "id": "topic-21-word-010",
+        "korean": "대학생",
+        "pronunciation": "dae-hak-ssaeng",
+        "meaning": "mahasiswa"
+      },
+      {
+        "id": "topic-21-word-011",
+        "korean": "~학년",
+        "pronunciation": "hang-nyeon",
+        "meaning": "kelas / tahun tingkat"
+      },
+      {
+        "id": "topic-21-word-012",
+        "korean": "교실",
+        "pronunciation": "gyo-sil",
+        "meaning": "ruang kelas"
+      },
+      {
+        "id": "topic-21-word-013",
+        "korean": "칠판",
+        "pronunciation": "chil-pan",
+        "meaning": "papan tulis"
+      },
+      {
+        "id": "topic-21-word-014",
+        "korean": "영어",
+        "pronunciation": "yeong-eo",
+        "meaning": "bahasa Inggris"
+      },
+      {
+        "id": "topic-21-word-015",
+        "korean": "수학",
+        "pronunciation": "su-hak",
+        "meaning": "matematika"
+      },
+      {
+        "id": "topic-21-word-016",
+        "korean": "과학",
+        "pronunciation": "gwa-hak",
+        "meaning": "ilmu pengetahuan"
+      },
+      {
+        "id": "topic-21-word-017",
+        "korean": "수업",
+        "pronunciation": "su-eop",
+        "meaning": "pelajaran / kelas"
+      },
+      {
+        "id": "topic-21-word-018",
+        "korean": "공부",
+        "pronunciation": "gong-bu",
+        "meaning": "belajar"
+      },
+      {
+        "id": "topic-21-word-019",
+        "korean": "숙제",
+        "pronunciation": "suk-jje",
+        "meaning": "pekerjaan rumah / PR"
+      },
+      {
+        "id": "topic-21-word-020",
+        "korean": "졸다",
+        "pronunciation": "jol-da",
+        "meaning": "tertidur sebentar / mengantuk"
+      },
+      {
+        "id": "topic-21-word-021",
+        "korean": "시험",
+        "pronunciation": "si-heom",
+        "meaning": "ujian"
+      },
+      {
+        "id": "topic-21-word-022",
+        "korean": "출석",
+        "pronunciation": "chul-sseok",
+        "meaning": "hadir"
+      },
+      {
+        "id": "topic-21-word-023",
+        "korean": "결석",
+        "pronunciation": "gyeol-sseok",
+        "meaning": "tidak hadir"
+      },
+      {
+        "id": "topic-21-word-024",
+        "korean": "운동회",
+        "pronunciation": "un-dong-hwe",
+        "meaning": "acara olahraga sekolah"
+      }
+    ],
+    "expressions": [
+      {
+        "id": "topic-21-expression-01",
+        "korean": "수업 시간에 졸았어요.",
+        "pronunciation": "",
+        "meaning": "Saya ketiduran saat kelas."
+      },
+      {
+        "id": "topic-21-expression-02",
+        "korean": "숙제를 아직 안 했어요.",
+        "pronunciation": "",
+        "meaning": "Saya belum mengerjakan PR."
+      },
+      {
+        "id": "topic-21-expression-03",
+        "korean": "내일 시험이 있어요.",
+        "pronunciation": "",
+        "meaning": "Besok ada ujian."
+      }
+    ],
+    "questions": [
+      {
+        "id": "topic-21-question-01",
+        "prompt": "대학교에서 학생을 가르치는 사람은 누구입니까?",
+        "hint": "Siapakah orang yang mengajar mahasiswa di universitas?",
+        "options": [
+          "학생",
+          "교수님",
+          "회사원",
+          "경찰"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-21-question-02",
+        "prompt": "학교에 나오지 않는 것을 무엇이라고 합니까?",
+        "hint": "Tidak hadir di sekolah disebut apa?",
+        "options": [
+          "출석",
+          "결석",
+          "졸업",
+          "입학"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-21-question-03",
+        "prompt": "집에서 해야 하는 학교 과제를 무엇이라고 합니까?",
+        "hint": "Apa sebutan untuk tugas sekolah yang harus dikerjakan di rumah?",
+        "options": [
+          "칠판",
+          "숙제",
+          "수업",
+          "교실"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-21-question-04",
+        "prompt": "대학교에 다니는 학생을 무엇이라고 합니까?",
+        "hint": "Apa sebutan untuk siswa yang sedang belajar di universitas?",
+        "options": [
+          "중학생",
+          "대학생",
+          "초등학생",
+          "고등학생"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-21-question-05",
+        "prompt": "`ujian`과 같은 뜻의 한국어 단어는 무엇입니까?",
+        "hint": "Kata bahasa Korea manakah yang memiliki arti sama dengan `ujian`?",
+        "options": [
+          "공부",
+          "시험",
+          "수업",
+          "입학"
+        ],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "topic-22",
+    "lessonNumber": 22,
+    "titleKorean": "우체국",
+    "titleIndonesian": "Kantor Pos",
+    "words": [
+      {
+        "id": "topic-22-word-001",
+        "korean": "우체국",
+        "pronunciation": "u-che-guk",
+        "meaning": "kantor pos"
+      },
+      {
+        "id": "topic-22-word-002",
+        "korean": "우체통",
+        "pronunciation": "u-che-tong",
+        "meaning": "kotak pos"
+      },
+      {
+        "id": "topic-22-word-003",
+        "korean": "편지",
+        "pronunciation": "pyeon-ji",
+        "meaning": "surat"
+      },
+      {
+        "id": "topic-22-word-004",
+        "korean": "메일",
+        "pronunciation": "me-il",
+        "meaning": "email"
+      },
+      {
+        "id": "topic-22-word-005",
+        "korean": "우표",
+        "pronunciation": "u-pyo",
+        "meaning": "perangko"
+      },
+      {
+        "id": "topic-22-word-006",
+        "korean": "봉투",
+        "pronunciation": "bong-tu",
+        "meaning": "amplop"
+      },
+      {
+        "id": "topic-22-word-007",
+        "korean": "우편번호",
+        "pronunciation": "u-pyeon-beon-ho",
+        "meaning": "kode pos"
+      },
+      {
+        "id": "topic-22-word-008",
+        "korean": "주소",
+        "pronunciation": "ju-so",
+        "meaning": "alamat"
+      },
+      {
+        "id": "topic-22-word-009",
+        "korean": "답장",
+        "pronunciation": "dap-jjang",
+        "meaning": "balasan"
+      },
+      {
+        "id": "topic-22-word-010",
+        "korean": "답장하다",
+        "pronunciation": "dap-jjang-ha-da",
+        "meaning": "membalas"
+      },
+      {
+        "id": "topic-22-word-011",
+        "korean": "일반우편",
+        "pronunciation": "il-ban-u-pyeon",
+        "meaning": "pos biasa"
+      },
+      {
+        "id": "topic-22-word-012",
+        "korean": "등기우편",
+        "pronunciation": "deung-gi-u-pyeon",
+        "meaning": "surat tercatat"
+      },
+      {
+        "id": "topic-22-word-013",
+        "korean": "익일특급",
+        "pronunciation": "i-gil-teuk-kkeup",
+        "meaning": "layanan kirim cepat hari berikutnya"
+      },
+      {
+        "id": "topic-22-word-014",
+        "korean": "배달",
+        "pronunciation": "bae-dal",
+        "meaning": "pengiriman"
+      },
+      {
+        "id": "topic-22-word-015",
+        "korean": "국제우편",
+        "pronunciation": "guk-jje-u-pyeon",
+        "meaning": "pos internasional"
+      }
+    ],
+    "expressions": [
+      {
+        "id": "topic-22-expression-01",
+        "korean": "이 편지를 보내고 싶어요.",
+        "pronunciation": "",
+        "meaning": "Saya ingin mengirim surat ini."
+      },
+      {
+        "id": "topic-22-expression-02",
+        "korean": "주소를 써 주세요.",
+        "pronunciation": "",
+        "meaning": "Tolong tuliskan alamatnya."
+      },
+      {
+        "id": "topic-22-expression-03",
+        "korean": "인도네시아로 보내려고 해요.",
+        "pronunciation": "",
+        "meaning": "Saya ingin mengirimnya ke Indonesia."
+      }
+    ],
+    "questions": [
+      {
+        "id": "topic-22-question-01",
+        "prompt": "편지를 넣어서 보내는 종이는 무엇입니까?",
+        "hint": "Benda dari kertas apakah yang digunakan untuk memasukkan dan mengirim surat?",
+        "options": [
+          "우표",
+          "봉투",
+          "주소",
+          "우체통"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-22-question-02",
+        "prompt": "편지나 소포를 보내는 곳은 어디입니까?",
+        "hint": "Di manakah kita dapat mengirim surat atau paket?",
+        "options": [
+          "은행",
+          "우체국",
+          "병원",
+          "학교"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-22-question-03",
+        "prompt": "편지를 보낼 때 봉투에 붙이는 것은 무엇입니까?",
+        "hint": "Apa yang ditempelkan pada amplop ketika mengirim surat?",
+        "options": [
+          "우표",
+          "주소",
+          "답장",
+          "메일"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-22-question-04",
+        "prompt": "해외로 보내는 우편을 무엇이라고 합니까?",
+        "hint": "Apa sebutan untuk kiriman pos yang dikirim ke luar negeri?",
+        "options": [
+          "일반우편",
+          "국제우편",
+          "답장",
+          "봉투"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-22-question-05",
+        "prompt": "`kode pos`와 같은 뜻의 한국어 단어는 무엇입니까?",
+        "hint": "Kata bahasa Korea manakah yang memiliki arti sama dengan `kode pos`?",
+        "options": [
+          "주소",
+          "우편번호",
+          "우표",
+          "우체통"
+        ],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "topic-23",
+    "lessonNumber": 23,
+    "titleKorean": "병원",
+    "titleIndonesian": "Rumah Sakit",
+    "words": [
+      {
+        "id": "topic-23-word-001",
+        "korean": "병원",
+        "pronunciation": "byeong-won",
+        "meaning": "rumah sakit"
+      },
+      {
+        "id": "topic-23-word-002",
+        "korean": "119",
+        "pronunciation": "il-il-gu",
+        "meaning": "nomor darurat 119"
+      },
+      {
+        "id": "topic-23-word-003",
+        "korean": "구급차",
+        "pronunciation": "gu-geup-cha",
+        "meaning": "ambulans"
+      },
+      {
+        "id": "topic-23-word-004",
+        "korean": "환자",
+        "pronunciation": "hwan-ja",
+        "meaning": "pasien"
+      },
+      {
+        "id": "topic-23-word-005",
+        "korean": "의사",
+        "pronunciation": "ui-sa",
+        "meaning": "dokter"
+      },
+      {
+        "id": "topic-23-word-006",
+        "korean": "입원",
+        "pronunciation": "i-bwon",
+        "meaning": "rawat inap"
+      },
+      {
+        "id": "topic-23-word-007",
+        "korean": "퇴원",
+        "pronunciation": "twe-won",
+        "meaning": "keluar dari rumah sakit"
+      },
+      {
+        "id": "topic-23-word-008",
+        "korean": "수술",
+        "pronunciation": "su-sul",
+        "meaning": "operasi"
+      },
+      {
+        "id": "topic-23-word-009",
+        "korean": "안과",
+        "pronunciation": "an-kkwa",
+        "meaning": "klinik mata"
+      },
+      {
+        "id": "topic-23-word-010",
+        "korean": "정형외과",
+        "pronunciation": "jeong-hyeong-we-gwa",
+        "meaning": "ortopedi"
+      },
+      {
+        "id": "topic-23-word-011",
+        "korean": "피부과",
+        "pronunciation": "pi-bu-kkwa",
+        "meaning": "dermatologi"
+      },
+      {
+        "id": "topic-23-word-012",
+        "korean": "내과",
+        "pronunciation": "nae-kkwa",
+        "meaning": "penyakit dalam"
+      },
+      {
+        "id": "topic-23-word-013",
+        "korean": "이비인후과",
+        "pronunciation": "i-bi-in-hu-gwa",
+        "meaning": "THT"
+      },
+      {
+        "id": "topic-23-word-014",
+        "korean": "주사",
+        "pronunciation": "ju-sa",
+        "meaning": "suntikan"
+      },
+      {
+        "id": "topic-23-word-015",
+        "korean": "치료",
+        "pronunciation": "chi-ryo",
+        "meaning": "perawatan / pengobatan"
+      },
+      {
+        "id": "topic-23-word-016",
+        "korean": "링거",
+        "pronunciation": "ring-geo",
+        "meaning": "infus"
+      },
+      {
+        "id": "topic-23-word-017",
+        "korean": "혈압",
+        "pronunciation": "hyeo-rap",
+        "meaning": "tekanan darah"
+      },
+      {
+        "id": "topic-23-word-018",
+        "korean": "진찰",
+        "pronunciation": "jin-chal",
+        "meaning": "pemeriksaan dokter"
+      }
+    ],
+    "expressions": [
+      {
+        "id": "topic-23-expression-01",
+        "korean": "어디가 아프세요?",
+        "pronunciation": "",
+        "meaning": "Bagian mana yang sakit?"
+      },
+      {
+        "id": "topic-23-expression-02",
+        "korean": "병원에 입원했어요.",
+        "pronunciation": "",
+        "meaning": "Saya dirawat di rumah sakit."
+      },
+      {
+        "id": "topic-23-expression-03",
+        "korean": "혈압을 재겠습니다.",
+        "pronunciation": "",
+        "meaning": "Saya akan mengukur tekanan darah Anda."
+      }
+    ],
+    "questions": [
+      {
+        "id": "topic-23-question-01",
+        "prompt": "응급환자를 병원으로 데려가는 차는 무엇입니까?",
+        "hint": "Kendaraan apakah yang membawa pasien dalam keadaan darurat ke rumah sakit?",
+        "options": [
+          "택시",
+          "구급차",
+          "버스",
+          "자전거"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-23-question-02",
+        "prompt": "눈이 아프면 주로 어디에 갑니까?",
+        "hint": "Ke bagian manakah biasanya kita pergi jika mengalami masalah pada mata?",
+        "options": [
+          "안과",
+          "피부과",
+          "정형외과",
+          "은행"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-23-question-03",
+        "prompt": "병원에서 며칠 동안 지내며 치료받는 것을 무엇이라고 합니까?",
+        "hint": "Menjalani perawatan dengan tinggal di rumah sakit selama beberapa hari disebut apa?",
+        "options": [
+          "퇴원",
+          "입원",
+          "면접",
+          "출근"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-23-question-04",
+        "prompt": "피부에 문제가 있으면 어디에 갑니까?",
+        "hint": "Ke bagian manakah kita pergi jika mengalami masalah pada kulit?",
+        "options": [
+          "안과",
+          "피부과",
+          "내과",
+          "이비인후과"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-23-question-05",
+        "prompt": "`tekanan darah`와 같은 뜻의 한국어 단어는 무엇입니까?",
+        "hint": "Kata bahasa Korea manakah yang memiliki arti sama dengan `tekanan darah`?",
+        "options": [
+          "혈압",
+          "주사",
+          "치료",
+          "수술"
+        ],
+        "correctIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "topic-24",
+    "lessonNumber": 24,
+    "titleKorean": "약국",
+    "titleIndonesian": "Apotek",
+    "words": [
+      {
+        "id": "topic-24-word-001",
+        "korean": "약국",
+        "pronunciation": "yak-kkuk",
+        "meaning": "apotek"
+      },
+      {
+        "id": "topic-24-word-002",
+        "korean": "약사",
+        "pronunciation": "yak-ssa",
+        "meaning": "apoteker"
+      },
+      {
+        "id": "topic-24-word-003",
+        "korean": "약",
+        "pronunciation": "yak",
+        "meaning": "obat"
+      },
+      {
+        "id": "topic-24-word-004",
+        "korean": "약을 먹다",
+        "pronunciation": "ya-geul meok-tta",
+        "meaning": "minum obat"
+      },
+      {
+        "id": "topic-24-word-005",
+        "korean": "회복하다",
+        "pronunciation": "hwe-bo-ka-da",
+        "meaning": "pulih"
+      },
+      {
+        "id": "topic-24-word-006",
+        "korean": "진통제",
+        "pronunciation": "jin-tong-je",
+        "meaning": "obat penghilang rasa sakit"
+      },
+      {
+        "id": "topic-24-word-007",
+        "korean": "감기약",
+        "pronunciation": "gam-gi-yak",
+        "meaning": "obat flu"
+      },
+      {
+        "id": "topic-24-word-008",
+        "korean": "통증",
+        "pronunciation": "tong-jjeung",
+        "meaning": "rasa sakit"
+      },
+      {
+        "id": "topic-24-word-009",
+        "korean": "식전",
+        "pronunciation": "sik-jjeon",
+        "meaning": "sebelum makan"
+      },
+      {
+        "id": "topic-24-word-010",
+        "korean": "식후",
+        "pronunciation": "si-ku",
+        "meaning": "setelah makan"
+      },
+      {
+        "id": "topic-24-word-011",
+        "korean": "소화제",
+        "pronunciation": "so-hwa-je",
+        "meaning": "obat pencernaan"
+      },
+      {
+        "id": "topic-24-word-012",
+        "korean": "연고",
+        "pronunciation": "yeon-go",
+        "meaning": "salep"
+      },
+      {
+        "id": "topic-24-word-013",
+        "korean": "파스",
+        "pronunciation": "pa-seu",
+        "meaning": "koyo"
+      },
+      {
+        "id": "topic-24-word-014",
+        "korean": "반창고",
+        "pronunciation": "ban-chang-go",
+        "meaning": "plester luka"
+      },
+      {
+        "id": "topic-24-word-015",
+        "korean": "거즈",
+        "pronunciation": "geo-jeu",
+        "meaning": "kain kasa"
+      },
+      {
+        "id": "topic-24-word-016",
+        "korean": "상처",
+        "pronunciation": "sang-cheo",
+        "meaning": "luka"
+      },
+      {
+        "id": "topic-24-word-017",
+        "korean": "알약",
+        "pronunciation": "al-lyak",
+        "meaning": "tablet / pil"
+      },
+      {
+        "id": "topic-24-word-018",
+        "korean": "가루약",
+        "pronunciation": "ga-ru-yak",
+        "meaning": "obat bubuk"
+      },
+      {
+        "id": "topic-24-word-019",
+        "korean": "안약",
+        "pronunciation": "an-yak",
+        "meaning": "obat tetes mata"
+      },
+      {
+        "id": "topic-24-word-020",
+        "korean": "부작용",
+        "pronunciation": "bu-ja-gyong",
+        "meaning": "efek samping"
+      },
+      {
+        "id": "topic-24-word-021",
+        "korean": "증상",
+        "pronunciation": "jeung-sang",
+        "meaning": "gejala"
+      }
+    ],
+    "expressions": [
+      {
+        "id": "topic-24-expression-01",
+        "korean": "식후에 약을 드세요.",
+        "pronunciation": "",
+        "meaning": "Minum obat setelah makan."
+      },
+      {
+        "id": "topic-24-expression-02",
+        "korean": "하루에 세 번 드세요.",
+        "pronunciation": "",
+        "meaning": "Minum tiga kali sehari."
+      },
+      {
+        "id": "topic-24-expression-03",
+        "korean": "어떤 증상이 있으세요?",
+        "pronunciation": "",
+        "meaning": "Gejala apa yang Anda alami?"
+      }
+    ],
+    "questions": [
+      {
+        "id": "topic-24-question-01",
+        "prompt": "약을 판매하고 조제하는 사람은 누구입니까?",
+        "hint": "Siapakah orang yang menjual dan menyiapkan obat di apotek?",
+        "options": [
+          "의사",
+          "약사",
+          "환자",
+          "간호사"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-24-question-02",
+        "prompt": "밥을 먹은 후라는 뜻은 무엇입니까?",
+        "hint": "Kata manakah yang berarti `setelah makan`?",
+        "options": [
+          "식전",
+          "식후",
+          "통증",
+          "회복"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-24-question-03",
+        "prompt": "눈에 넣는 약은 무엇입니까?",
+        "hint": "Obat apakah yang digunakan dengan cara diteteskan ke mata?",
+        "options": [
+          "감기약",
+          "안약",
+          "연고",
+          "소화제"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-24-question-04",
+        "prompt": "머리나 몸이 아플 때 통증을 줄이기 위해 먹는 약은 무엇입니까?",
+        "hint": "Obat apakah yang digunakan untuk mengurangi rasa sakit pada kepala atau tubuh?",
+        "options": [
+          "진통제",
+          "소화제",
+          "안약",
+          "거즈"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-24-question-05",
+        "prompt": "`efek samping`과 같은 뜻의 한국어 단어는 무엇입니까?",
+        "hint": "Kata bahasa Korea manakah yang memiliki arti sama dengan `efek samping`?",
+        "options": [
+          "증상",
+          "부작용",
+          "회복",
+          "상처"
+        ],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "topic-25",
+    "lessonNumber": 25,
+    "titleKorean": "은행",
+    "titleIndonesian": "Bank",
+    "words": [
+      {
+        "id": "topic-25-word-001",
+        "korean": "은행",
+        "pronunciation": "eun-haeng",
+        "meaning": "bank"
+      },
+      {
+        "id": "topic-25-word-002",
+        "korean": "돈",
+        "pronunciation": "don",
+        "meaning": "uang"
+      },
+      {
+        "id": "topic-25-word-003",
+        "korean": "현금",
+        "pronunciation": "hyeon-geum",
+        "meaning": "uang tunai"
+      },
+      {
+        "id": "topic-25-word-004",
+        "korean": "현금카드",
+        "pronunciation": "hyeon-geum-ka-deu",
+        "meaning": "kartu debit / kartu ATM"
+      },
+      {
+        "id": "topic-25-word-005",
+        "korean": "신용카드",
+        "pronunciation": "si-nyong-ka-deu",
+        "meaning": "kartu kredit"
+      },
+      {
+        "id": "topic-25-word-006",
+        "korean": "저금",
+        "pronunciation": "jeo-geum",
+        "meaning": "menabung"
+      },
+      {
+        "id": "topic-25-word-007",
+        "korean": "이자",
+        "pronunciation": "i-ja",
+        "meaning": "bunga"
+      },
+      {
+        "id": "topic-25-word-008",
+        "korean": "저금통",
+        "pronunciation": "jeo-geum-tong",
+        "meaning": "celengan"
+      },
+      {
+        "id": "topic-25-word-009",
+        "korean": "통장",
+        "pronunciation": "tong-jang",
+        "meaning": "buku tabungan"
+      },
+      {
+        "id": "topic-25-word-010",
+        "korean": "계좌",
+        "pronunciation": "gye-jwa",
+        "meaning": "rekening"
+      },
+      {
+        "id": "topic-25-word-011",
+        "korean": "계좌번호",
+        "pronunciation": "gye-jwa-beon-ho",
+        "meaning": "nomor rekening"
+      },
+      {
+        "id": "topic-25-word-012",
+        "korean": "비밀번호",
+        "pronunciation": "bi-mil-beon-ho",
+        "meaning": "kata sandi / PIN"
+      },
+      {
+        "id": "topic-25-word-013",
+        "korean": "입금",
+        "pronunciation": "ip-kkeum",
+        "meaning": "setor uang"
+      },
+      {
+        "id": "topic-25-word-014",
+        "korean": "송금",
+        "pronunciation": "song-geum",
+        "meaning": "mengirim uang"
+      },
+      {
+        "id": "topic-25-word-015",
+        "korean": "인출",
+        "pronunciation": "in-chul",
+        "meaning": "menarik uang"
+      },
+      {
+        "id": "topic-25-word-016",
+        "korean": "계좌 이체",
+        "pronunciation": "gye-jwa i-che",
+        "meaning": "transfer antar rekening"
+      },
+      {
+        "id": "topic-25-word-017",
+        "korean": "자동인출기",
+        "pronunciation": "ja-dong-in-chul-gi",
+        "meaning": "ATM"
+      },
+      {
+        "id": "topic-25-word-018",
+        "korean": "잔고",
+        "pronunciation": "jan-go",
+        "meaning": "saldo"
+      },
+      {
+        "id": "topic-25-word-019",
+        "korean": "비싸다",
+        "pronunciation": "bi-ssa-da",
+        "meaning": "mahal"
+      },
+      {
+        "id": "topic-25-word-020",
+        "korean": "환전",
+        "pronunciation": "hwan-jeon",
+        "meaning": "penukaran mata uang"
+      },
+      {
+        "id": "topic-25-word-021",
+        "korean": "수수료",
+        "pronunciation": "su-su-ryo",
+        "meaning": "biaya administrasi"
+      },
+      {
+        "id": "topic-25-word-022",
+        "korean": "빚",
+        "pronunciation": "bit",
+        "meaning": "utang"
+      },
+      {
+        "id": "topic-25-word-023",
+        "korean": "창구",
+        "pronunciation": "chang-gu",
+        "meaning": "loket"
+      }
+    ],
+    "expressions": [
+      {
+        "id": "topic-25-expression-01",
+        "korean": "계좌번호를 알려 주세요.",
+        "pronunciation": "",
+        "meaning": "Tolong beri tahu nomor rekeningnya."
+      },
+      {
+        "id": "topic-25-expression-02",
+        "korean": "돈을 송금했어요.",
+        "pronunciation": "",
+        "meaning": "Saya sudah mentransfer uang."
+      },
+      {
+        "id": "topic-25-expression-03",
+        "korean": "현금을 인출하고 싶어요.",
+        "pronunciation": "",
+        "meaning": "Saya ingin menarik uang tunai."
+      }
+    ],
+    "questions": [
+      {
+        "id": "topic-25-question-01",
+        "prompt": "다른 사람의 계좌로 돈을 보내는 것을 무엇이라고 합니까?",
+        "hint": "Mengirim uang ke rekening orang lain disebut apa?",
+        "options": [
+          "인출",
+          "송금",
+          "환전",
+          "저금"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-25-question-02",
+        "prompt": "계좌에 현재 남아 있는 돈을 무엇이라고 합니까?",
+        "hint": "Apa sebutan untuk jumlah uang yang saat ini tersisa di dalam rekening?",
+        "options": [
+          "수수료",
+          "이자",
+          "잔고",
+          "빚"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "topic-25-question-03",
+        "prompt": "한국 돈을 인도네시아 루피아로 바꾸는 것을 무엇이라고 합니까?",
+        "hint": "Menukar uang Korea menjadi rupiah Indonesia disebut apa?",
+        "options": [
+          "환전",
+          "인출",
+          "저금",
+          "입금"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "topic-25-question-04",
+        "prompt": "ATM에서 돈을 꺼내는 것을 무엇이라고 합니까?",
+        "hint": "Mengambil uang dari ATM disebut apa?",
+        "options": [
+          "입금",
+          "인출",
+          "송금",
+          "저금"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "topic-25-question-05",
+        "prompt": "`nomor rekening`과 같은 뜻의 한국어 단어는 무엇입니까?",
+        "hint": "Kata bahasa Korea manakah yang memiliki arti sama dengan `nomor rekening`?",
+        "options": [
+          "계좌번호",
+          "비밀번호",
+          "수수료",
+          "현금카드"
+        ],
+        "correctIndex": 0
+      }
+    ]
+  }
+]

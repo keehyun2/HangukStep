@@ -21,9 +21,19 @@ export interface Lesson {
   courseId: string
   lessonNumber: number
   status: 'published' | 'draft'
+  format?: 'standard' | 'daily'
   title: string
   subtitle: string
   vocabulary: VocabularyWord[]
   sentences: LessonSentence[]
   grammarSections: LessonGrammarReference[]
+  audio?: {
+    id: string
+    src: string
+    transcript: string[]
+  }
+  introduction?: {
+    korean: string[]
+    indonesian: string[]
+  }
 }

@@ -4,8 +4,9 @@ import HomeView from '@/views/HomeView.vue'
 import LoginView from '@/views/LoginView.vue'
 import DashboardView from '@/views/DashboardView.vue'
 import CourseView from '@/views/CourseView.vue'
-import LessonView from '@/views/LessonView.vue'
+import LessonEntryView from '@/views/LessonEntryView.vue'
 import GrammarView from '@/views/GrammarView.vue'
+import VocabularyStudyView from '@/views/VocabularyStudyView.vue'
 import WordbookView from '@/views/WordbookView.vue'
 
 const router = createRouter({
@@ -40,13 +41,18 @@ const router = createRouter({
     {
       path: '/courses/:courseId/lessons/:lessonNumber',
       name: 'lesson',
-      component: LessonView,
+      component: LessonEntryView,
       meta: { requiresAuth: true },
     },
     {
       path: '/grammar',
       name: 'grammar',
       component: GrammarView,
+    },
+    {
+      path: '/vocabulary',
+      name: 'vocabulary',
+      component: VocabularyStudyView,
     },
     {
       path: '/wordbook',

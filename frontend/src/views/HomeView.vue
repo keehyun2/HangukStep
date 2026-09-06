@@ -18,6 +18,7 @@ const availableLessonCount = (courseId: string) => getPublishedLessons(courseId)
         <span><strong>Hanguk Step</strong><small>Korean, one step at a time</small></span>
       </RouterLink>
       <nav aria-label="Navigasi utama">
+        <RouterLink to="/vocabulary">Kosakata</RouterLink>
         <RouterLink to="/grammar">Tata Bahasa</RouterLink>
         <RouterLink to="/wordbook">Kosakata Saya</RouterLink>
         <RouterLink class="account-link" :to="isAuthenticated ? '/dashboard' : '/login'">
@@ -70,6 +71,10 @@ const availableLessonCount = (courseId: string) => getPublishedLessons(courseId)
 
       <section class="study-tools">
         <div><p class="section-kicker">ALAT BELAJAR</p><h2>Pelajari kembali kapan saja</h2></div>
+        <RouterLink to="/vocabulary">
+          <strong>Kamus Kosakata</strong>
+          <span>Jelajahi kosakata Korea berdasarkan tema.</span>
+        </RouterLink>
         <RouterLink to="/grammar">
           <strong>Kamus Tata Bahasa</strong>
           <span>Lihat penjelasan dan contoh dari semua kursus.</span>
@@ -114,7 +119,7 @@ const availableLessonCount = (courseId: string) => getPublishedLessons(courseId)
 .course-meta .coming-label { color: #b34b3f; font-weight: 900; }
 .course-action { color: var(--blue-600); font-size: 13px; font-weight: 900; text-decoration: none; }
 .course-action.secondary { color: var(--muted); }
-.study-tools { padding: 38px max(5vw, calc((100vw - 1180px) / 2)) 55px; display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 15px; align-items: stretch; background: var(--white); border-top: 1px solid var(--line); }
+.study-tools { padding: 38px max(5vw, calc((100vw - 1180px) / 2)) 55px; display: grid; grid-template-columns: 1.2fr repeat(3, 1fr); gap: 15px; align-items: stretch; background: var(--white); border-top: 1px solid var(--line); }
 .study-tools > a { padding: 20px; display: flex; flex-direction: column; justify-content: center; border-left: 3px solid var(--blue-600); background: #f4f7fd; color: inherit; text-decoration: none; }
 .study-tools > a:last-child { border-left-color: #d94f45; background: #fff5f3; }
 .study-tools a span { margin-top: 7px; color: var(--muted); font-size: 12px; line-height: 1.45; }

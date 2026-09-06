@@ -7,16 +7,19 @@ import { lessons } from '@/data/lessons'
 
 const router = useRouter()
 const query = ref('')
-const lessonLabels = (grammarId: string) => lessons
-  .filter((lesson) => lesson.grammarSections.some((reference) => reference.grammarId === grammarId))
-  .map((lesson) => `${courses.find((course) => course.id === lesson.courseId)?.title ?? lesson.courseId} · Pelajaran ${lesson.lessonNumber}`)
-  .join(' · ')
+const lessonLabels = (grammarId: string, epsLesson?: number) => {
+  const labels = lessons
+    .filter((lesson) => lesson.grammarSections.some((reference) => reference.grammarId === grammarId))
+    .map((lesson) => `${courses.find((course) => course.id === lesson.courseId)?.title ?? lesson.courseId} · Pelajaran ${lesson.lessonNumber}`)
+  if (epsLesson) labels.push(`EPS-TOPIK · Pelajaran ${epsLesson}`)
+  return labels.join(' · ')
+}
 const filteredItems = computed(() => {
   const search = query.value.trim().toLowerCase()
   if (!search) return grammarItems
   return grammarItems.filter((item) => {
     const sectionText = item.sections?.map((section) => `${section.title} ${section.explanation}`).join(' ') ?? ''
-    return `${item.title} ${item.summary} ${item.explanation} ${item.keywords.join(' ')} ${sectionText}`
+    return `${item.title} ${item.summary} ${item.explanation} ${item.koreanExplanation ?? ''} ${item.keywords.join(' ')} ${sectionText}`
       .toLowerCase()
       .includes(search)
   })
@@ -35,17 +38,21 @@ const filteredItems = computed(() => {
       <section class="library-heading">
         <p>KAMUS TATA BAHASA</p>
         <h1>문법 사전</h1>
-        <span>Temukan penjelasan tata bahasa yang digunakan di semua kursus.</span>
+        <span>Temukan {{ grammarItems.length }} tata bahasa yang digunakan di semua kursus.</span>
         <input v-model="query" type="search" placeholder="Cari tata bahasa atau penjelasan...">
       </section>
 
       <section class="grammar-list">
         <article v-for="item in filteredItems" :id="item.id" :key="item.id">
-          <div class="grammar-title"><span>{{ lessonLabels(item.id) || 'KAMUS TATA BAHASA' }}</span><h2>{{ item.title }}</h2><p>{{ item.summary }}</p></div>
+          <div class="grammar-title"><span>{{ lessonLabels(item.id, item.epsLesson) || 'KAMUS TATA BAHASA' }}</span><h2>{{ item.title }}</h2><p>{{ item.summary }}</p></div>
           <div class="grammar-detail">
             <p>{{ item.explanation }}</p>
+            <details v-if="item.koreanExplanation" class="korean-explanation">
+              <summary>한국어 설명</summary>
+              <p>{{ item.koreanExplanation }}</p>
+            </details>
             <div v-for="example in item.examples" :key="example.korean" class="example-row">
-              <strong>{{ example.korean }}</strong><span>{{ example.indonesian }}</span>
+              <strong>{{ example.korean }}</strong><span v-if="example.indonesian">{{ example.indonesian }}</span>
             </div>
             <section v-for="section in item.sections" :id="`${item.id}-${section.id}`" :key="section.id" class="grammar-section">
               <small>{{ section.type === 'exception' ? 'PENGECUALIAN' : 'ATURAN' }}</small>
@@ -87,6 +94,9 @@ const filteredItems = computed(() => {
 .example-row { padding: 10px 12px; display: flex; justify-content: space-between; gap: 20px; background: #f7f8fa; }
 .example-row + .example-row { margin-top: 6px; }
 .example-row span { color: var(--muted); }
+.korean-explanation { margin: 0 0 16px; padding: 11px 13px; border: 1px solid var(--line); background: #fafbfc; }
+.korean-explanation summary { color: var(--blue-600); font-size: 12px; font-weight: 900; cursor: pointer; }
+.korean-explanation p { margin: 10px 0 0; line-height: 1.65; white-space: pre-line; }
 .grammar-section { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); }
 .grammar-section small { color: var(--blue-600); font-size: 10px; font-weight: 900; }
 .grammar-section h3 { margin: 5px 0 7px; }
