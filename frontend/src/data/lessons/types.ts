@@ -2,11 +2,24 @@ export interface VocabularyWord {
   id: string
   korean: string
   meaning: string
+  pronunciation?: string
 }
 
 export interface LessonSentence {
   korean: string
   indonesian: string
+  pronunciation?: string
+}
+
+export interface LessonNote {
+  id: string
+  title: string
+  explanation: string
+  examples?: LessonSentence[]
+  table?: {
+    headers: string[]
+    rows: string[][]
+  }
 }
 
 export interface LessonGrammarReference {
@@ -36,4 +49,6 @@ export interface Lesson {
     korean: string[]
     indonesian: string[]
   }
+  dailyIntro?: string
+  notes?: LessonNote[]
 }

@@ -1,10 +1,11 @@
 import { basicLessonOne } from '@/data/lessons/basic/lesson-001'
 import { basicLessonTwo } from '@/data/lessons/basic/lesson-002'
 import { dailyLessonOne } from '@/data/lessons/daily/lesson-001'
+import { dailyLessonTwo } from '@/data/lessons/daily/lesson-002'
 
 export * from '@/data/lessons/types'
 
-export const lessons = [dailyLessonOne, basicLessonOne, basicLessonTwo]
+export const lessons = [dailyLessonOne, dailyLessonTwo, basicLessonOne, basicLessonTwo]
 
 export function getLesson(courseId: string, lessonNumber: number) {
   return lessons.find(

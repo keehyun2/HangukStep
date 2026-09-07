@@ -176,6 +176,36 @@ const curatedGrammarItems: GrammarItem[] = [
       { korean: '일하고 있습니다.', indonesian: 'Sedang bekerja.' },
     ],
   },
+  {
+    id: 'counter-myeong',
+    title: '명',
+    summary: 'Kata satuan yang digunakan untuk menghitung orang.',
+    explanation: '명 adalah kata satuan yang digunakan untuk menghitung orang. Saat angka Korea digunakan bersama 명, beberapa bentuk angka berubah.',
+    level: 'beginner',
+    category: 'counter',
+    keywords: ['명', 'orang', 'menghitung orang', '한 명', '두 명'],
+    examples: [
+      { korean: '한 명', indonesian: 'satu orang' },
+      { korean: '두 명', indonesian: 'dua orang' },
+      { korean: '세 명', indonesian: 'tiga orang' },
+      { korean: '네 명', indonesian: 'empat orang' },
+      { korean: '우리 가족은 모두 여섯 명이에요.', indonesian: 'Keluarga saya terdiri dari enam orang.' },
+    ],
+    sections: [
+      {
+        id: 'number-changes',
+        type: 'rule',
+        title: 'Perubahan bentuk angka',
+        explanation: '하나, 둘, 셋, 넷 berubah bentuk ketika digunakan sebelum 명.',
+        examples: [
+          { korean: '하나 → 한 명', indonesian: 'satu orang' },
+          { korean: '둘 → 두 명', indonesian: 'dua orang' },
+          { korean: '셋 → 세 명', indonesian: 'tiga orang' },
+          { korean: '넷 → 네 명', indonesian: 'empat orang' },
+        ],
+      },
+    ],
+  },
 ]
 
 const importedGrammarItems = rawEpsGrammarItems as GrammarItem[]
