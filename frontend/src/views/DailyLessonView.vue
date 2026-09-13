@@ -23,7 +23,7 @@ const sections = computed(() => {
   const items: { id: DailySection; label: string; korean: string }[] = [
     { id: 'listen', label: 'Dengarkan', korean: '먼저 들어 보세요' },
   ]
-  if (lesson.value?.vocabulary.length) items.push({ id: 'vocabulary', label: 'Kosakata', korean: '가족 단어' })
+  if (lesson.value?.vocabulary.length) items.push({ id: 'vocabulary', label: 'Kosakata', korean: '단어' })
   if (lesson.value?.notes?.length) items.push({ id: 'notes', label: 'Penjelasan', korean: '표현 설명' })
   if (lesson.value?.grammarSections.length) items.push({ id: 'grammar', label: 'Tata Bahasa', korean: '문법을 배워요' })
   if (lesson.value?.introduction) items.push({ id: 'practice', label: 'Berlatih', korean: '혼자 말해 보세요' })
@@ -97,7 +97,7 @@ onBeforeUnmount(stopSpeech)
         </div>
 
         <div v-else-if="activeSection === 'vocabulary'" class="vocabulary-section">
-          <div class="content-heading"><p>KOSAKATA KELUARGA</p><h2>가족 단어</h2><span>Pelajari kata-kata yang digunakan untuk memperkenalkan keluarga.</span></div>
+          <div class="content-heading"><p>KOSAKATA</p><h2>단어</h2><span>Pelajari kosakata yang digunakan dalam pelajaran ini.</span></div>
           <div class="vocabulary-grid">
             <article v-for="word in lesson.vocabulary" :key="word.id">
               <div><h3>{{ word.korean }}</h3><p>{{ word.pronunciation || romanizeKorean(word.korean) }}</p><strong>{{ word.meaning }}</strong></div>
